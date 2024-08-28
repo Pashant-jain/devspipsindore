@@ -1,0 +1,50 @@
+@import '../../../styles/variable';
+.footer{
+    background-color: $primary;
+    .footerInner{
+        padding: 120px 0 70px;
+        margin: 0 60px;
+        display: flex;
+        gap: 45px;
+        .footer_info{
+            width: 30%;
+            p{
+                font-family: $font-ABeeZee;
+                color: $White;
+            }
+        }
+        .footerNavLinkWrp{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            gap: 25px;
+            .footerNavLink{
+                // width: 100%;
+                // min-width: 15%;
+                h6{
+                    font-family: $font-Roboto;
+                    color: $White;
+                    margin-bottom: 32px;
+                }
+                .List{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 8px;
+                    a{
+                        font-family: $font-ABeeZee;
+                        color: $White; 
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        margin: 0 60px;
+        border-top: 1px solid #848484;
+        font-family: $font-ABeeZee;
+        color: $White;
+        padding: 24px 0;
+    }
+}

@@ -1,0 +1,67 @@
+@import "../../../styles/variable";
+.CollegeLogo_wrp{
+// background-color: $primary;
+    .CollegeLogo{
+        width: 100%;
+        height: unset;
+        max-width: 1400px;
+        margin: auto;
+    }
+}
+.topHeader {
+  padding: 17px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .ContactInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    a {
+      font-family: $font-ABeeZee;
+      color: #1E1E1E;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5.5px;
+    }
+  }
+  .External_Links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    a{
+        font-family: $font-ABeeZee;
+        color: #1E1E1E;
+    }
+  }
+}
+.sumNavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-color: $primary;
+    padding: 19px 60px;
+    a{
+      font-family: $font-ABeeZee;
+        color: $White;
+
+    }
+}
+.MainNavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 33px 60px;
+    a{
+        font-family: $font-ABeeZee;
+        color: #1E1E1E;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap: 6px;
+    }
+}
