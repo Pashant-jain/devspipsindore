@@ -3,6 +3,13 @@ import { Container } from "react-bootstrap";
 import style from "./style.module.scss";
 import Image from "next/image";
 import Link from "next/link";
+import Facebook from "/public/assets/icons/Facebook.svg";
+import Instagram from "/public/assets/icons/Instagram.svg";
+import LinkedIn from "/public/assets/icons/LinkedIn.svg";
+import Twitter from "/public/assets/icons/Twitter.svg";
+import YouTube from "/public/assets/icons/YouTube.svg";
+
+
 const Footer = () => {
   return (
     <div className={style["footer"]}>
@@ -19,6 +26,14 @@ const Footer = () => {
               Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam
               mauris sed ma
             </p>
+            <div className={style['socialMedia']} >
+                <Link href={`#`} ><Image src={Facebook} alt="" width={24} height={24} /></Link>
+                <Link href={`#`} ><Image src={Instagram} alt="" width={24} height={24} /></Link>
+                <Link href={`#`} ><Image src={LinkedIn} alt="" width={24} height={24} /></Link>
+                <Link href={`#`} ><Image src={Twitter} alt="" width={24} height={24} /></Link>
+                <Link href={`#`} ><Image src={YouTube} alt="" width={24} height={24} /></Link>
+
+            </div>
           </div>
           <div className={style["footerNavLinkWrp"]}>
             <div className={style["footerNavLink"]} >
