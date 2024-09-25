@@ -7,8 +7,7 @@ import Image from 'next/image';
 const MainNavbar = () => {
   return (
     <div className={style['MainNavbar']} >
-      <Link href={'#'} className={`text-regular`} >Home</Link>
-      <Link href={'#'} className={`text-regular Submenu `} >Library</Link>
+      <Link href={'/'} className={`text-regular`} >Home</Link>
       <Link href={'#'} className={`text-regular Submenu `} >About SPIPS <Image src={ArrowDown} alt="DownArrow" width={15} height={15} /></Link>
       <Link href={'#'} className={`text-regular Submenu `} >SPIPS@core <Image src={ArrowDown} alt="DownArrow" width={15} height={15} /></Link>
       <Link href={'#'} className={`text-regular Submenu `} >Departments <Image src={ArrowDown} alt="DownArrow" width={15} height={15} /></Link>

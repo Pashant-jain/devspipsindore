@@ -1,0 +1,49 @@
+import React, { useState } from 'react'
+import style from './style.module.scss'
+import SectionHeading from '../../comman/sectionHeading'
+import { Tab, Tabs } from 'react-bootstrap'
+import FeaturedCoursesCard from '@/components/cards/FeaturedCoursesCard'
+
+const FeaturedCourses = ({sectionGap}) => {
+  const [key, setKey] = useState('tab1');
+
+  const TabContent = () =>{
+    return(
+      <div className={style['FeaturedCourses_list']} >
+        <FeaturedCoursesCard/>
+        <FeaturedCoursesCard/>
+        <FeaturedCoursesCard/>
+      </div>
+    )
+  }
+  return (
+    <div className={`${style['FeaturedCourses']} ${sectionGap === 'top' ? 'spacing_top' : sectionGap === 'bottom' ? 'spacing_bottom' : sectionGap === 'both' ?'spacing_both' : ''} `} >
+<div className='container' >
+  <SectionHeading title='Explore Featured Online Courses' description={ <>Lorem ipsum dolor sit amet consectetur adipiscing elitdolor mattis sit phasellus mollis sit <br />aliquam sit nullam neques.</>} />
+  <div className={`FeaturedCourses_list_wrp text-center ${style['FeaturedCourses_inner']}`} >
+  <Tabs
+      id="controlled-tab-example"
+      activeKey={key}
+      onSelect={(k) => setKey(k)}
+      className="mb-3"
+    >
+      <Tab eventKey="tab1" title="See all">
+       <TabContent/>
+      </Tab>
+      <Tab eventKey="tab2" title="Trending">
+      <TabContent/>
+      </Tab>
+      <Tab eventKey="tab3" title="Trending">
+      <TabContent/>
+      </Tab>
+      <Tab eventKey="tab4" title="Trending">
+      <TabContent/>
+      </Tab>
+    </Tabs>
+  </div>
+</div>
+    </div>
+  )
+}
+
+export default FeaturedCourses

@@ -2,6 +2,15 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
+import Banner from "@/components/banner";
+import NewsAndAnnouncements from "@/components/homePage/ NewsAndAnnouncements";
+import OurStats from "@/components/homePage/OurStats";
+import FeaturedCourses from "@/components/homePage/FeatruredCourses";
+import Testimonials from "@/components/comman/testimonials";
+import TopRecruiters from "@/components/homePage/TopRecruiters";
+import OurGallery from "@/components/homePage/OurGallery";
+
+import bannerImg from "/public/assets/images/front-banner-img.png";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +24,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        
-      </main>
+         <Banner isFrontBanner={true} bannerImg={bannerImg} />
+        <NewsAndAnnouncements sectionGap="both"  />
+        <OurStats/>
+        <FeaturedCourses sectionGap="both" />
+        <Testimonials sectionGap="both"/>
+        <TopRecruiters sectionGap="both"/>
+        <OurGallery sectionGap="bottom"/>
+      </main> 
     </>
   );
 }

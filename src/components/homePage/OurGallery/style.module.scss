@@ -1,0 +1,16 @@
+@import '../../../styles/variable';
+
+.OurGallery_Wrp{
+    background-color: $White;
+    .Gallery_list{
+        margin-top: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        .card_img{
+            object-fit: cover;
+        }
+    }
+}

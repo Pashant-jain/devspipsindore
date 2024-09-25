@@ -1,0 +1,59 @@
+@import '../../../styles/variable';
+
+.AnnouncementsCard_wrp {
+    background-color: $White;
+    padding: 16px 32px 16px 16px;
+    box-shadow: 0px 4px 24px 0px #0000000F;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    color: $Body_light;
+
+    .Announcement_date {
+        border-radius: 16px;
+        background-color: $primary;
+        color: $White;
+        padding: 16px;
+        width: 88px;
+        height: 88px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        flex-direction: column;
+        font-family: $font-Roboto;
+
+        strong {
+            display: block;
+            line-height: 34px;
+
+        }
+
+        span {
+            display: block;
+            color: $White_80;
+            line-height: normal;
+        }
+
+
+    }
+    p{
+        margin-top: 16px;
+        margin-bottom: unset;
+    }
+    .tag {
+        position: absolute;
+        right: 0;
+        top: 11px;
+        padding: 5px 11px;
+        background-color: $Secondary;
+        font-family: $font-ABeeZee;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        border-radius:  4px 0px 0px 4px;
+    }
+}

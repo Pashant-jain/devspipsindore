@@ -1,13 +1,132 @@
-
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import './variable';
 @import './typography';
-body{
+
+body {
     margin: unset;
+    background-image: url('/assets/images/bg-image.jpeg');
+    background-position: center;
+    background-size: cover;
 }
-a{
-    text-decoration: unset  !important;
+
+a {
+    text-decoration: unset !important;
 }
-.text-center{
+
+.text-center {
     text-align: center;
 }
+
+.container {
+    max-width: 1400px;
+    width: 94%;
+}
+
+.spacing_bottom {
+    padding-bottom: 120px;
+}
+
+.spacing_top {
+    padding-top: 120px;
+}
+
+.spacing_both {
+    padding: 120px 0;
+}
+
+// banner scss
+.front_banner_form {
+    .input-group {
+        width: -webkit-fill-available;
+
+        .input-group-text {
+            background: $transparent;
+            border: unset;
+        }
+
+        .form-control {
+            background-color: $transparent;
+            border: unset;
+            color: $White;
+            box-shadow: unset;
+            border-radius: unset;
+
+            &::placeholder {
+                color: $White;
+            }
+
+            &:focus {
+                border-bottom: 1px solid $White;
+            }
+        }
+
+        .dropdown-toggle {
+            border: unset;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            color: $White;
+
+            &:hover,
+            &:focus-within,
+            &:active {
+                background-color: $transparent;
+            }
+
+        }
+
+        .dropdown-menu {
+            .dropdown-item {
+
+                &:active,
+                &:hover {
+                    background-color: $primary;
+                    color: $White;
+                }
+            }
+        }
+    }
+
+}
+
+// end banner scss
+
+// featured coursess
+.FeaturedCourses_list_wrp {
+    .nav-tabs {
+        border: 1px solid #C9C9C9;
+        display: inline-flex;
+        padding: 16px;
+        border-radius: 12px;
+
+        .nav-item {
+            .nav-link {
+                background-color: $transparent;
+                border: unset;
+                font-family: $font-ABeeZee;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+                color: $Body;
+                border-radius:
+                    8px;
+                padding: 16px;
+
+                &.active {
+                    background-color: $primary;
+                    color: $White;
+                }
+            }
+        }
+
+       
+    }
+    .tab-content{
+        margin-top: 32px;
+        .tab-pane{
+            
+        }
+    }
+}
+
+// end featured coursess

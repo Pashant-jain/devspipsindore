@@ -1,0 +1,15 @@
+@import '../../../styles/variable';
+.bgImage{
+    width: 100% !important;
+    background-color: $White;
+}
+.testmonials_wrp{
+    background-color: $Secondary;
+    .testimonial_list{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 22px;
+        margin-top: 60px;
+    }
+}

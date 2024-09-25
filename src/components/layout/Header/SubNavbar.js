@@ -5,7 +5,7 @@ import Link from 'next/link'
 const SubNavbar = () => {
   return (
     <div className={style['sumNavbar']} >
-      <Link href={'#'} className="text-regular" >Library</Link>
+      <Link href={'/liberary'} className="text-regular" >Library</Link>
       <Link href={'#'} className="text-regular" >Students</Link>
       <Link href={'#'} className="text-regular" >Students</Link>
       <Link href={'#'} className="text-regular" >Staff</Link>

@@ -1,0 +1,30 @@
+@import '../../../styles/variable';
+.TestimonialsCard {
+    .persnol_del {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+
+        .card_img {
+            border-radius: 50%;
+        }
+
+        h5 {
+            font-family: $font-ABeeZee ;
+            color: $primary;
+        }
+        p{
+            font-family: $font-ABeeZee ;
+            color: $primary;
+            margin: unset;
+        }
+    }
+    p{
+        margin-top: 28px;
+        margin-bottom: unset;
+        font-family: $font-ABeeZee ;
+        color: #002147CC;
+
+    }
+}

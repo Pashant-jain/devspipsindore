@@ -1,0 +1,74 @@
+@import '../../styles/variable';
+
+.front_banner_wrp {
+    background-color: $primary;
+
+    .front_banner_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .bannner_content {
+            span {
+                font-family: $font-ABeeZee;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 22px;
+                color: $Secondary;
+            }
+
+            h1 {
+                font-family: $font-Roboto;
+                color: $White;
+            }
+
+            p {
+                font-family: $font-ABeeZee;
+                color: $White;
+            }
+            .front_banner_form{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+                background-color: #00142A;
+                padding: 12px 16px;
+                border-radius: 12px;
+
+            }
+        }
+    }
+
+}
+.Banner_wrp{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    .Banner_overlay{
+        background-image: url('/assets/images/banner-overlay.svg');
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: cover;
+        .Banner_inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 0;
+            .bannner_content{
+                h1 {
+                    font-family: $font-Roboto;
+                    color: $White;
+                }
+    
+                p {
+                    font-family: $font-ABeeZee;
+                    color: $White;
+                }
+                button{
+                    color: $Black;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

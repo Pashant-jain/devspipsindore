@@ -1,0 +1,11 @@
+@import '../../../styles/variable';
+
+.SectionHeading {
+    h2 {
+        color: $primary;
+    }
+
+    p {
+        color: $Body_light;
+    }
+}

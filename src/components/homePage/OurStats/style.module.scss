@@ -1,0 +1,33 @@
+@import '../../../styles/variable';
+.our_stats_wrp {
+    .stats_list {
+        margin-top: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: wrap;
+        border-radius: 8px;
+        overflow: hidden;
+        .stats {
+            width: 221.33px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 16px;
+            &:first-child{
+                border-radius: 8px 0 0 8px;
+            }
+            &:last-child{
+                border-radius:  0 8px 8px 0;
+            }
+            &:nth-child(odd){
+                background-color: $primary;
+                color: $White;
+            }
+            &:nth-child(even){
+                background-color: $Secondary;
+                color: $primary;
+            }
+        }
+    }
+}
