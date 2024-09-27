@@ -13,7 +13,7 @@ import {
   InputGroup,
 } from "react-bootstrap";
 
-const Banner = ({ isFrontBanner, bannerImg }) => {
+const Banner = ({ isFrontBanner, bannerImg,heading,description }) => {
   console.log(bannerImg, "--bannerImg");
 
   return (
@@ -31,9 +31,10 @@ const Banner = ({ isFrontBanner, bannerImg }) => {
                   Lorem ipsum dolor sit amet consectetur adipiscing elidolor
                   mattis sit phasellus mollis sit aliquam sit nullam neques.
                 </p>
-                <Form class={`front_banner_form ${style["front_banner_form"]}`}>
+                <Form>
+                  <div class={`front_banner_form ${style["front_banner_form"]}`} >
                   <InputGroup className="w-100">
-                    <InputGroup.Text>
+                    <InputGroup.Text className="p-0" >
                       <Image src={SearchIcon} alt="" width={24} height={24} />
                     </InputGroup.Text>
 
@@ -43,7 +44,7 @@ const Banner = ({ isFrontBanner, bannerImg }) => {
                     />
                   </InputGroup>
                   <InputGroup className="w-100">
-                    <InputGroup.Text>
+                    <InputGroup.Text className="p-0" >
                       <Image src={SearchIcon} alt="" width={24} height={24} />
                     </InputGroup.Text>
                     <DropdownButton
@@ -64,6 +65,7 @@ const Banner = ({ isFrontBanner, bannerImg }) => {
                     Search Course{" "}
                     <Image src={arrowRight} alt="" width={8} height={8} />
                   </Button>
+                  </div>
                 </Form>
               </div>
               <div>
@@ -87,9 +89,9 @@ const Banner = ({ isFrontBanner, bannerImg }) => {
             <div className="container">
               <div className={style["Banner_inner"]}>
                 <div className="w-100"></div>
-                <div className={`w-50 ${style["bannner_content"]}`}>
-                  <h1 className="heading-1" >Library</h1>
-                  <p className="text-regular" >Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam.</p>
+                <div className={`w-75 ps-5 ${style["bannner_content"]}`}>
+                  <h1 className="heading-1" >{heading}</h1>
+                  <p className="text-regular my-4" >{description}</p>
                   <Button type="submit" variant="secondary" >
                   Contact Us
                     <Image src={arrowRight} alt="" width={8} height={8} />

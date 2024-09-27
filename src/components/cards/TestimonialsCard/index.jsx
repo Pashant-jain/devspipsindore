@@ -2,10 +2,12 @@ import React from "react";
 import style from "./style.module.scss";
 import cardImg from "/public/assets/images/testimonial.jpeg";
 import Image from "next/image";
+import Link from "next/link";
 const TestimonialsCard = () => {
   return (
     <div className={`${style["TestimonialsCard"]} w-100 `}>
       <div className={style["persnol_del"]}>
+        <Link href={'/our-patron/chairman'} >
         <Image
           src={cardImg}
           alt=""
@@ -14,8 +16,9 @@ const TestimonialsCard = () => {
           height={160}
           className={style["card_img"]}
         />
+        </Link>
         <div>
-          <h5 className="heading-5">Macauley Herring</h5>
+        <Link href={'/our-patron/chairman'} > <h5 className="heading-5">Macauley Herring</h5></Link>
           <p className="small-text">CEO & Founder</p>
         </div>
       </div>

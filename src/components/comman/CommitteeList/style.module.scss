@@ -1,0 +1,39 @@
+@import '../../../styles/variable';
+.CommitteeList_wrp{
+    background-color: $White;
+    .table_wrp{
+        border: 1px solid #E1E4ED;
+        border-radius: 10px;
+        .tHead{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $primary;
+            border-radius: 10px 10px 0 0 ;
+            .key{
+                padding: 22px 14px;
+                color: $White;
+                width: 100%;
+            }
+        }
+        .tbody{
+          .row{
+            border-top: 1px solid #E1E4ED;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $White;
+           &:last-child{
+            border-radius:  0 0 10px 10px ;
+           }
+            .key{
+                padding: 22px 14px;
+                color: $primary;
+                width: 100%;
+            }
+          }
+            
+            
+        }
+    }
+}

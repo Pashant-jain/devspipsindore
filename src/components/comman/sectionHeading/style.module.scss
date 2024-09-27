@@ -1,11 +1,21 @@
 @import '../../../styles/variable';
 
 .SectionHeading {
+    text-align: center;
     h2 {
         color: $primary;
     }
 
-    p {
+    .content{
         color: $Body_light;
+    }
+    &.text-white{
+        h2 {
+            color: $White;
+        }
+    
+        .content{
+            color: $White;
+        }
     }
 }

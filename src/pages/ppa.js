@@ -13,11 +13,12 @@ import CommitteeList from "@/components/comman/CommitteeList";
 import { LibraryAdvisoryCommeitteeTableData, LibraryAdvisoryCommeitteeTablehead, LibraryWorkingTableData, LibraryWorkingTablehead } from "@/config";
 import SectionImage from "/public/assets/images/libery-features.png";
 import CommitteeTable from "@/components/comman/CommitteeList";
+import ListingsSection from "@/components/comman/ListingsSection";
 
 
 const inter = Inter({ subsets: ["latin"] }); // Example of font setup
 
-const Library = () => {
+const PPA = () => {
   return (
     <>
       <Head>
@@ -27,10 +28,10 @@ const Library = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-      <Banner bannerImg={bannerImg} heading="Library" description="Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam."  />
-        <PageContent sectionGap="both" />
-        <Features sectionGap="bottom" SectionImage={SectionImage} />
-        <Services />
+      <Banner bannerImg={bannerImg} heading="PPA" description="Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam."  />
+        {/* <PageContent sectionGap="both" /> */}
+        <Features sectionGap="both" SectionImage={SectionImage} />
+
         <CommitteeList
           sectionGap="both"
           title="Library Advisory Committee"
@@ -44,23 +45,10 @@ const Library = () => {
           tablehead={LibraryAdvisoryCommeitteeTablehead} 
           tableData={LibraryAdvisoryCommeitteeTableData}
         />
-         <CommitteeList
-          sectionGap="bottom"
-          title="Meet our Library Staff"
-          description={
-            <>
-              Lorem ipsum dolor sit amet consectetur adipiscing elidolor mattis
-              sit
-              <br /> phasellus mollis sit aliquam sit nullam neques.
-            </>
-          }
-          tablehead={LibraryWorkingTablehead} 
-          tableData={LibraryWorkingTableData}
-        />
         <div></div>
       </main>
     </>
   );
 };
 
-export default Library;
+export default PPA;

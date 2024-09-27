@@ -20,9 +20,9 @@ const TopHeader = () => {
       </div>
       <div className={styles['External_Links']} >
           <Link href={'#'} className="text-regular" >Pay Prof. Course Fee</Link>
-          <Link href={'#'} className="text-regular" >NIRF</Link>
-          <Link href={'#'} className="text-regular" >E-Mail</Link>
-          <Link href={'#'} className="text-regular" >E-Care</Link>
+          <Link href={'https://www.nirfindia.org/'} target="_blank" rel="noopener noreferrer" className="text-regular" >NIRF</Link>
+          <Link href={'mailto:info@spipsindore.com'} target="_blank" rel="noopener noreferrer" className="text-regular" >E-Mail</Link>
+          <Link href={'https://ecare.spipsindore.com/app/login'} target="_blank" rel="noopener noreferrer"  className="text-regular" >E-Care</Link>
 
       </div>
     </div>

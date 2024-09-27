@@ -1,57 +1,142 @@
 @import '../../../styles/variable';
-.footer{
+
+.footer {
     background-color: $primary;
-    .footerInner{
+
+    .footerInner {
         padding: 120px 0 70px;
         margin: 0 60px;
         display: flex;
         gap: 45px;
-        .footer_info{
+
+        .footer_info {
             width: 30%;
-            p{
+
+            p {
                 font-family: $font-ABeeZee;
                 color: $White;
                 margin: 20px 0;
             }
-            .socialMedia{
+
+            .socialMedia {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
                 gap: 16px;
             }
         }
-        .footerNavLinkWrp{
+
+        .footerNavLinkWrp {
             width: 70%;
             display: flex;
             justify-content: space-between;
             gap: 25px;
-            .footerNavLink{
+
+            .footerNavLink {
+
                 // width: 100%;
                 // min-width: 15%;
-                h6{
+                h6 {
                     font-family: $font-Roboto;
                     color: $White;
                     margin-bottom: 32px;
                 }
-                .List{
+
+                .List {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: flex-start;
                     gap: 8px;
-                    a{
+
+                    a {
                         font-family: $font-ABeeZee;
-                        color: $White; 
+                        color: $White;
                     }
                 }
             }
         }
     }
-    .copyright{
+
+    .copyright {
         margin: 0 60px;
         border-top: 1px solid #848484;
         font-family: $font-ABeeZee;
         color: $White;
         padding: 24px 0;
+    }
+}
+
+.footer_cta_wrp {
+    background-color: $White;
+
+    .footer_cta {
+        background-color: $Secondary;
+        border-radius: 24px;
+        padding: 75px;
+        margin-bottom: -60px;
+        z-index: 2;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        box-shadow: 0px 10px 70px 0px $Secondary;
+
+        .btn_wrp {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 16px;
+
+            .btn_primary {
+                background-color: $primary;
+                border: 1px solid $primary;
+                color: $Secondary;
+                border-radius: 6px;
+                box-shadow: 0px 1px 4px 0px #19213D14;
+                font-family: $font-Roboto;
+                padding: 14px 16px;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 20px;
+
+                &:hover,
+                &:active {
+                    background-color: $Secondary;
+                    color: $primary;
+                }
+
+                img {
+                    margin-left: 3px;
+                }
+
+
+            }
+
+            .btn_secondary {
+                background-color: $Secondary;
+                border: 1px solid $primary;
+                color: $primary;
+                border-radius: 6px;
+                box-shadow: 0px 1px 4px 0px #19213D14;
+                font-family: $font-Roboto;
+                padding: 14px 16px;
+
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 20px;
+
+                &:hover,
+                &:active {
+                    background-color: $primary;
+                    color: $Secondary;
+                }
+
+                img {
+                    margin-left: 3px;
+                }
+            }
+        }
     }
 }

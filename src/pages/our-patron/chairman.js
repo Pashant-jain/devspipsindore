@@ -11,13 +11,12 @@ import Features from "@/components/liberary/Features";
 import Services from "@/components/liberary/Services";
 import CommitteeList from "@/components/comman/CommitteeList";
 import { LibraryAdvisoryCommeitteeTableData, LibraryAdvisoryCommeitteeTablehead, LibraryWorkingTableData, LibraryWorkingTablehead } from "@/config";
-import SectionImage from "/public/assets/images/libery-features.png";
-import CommitteeTable from "@/components/comman/CommitteeList";
+import SectionImage from "/public/assets/images/chairman.png";
 
 
 const inter = Inter({ subsets: ["latin"] }); // Example of font setup
 
-const Library = () => {
+const Chairman = () => {
   return (
     <>
       <Head>
@@ -27,7 +26,7 @@ const Library = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-      <Banner bannerImg={bannerImg} heading="Library" description="Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam."  />
+      <Banner bannerImg={bannerImg} heading="Chairman" description="Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam."  />
         <PageContent sectionGap="both" />
         <Features sectionGap="bottom" SectionImage={SectionImage} />
         <Services />
@@ -63,4 +62,4 @@ const Library = () => {
   );
 };
 
-export default Library;
+export default Chairman;

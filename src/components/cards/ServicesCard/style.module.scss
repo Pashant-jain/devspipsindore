@@ -1,0 +1,48 @@
+@import '../../../styles/variable';
+
+.ServicesCard {
+    background-color: $White;
+    border: 1px solid #E6E8EC80;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+
+    .icon {
+        width: 76px;
+        height: 76px;
+        min-width: 76px;
+        min-height: 76px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F0F5FF;
+        border-radius: 10px;
+    }
+
+    &:hover {
+        .icon {
+            background-color: $primary;
+
+            img {
+                filter: invert(1);
+            }
+        }
+
+    }
+
+    .content {
+        h3 {
+            color: $primary;
+            font-family: $font-Inter;
+        }
+
+        p {
+            color: #42526B;
+            font-family: $font-ABeeZee;
+            margin: unset;
+        }
+    }
+}
