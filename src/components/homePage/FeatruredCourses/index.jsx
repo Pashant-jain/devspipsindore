@@ -3,16 +3,32 @@ import style from './style.module.scss'
 import SectionHeading from '../../comman/sectionHeading'
 import { Tab, Tabs } from 'react-bootstrap'
 import FeaturedCoursesCard from '@/components/cards/FeaturedCoursesCard'
+import Slider from 'react-slick'
 
 const FeaturedCourses = ({sectionGap}) => {
   const [key, setKey] = useState('tab1');
 
   const TabContent = () =>{
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      adaptiveHeight: true
+    };
     return(
       <div className={style['FeaturedCourses_list']} >
+         <Slider {...settings} >
         <FeaturedCoursesCard/>
         <FeaturedCoursesCard/>
         <FeaturedCoursesCard/>
+        <FeaturedCoursesCard/>
+        <FeaturedCoursesCard/>
+        <FeaturedCoursesCard/>
+        </Slider>
       </div>
     )
   }
