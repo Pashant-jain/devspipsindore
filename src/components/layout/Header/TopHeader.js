@@ -5,8 +5,9 @@ import Logo from "/public/assets/images/College-logo.png";
 
 import styles from "./style.module.scss";
 import Image from "next/image";
+import { Button } from "react-bootstrap";
 
-const TopHeader = () => {
+const TopHeader = ({handleShow}) => {
   console.log(Logo);
   
   return (
@@ -25,10 +26,13 @@ const TopHeader = () => {
           <Link href={'https://ecare.spipsindore.com/app/login'} target="_blank" rel="noopener noreferrer"  className="text-regular" >E-Care</Link>
 
       </div>
+      {/* <Button variant="primary" onClick={handleShow} className="me-2">
+        cdsa
+      </Button> */}
     </div>
-    {/* <div className={styles['CollegeLogo_wrp']} >
+    <div className={styles['CollegeLogo_wrp']} >
     <img src={Logo.src} alt="logo"  width={Logo.width} height={Logo.height} className={styles['CollegeLogo']}  />
-    </div> */}
+    </div>
       </div>
   );
 };

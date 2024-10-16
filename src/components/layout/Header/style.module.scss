@@ -1,6 +1,6 @@
 @import "../../../styles/variable";
 .CollegeLogo_wrp{
-// background-color: $primary;
+background-color: $White;
     .CollegeLogo{
         width: 100%;
         height: unset;
@@ -13,18 +13,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $White;
+  background-color: $primary;
   .ContactInfo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     a {
       font-family: $font-ABeeZee;
-      color: #1E1E1E;
+      color: $White !important;
       display: flex;
       justify-content: center;
       align-items: center;
       gap: 5.5px;
+      span{
+        color: inherit;
+      }
+      img{
+        filter: invert(1);
+      }
     }
   }
   .External_Links{
@@ -34,7 +40,7 @@
     gap: 24px;
     a{
         font-family: $font-ABeeZee;
-        color: #1E1E1E;
+        color: $White;
     }
   }
 }
@@ -58,12 +64,21 @@
     gap: 24px;
     padding: 33px 60px;
     background-color: $White;
+    @media (max-width: 1400px) {
+      gap: 12px;
+    }
+    @media (max-width: 1199px) {
+     flex-direction: column;
+    }
     a{
         font-family: $font-ABeeZee;
         color: #1E1E1E;
-       display: flex;
-       justify-content: center;
-       align-items: center;
+      //  display: flex;
+      //  justify-content: center;
+      //  align-items: center;
        gap: 6px;
+
+       display: block;
     }
 }
+

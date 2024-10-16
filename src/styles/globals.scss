@@ -35,6 +35,76 @@ a {
     padding: 120px 0;
 }
 
+// header scss
+.header {
+   
+    .dropdown-toggle {
+        background-color: $transparent;
+        border: unset;
+        font-family: $font-ABeeZee;
+        color: #1E1E1E;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6px;
+        width: 100%;
+        border-radius: unset;
+        &.menu_toggle{
+            padding: unset;
+            &:hover{
+                background-color: $transparent;
+                color: $primary;
+                &::after{
+                    filter: invert(0);
+                }
+            }
+        }
+
+        &:hover{
+            background-color: $primary;
+            color: $White;
+            &::after{
+                filter: invert(1);
+            }
+        }
+
+        &::after {
+            border: unset;
+            width: 15px;
+            height: 15px;
+            background-image: url('/assets/icons/arrow-down.svg');
+        }
+        &:focus,&:active{
+            background-color: $transparent;
+            color: #1E1E1E;
+        }
+    }
+    .dropdown-menu{
+        text-align: left;
+        border: unset;
+        box-shadow: 0px 4px 24px 0px #0000000F;
+        .dropdown-item{
+            padding: unset;
+            a{
+                display: block;
+                width: 100%;
+                padding: 8px 12px;
+                &:hover{
+                    background-color: $primary;
+                    color: $White;
+                   
+                }
+            }
+            &:hover{
+                background-color: $transparent;
+            }
+            
+        }
+    }
+}
+
+// end of Header scss
+
 // banner scss
 .front_banner_form {
     .input-group {
@@ -120,13 +190,13 @@ a {
             }
         }
 
-       
+
     }
-    .tab-content{
+
+    .tab-content {
         margin-top: 32px;
-        .tab-pane{
-            
-        }
+
+        .tab-pane {}
     }
 }
 
