@@ -10,7 +10,6 @@ import Twitter from "/public/assets/icons/Twitter.svg";
 import YouTube from "/public/assets/icons/YouTube.svg";
 import arrowRight from "/public/assets/icons/Arrow-right.svg";
 
-
 const Footer = () => {
   return (
     <>
@@ -18,14 +17,15 @@ const Footer = () => {
         <div className="container">
           <div className={style["footer_cta"]}>
             <h2 className="heading-2">
-              Are you Ready to Start your<br/> Career with us?
+              Are you Ready to Start your
+              <br /> Career with us?
             </h2>
             <div className={style["btn_wrp"]}>
-              <Link href={"#"} className={style['btn_primary']} >
+              <Link href={"#"} className={style["btn_primary"]}>
                 Search Course{" "}
                 <Image src={arrowRight} alt="" width={8} height={8} />{" "}
               </Link>
-              <Link href={"#"} className={style['btn_secondary']} >
+              <Link href={"#"} className={style["btn_secondary"]}>
                 Search Course{" "}
                 <Image src={arrowRight} alt="" width={8} height={8} />{" "}
               </Link>
@@ -44,8 +44,11 @@ const Footer = () => {
                 height={100}
               />
               <p className="text-regular">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam
-                mauris sed ma
+                SPIPS is a Self-financed Christian Minority Institute, approved
+                as such by the Government of India. It is owned and managed by
+                the Catholic Diocese of Indore. It is approved by the Department
+                of Higher Education, M.P., and is affiliated to the Devi Ahilya
+                Vishwavidyalaya, Indore.
               </p>
               <div className={style["socialMedia"]}>
                 <Link href={`#`}>
@@ -66,84 +69,49 @@ const Footer = () => {
               </div>
             </div>
             <div className={style["footerNavLinkWrp"]}>
-              <div className={style["footerNavLink"]}>
+              
+              <div className={`${style["footerNavLink"]} ${style['featured_link']}`} > 
                 <h6 className="heading-6">About us</h6>
-                <div className={style["List"]}>
-                  <Link href={`https://dev.spipsindore.site/`} className="text-regular">
-                    Home
-                  </Link>
-                  <Link href={`/clubs`} className="text-regular">
-                    Clubs
-                  </Link>
-                  <Link href={`/NIRF`} className="text-regular">
-                  NIRF
-                  </Link>
-                  <Link href={`/our-patron/chairman`} className="text-regular">
-                    chairman Message
-                  </Link>
-                  <Link href={`/governing-body`} className="text-regular">
-                  Governing Body
-                  </Link>
-                </div>
-              </div>
-              <div className={style["footerNavLink"]}>
-                <h6 className="heading-6">About us</h6>
-                <div className={style["List"]}>
+                
+               <div className={style["List"]}>
                   <Link href={`/managing-committee`} className="text-regular">
-                  managing-committee
+                    managing-committee
                   </Link>
                   <Link href={`/finantial-committee`} className="text-regular">
-                  finantial-committee
+                    finantial-committee
                   </Link>
                   <Link href={`/annual-report`} className="text-regular">
-                  annual-report
+                    annual-report
                   </Link>
                   <Link href={`/in-house-committee`} className="text-regular">
-                  in-house-committee
+                    in-house-committee
                   </Link>
                   <Link href={`/policy`} className="text-regular">
                     Privacy policy
                   </Link>
                 </div>
-              </div>
-              <div className={style["footerNavLink"]}>
-                <h6 className="heading-6">About us</h6>
-                <div className={style["List"]}>
-                  <Link href={`/mandate-disclosure`} className="text-regular">
-                  mandate-disclosure
-                  </Link>
-                  <Link href={`/ppa`} className="text-regular">
-                    ppa
-                  </Link>
-                  <Link href={`#`} className="text-regular">
-                    Awards
-                  </Link>
-                  <Link href={`#`} className="text-regular">
-                    Testimonials
-                  </Link>
-                  <Link href={`#`} className="text-regular">
-                    Privacy policy
-                  </Link>
-                </div>
-              </div>
-              <div className={style["footerNavLink"]}>
-                <h6 className="heading-6">About us</h6>
+               </div>
+
+              <div className={`${style["footerNavLink"]} ${style['info_dtn']}`}>
+                <h6 className="heading-6">Information
+                </h6>
                 <div className={style["List"]}>
                   <Link href={`#`} className="text-regular">
-                    Mission
+                    <Image src={Facebook} alt="" width={24} height={24} />
+                    <span>
+                      7/1, Boundary Road, Lalaram Nagar, Indore, Madhya Pradesh
+                      - 452001.
+                    </span>
                   </Link>
                   <Link href={`#`} className="text-regular">
-                    Our team
+                  <Image src={Facebook} alt="" width={24} height={24} />
+                  +91 731 2499911, 2490114
                   </Link>
                   <Link href={`#`} className="text-regular">
-                    Awards
+                  <Image src={Facebook} alt="" width={24} height={24} />
+                  info@spipsindore.ac.in
                   </Link>
-                  <Link href={`#`} className="text-regular">
-                    Testimonials
-                  </Link>
-                  <Link href={`#`} className="text-regular">
-                    Privacy policy
-                  </Link>
+                  
                 </div>
               </div>
             </div>

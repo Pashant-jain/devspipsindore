@@ -1,12 +1,61 @@
+@import '../../../styles/Mixins';
 @import "../../../styles/variable";
-.CollegeLogo_wrp{
-background-color: $White;
-    .CollegeLogo{
-        width: 100%;
-        height: unset;
-        max-width: 1400px;
-        margin: auto;
+
+.CollegeLogo_section{
+  background-color: $White;
+  .CollegeLogo_wrp {
+    background-color: $White;
+  
+    @media (max-width: 767px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+  
+    .mobileMenu {
+      display: none;
+  
+      @media (max-width: 767px) {
+        display: block;
+      }
+    }
+  
+    .mobileMenu {
+      display: none;
+      background-color: transparent;
+      border: transparent;
+  
+      img {
+        filter: invert(1);
+      }
+  
+      @media (max-width: 1199px) {
+        display: block;
+      }
+  
+      @media (max-width: 767px) {
+        img {
+          filter: invert(0);
+        }
+      }
+    }
+  
+    .CollegeLogo {
+      width: 100%;
+      height: unset;
+      max-width: 1400px;
+      margin: auto;
+  
+      @media (max-width: 767px) {
+        width: 75%;
+      }
+    }
+  }
+}
+
+.topHeader_sect{
+  background-color: $primary;
+
 }
 .topHeader {
   padding: 17px 60px;
@@ -14,10 +63,43 @@ background-color: $White;
   justify-content: space-between;
   align-items: center;
   background-color: $primary;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  .topHeader_inner {
+    display: flex;
+    justify-content: flex-start;
+    gap: 16px;
+
+    .mobileMenu {
+      display: none;
+      background-color: transparent;
+      border: transparent;
+
+      img {
+        filter: invert(1);
+      }
+
+      @media (max-width: 1199px) {
+        display: block;
+      }
+
+      @media (max-width: 767px) {
+        img {
+          filter: invert(0);
+        }
+      }
+    }
+
+  }
+
   .ContactInfo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
     a {
       font-family: $font-ABeeZee;
       color: $White !important;
@@ -25,60 +107,84 @@ background-color: $White;
       justify-content: center;
       align-items: center;
       gap: 5.5px;
-      span{
+
+      span {
         color: inherit;
       }
-      img{
+
+      img {
         filter: invert(1);
       }
     }
   }
-  .External_Links{
+
+  .External_Links {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 24px;
-    a{
-        font-family: $font-ABeeZee;
-        color: $White;
+
+    a {
+      font-family: $font-ABeeZee;
+      color: $White;
     }
   }
 }
-.sumNavbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    background-color: $primary;
-    padding: 19px 60px;
-    a{
-      font-family: $font-ABeeZee;
-        color: $White;
 
-    }
-}
-.MainNavbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    padding: 33px 60px;
-    background-color: $White;
-    @media (max-width: 1400px) {
-      gap: 12px;
-    }
-    @media (max-width: 1199px) {
-     flex-direction: column;
-    }
-    a{
-        font-family: $font-ABeeZee;
-        color: #1E1E1E;
-      //  display: flex;
-      //  justify-content: center;
-      //  align-items: center;
-       gap: 6px;
+.sumNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  background-color: $primary;
+  padding: 19px 60px;
 
-       display: block;
-    }
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  a {
+    font-family: $font-ABeeZee;
+    color: $White;
+
+  }
 }
 
+.MainNavbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 33px 60px;
+  background-color: $White;
+
+  @media (max-width: 1400px) {
+
+    gap: 12px;
+  }
+
+  @media (max-width: 1199px) {
+    flex-direction: column;
+
+    &.desktopMenu {
+      display: none;
+    }
+
+    &.mobileMenu {
+      display: block;
+      padding: unset;
+
+    }
+  }
+
+  a {
+    font-family: $font-ABeeZee;
+    color: #1E1E1E;
+    //  display: flex;
+    //  justify-content: center;
+    //  align-items: center;
+    gap: 6px;
+
+    display: block;
+  }
+}

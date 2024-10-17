@@ -5,6 +5,7 @@ export const headerData = [
     },
     {
       itemName: "About SPIPS",
+      link:'',
       child: [
         {
           subItemName: "Our Patron",
@@ -81,6 +82,7 @@ export const headerData = [
     },
     {
         itemName: "SPIPS @ CORE",
+        link:'',
         child: [
           {
             subItemName: "Annual Report",
@@ -146,6 +148,7 @@ export const headerData = [
       },
       {
         itemName: "Departments",
+        link:'',
         child: [
           {
             subItemName: "Dept. of Commerce & Management",
@@ -171,6 +174,7 @@ export const headerData = [
       },
       {
         itemName: "IQAC",
+        link:'',
         child: [
           {
             subItemName: "About SPIPS IQAC",
@@ -218,6 +222,7 @@ export const headerData = [
       },
       {
         itemName: "NAAC",
+        link:'',
         child: [
           {
             subItemName: "NAAC Certificate",
@@ -417,6 +422,7 @@ export const headerData = [
       },
       {
         itemName: "Student Corner",
+        link:'',
         child: [
           {
             subItemName: "NCC",
@@ -532,6 +538,7 @@ export const headerData = [
       },
       {
         itemName: "Facilities",
+        link:'',
         child: [
           {
             subItemName: "Physical Facility",
@@ -567,6 +574,7 @@ export const headerData = [
       },
       {
         itemName: "Gallery",
+        link:'',
         child: [
           {
             subItemName: "Photo Gallery",
@@ -622,6 +630,7 @@ export const headerData = [
       },
       {
         itemName: "Research",
+        link:'',
         child: [
           {
             subItemName: "Projects",
@@ -657,6 +666,7 @@ export const headerData = [
       },
       {
         itemName: "Public Self-Disclosure",
+        link:'',
         child: [
           {
             subItemName: "Public Disclosure- View file",
@@ -667,6 +677,7 @@ export const headerData = [
       },
       {
         itemName: "Contact",
+        link:'',
         child: [
           {
             subItemName: "Contact Us",

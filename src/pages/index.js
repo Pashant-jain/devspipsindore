@@ -24,13 +24,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-         <Banner isFrontBanner={true} bannerImg={bannerImg} />
+         {/* <Banner isFrontBanner={true} bannerImg={bannerImg} />
         <NewsAndAnnouncements sectionGap="both"  />
         <OurStats/>
         <FeaturedCourses sectionGap="both" />
         <Testimonials sectionGap="both"/>
         <TopRecruiters sectionGap="both"/>
-        <OurGallery sectionGap="bottom"/>
+        <OurGallery sectionGap="bottom"/> */}
       </main> 
     </>
   );
