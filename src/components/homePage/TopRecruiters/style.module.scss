@@ -8,5 +8,12 @@
         align-items: center;
         gap: 60px;
         margin-top: 48px;
+        flex-wrap: wrap;
+        @media (max-width: 991px) {
+            gap: 30px;
+        }
+        @media (max-width: 649px) {
+            gap: 16px;
+        }
     }
 }

@@ -2,15 +2,51 @@
 
 .OurGallery_Wrp{
     background-color: $White;
-    .Gallery_list{
-        margin-top: 48px;
+    overflow: hidden;
+ 
+      .carousel {
+        max-width: 100%;
         display: flex;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        gap: 40px;
-        flex-wrap: wrap;
-        .card_img{
-            object-fit: cover;
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        margin: auto;
+        gap: 16px;
+      }
+      .carousel .item {
+        width: 20%;
+        // height: 250px;
+        // max-width: 250px;
+        /* background-color: white; */
+        // margin: 16px;
+        transition: 0.5s;
+        object-fit: cover;
+        filter: brightness(1);
+        @media (max-width: 480px) {
+          height: 100%;
         }
-    }
+      }
+      .carousel .item:hover {
+        filter: brightness(1);
+        transform: translateZ(170px);
+      }
+      .carousel .item:hover + * {
+        filter: brightness(0.6);
+        transform: translateZ(60px) rotateY(20deg);
+      }
+      .carousel .item:hover + * + * {
+        filter: brightness(0.4);
+        transform: translateZ(25px) rotateY(10deg);
+      }
+      .carousel .item:has(+ *:hover) {
+        filter: brightness(0.6);
+        transform: translateZ(60px) rotateY(-20deg);
+      }
+      .carousel .item:has(+ * + *:hover) {
+        filter: brightness(0.4);
+        transform: translateZ(25px) rotateY(-10deg);
+      }
+      
 }
