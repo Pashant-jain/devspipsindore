@@ -19,8 +19,9 @@ const Testimonials = () => {
       />
       <div className={style["testmonials_wrp"]}>
         <div className="container">
-          <SectionHeading title="Meet Our Team" />
+          <SectionHeading title="Our Alumini" />
           <div className={style['testimonial_list']} >
+            
          <TestimonialsCard/>
          <TestimonialsCard/>
           </div>

@@ -25,7 +25,6 @@ const MobileNavbar = ({ handleClose, show }) => {
                     <Accordion.Header>{submenu.subItemName}</Accordion.Header>
                     <Accordion.Body>
                       {submenu.submenuChild.map((innerSubmenu, innerIndex) => {
-                        console.log(innerSubmenu); // Log innerSubmenu to check its structure
                         return (
                           innerSubmenu.link ? ( // Check if link is defined
                             <Link

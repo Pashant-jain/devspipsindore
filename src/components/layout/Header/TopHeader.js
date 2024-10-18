@@ -10,7 +10,6 @@ import Image from "next/image";
 import { Button } from "react-bootstrap";
 
 const TopHeader = ({ handleShow }) => {
-  console.log(Logo);
 
   return (
     <div className="text-center">

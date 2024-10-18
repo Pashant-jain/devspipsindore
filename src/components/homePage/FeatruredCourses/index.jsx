@@ -15,7 +15,7 @@ const FeaturedCourses = ({sectionGap}) => {
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 1,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 1000,
       adaptiveHeight: true
     };
@@ -43,16 +43,16 @@ const FeaturedCourses = ({sectionGap}) => {
       onSelect={(k) => setKey(k)}
       className="mb-3"
     >
-      <Tab eventKey="tab1" title="See all">
+      <Tab eventKey="tab1" title="Management">
        <TabContent/>
       </Tab>
-      <Tab eventKey="tab2" title="Trending">
+      <Tab eventKey="tab2" title="Computer Science">
       <TabContent/>
       </Tab>
-      <Tab eventKey="tab3" title="Trending">
+      <Tab eventKey="tab3" title="Social Science">
       <TabContent/>
       </Tab>
-      <Tab eventKey="tab4" title="Trending">
+      <Tab eventKey="tab4" title="Faculty Members">
       <TabContent/>
       </Tab>
     </Tabs>

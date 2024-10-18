@@ -14,8 +14,6 @@ import {
 } from "react-bootstrap";
 
 const Banner = ({ isFrontBanner, bannerImg,heading,description }) => {
-  console.log(bannerImg, "--bannerImg");
-
   return (
     <>
       {isFrontBanner ? (

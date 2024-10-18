@@ -1,16 +1,17 @@
 import React from 'react'
 import style from './style.module.scss'
+import Link from 'next/link'
 
-const AnnouncementsCard = () => {
+const AnnouncementsCard = ({AnnouncementType,date,month,title,link,target}) => {
   return (
-    <div className={`${style['AnnouncementsCard_wrp']}`} >
+    <Link href={link} target={target} className={`${style['AnnouncementsCard_wrp']}`} >
         <div className={style['Announcement_date']} >
-            <strong className='heading-2' >17</strong>
-            <span className='.text-regular' >August</span>
+            <strong className='heading-2' >{date}</strong>
+            <span className='.text-regular' >{month}</span>
         </div>
-       <p className='text-regular' >Lorem ipsum dolor sit amet consectetur adipiscing elidolor</p>
-        <div className={style['tag']} >News</div>
-    </div>
+       <p className='text-regular line-clamp line-clamp-2' >{title}</p>
+        <div className={style['tag']} >{AnnouncementType}</div>
+    </Link>
   )
 }
 

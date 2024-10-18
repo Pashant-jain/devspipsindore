@@ -1,33 +1,113 @@
 @import '../../../styles/variable';
+
 .our_stats_wrp {
     .stats_list {
         margin-top: 48px;
-        display: flex;
+        display: grid;
         justify-content: center;
         align-items: stretch;
         flex-wrap: wrap;
         border-radius: 8px;
         overflow: hidden;
+        grid-template-columns: repeat(6, 1fr);
+
+        @media (max-width: 1400px) {
+            grid-template-columns: repeat(3, 1fr);
+            width: 80%;
+            margin: 48px auto 0;
+        }
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        @media (max-width: 650px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         .stats {
-            width: 221.33px;
+            // width: 221.33px;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             padding: 16px;
-            &:first-child{
+            text-align: center;
+
+            &:first-child {
                 border-radius: 8px 0 0 8px;
             }
-            &:last-child{
-                border-radius:  0 8px 8px 0;
+
+            &:last-child {
+                border-radius: 0 8px 8px 0;
             }
-            &:nth-child(odd){
+            &:nth-child(odd) {
                 background-color: $primary;
                 color: $White;
             }
-            &:nth-child(even){
+
+            &:nth-child(even) {
                 background-color: $Secondary;
                 color: $primary;
             }
+            @media (max-width: 1400px) {
+                border-radius: unset;
+
+                &:nth-child(1) {
+                    border-radius: 8px 0 0 0;
+                }
+
+                &:nth-child(3) {
+                    border-radius: 0 8px 0 0;
+                }
+
+                &:nth-child(4) {
+                    border-radius: 0 0 8px 0;
+                }
+
+                &:nth-child(6) {
+                    border-radius: 0 0 0 8px;
+                }
+
+                &:nth-child(2),
+                :nth-child(5),
+                :nth-child(6) {
+                    border-radius: unset;
+                }
+            }
+
+            @media (max-width: 650px) {
+                border-radius: unset;
+
+                &:nth-child(1) {
+                    border-radius: 8px 0 0 0;
+                }
+
+                &:nth-child(2) {
+                    border-radius: 0 8px 0 0;
+                }
+
+                &:nth-child(5) {
+                    border-radius: 0 0 8px 0;
+                }
+
+                &:nth-child(6) {
+                    border-radius: 0 0 0 8px;
+                }
+
+                &:nth-child(3),
+                :nth-child(4) {
+                    border-radius: unset;
+                }
+                &:nth-child(3){
+                    background-color: $Secondary;
+                color: $primary;
+                }
+                &:nth-child(4){
+                    background-color: $primary;
+                color: $White;
+                }
+            }
+
+            
         }
     }
 }

@@ -1,15 +1,11 @@
 import React from "react";
 import style from "./style.module.scss";
 import SectionHeading from "../../comman/sectionHeading";
-import Recruiter1 from "/public/assets/images/Recruiter1.png";
-import Recruiter2 from "/public/assets/images/Recruiter2.png";
-import Recruiter3 from "/public/assets/images/Recruiter3.png";
-import Recruiter4 from "/public/assets/images/Recruiter4.png";
-import Recruiter5 from "/public/assets/images/Recruiter5.png";
+
 import Image from "next/image";
 
 
-const TopRecruiters = ({ sectionGap }) => {
+const TopRecruiters = ({ sectionGap,title,description,data }) => {
   return (
     <div
       className={`${style["TopRecruiters_wrp"]} ${
@@ -24,56 +20,23 @@ const TopRecruiters = ({ sectionGap }) => {
     >
       <div className="container">
         <SectionHeading
-          title="Our Top Recruiters"
-          description={
-            <>
-              Lorem ipsum dolor sit amet consectetur adipiscing elitdolor mattis
-              sit phasellus mollis sit <br />
-              aliquam sit nullam neques.
-            </>
-          }
+          title={title}
+          description={description}
         />
         <div className={style["Recruiters_list"]}>
-          <Image
-            src={Recruiter1}
-            alt=""
-            loading="lazy"
-            width={183}
-            height={48}
-            className={style["card_img"]}
-          />
-          <Image
-            src={Recruiter2}
-            alt=""
-            loading="lazy"
-            width={183}
-            height={48}
-            className={style["card_img"]}
-          />
-          <Image
-            src={Recruiter3}
-            alt=""
-            loading="lazy"
-            width={183}
-            height={48}
-            className={style["card_img"]}
-          />
-          <Image
-            src={Recruiter4}
-            alt=""
-            loading="lazy"
-            width={183}
-            height={48}
-            className={style["card_img"]}
-          />
-          <Image
-            src={Recruiter5}
-            alt=""
-            loading="lazy"
-            width={183}
-            height={48}
-            className={style["card_img"]}
-          />
+        {data?.map((item, index) => (
+              <div key={index}>
+                 <Image
+                src={item.image}
+                alt=""
+                loading="lazy"
+                width={item?.width || 183}
+                height={item?.height || 48}
+                className={style["card_img"]}
+              />
+              </div>
+            ))}
+         
         </div>
       </div>
     </div>

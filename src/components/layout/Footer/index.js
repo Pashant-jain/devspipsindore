@@ -69,32 +69,55 @@ const Footer = () => {
               </div>
             </div>
             <div className={style["footerNavLinkWrp"]}>
-              
-              <div className={`${style["footerNavLink"]} ${style['featured_link']}`} > 
-                <h6 className="heading-6">About us</h6>
-                
-               <div className={style["List"]}>
-                  <Link href={`/managing-committee`} className="text-regular">
-                    managing-committee
+              <div
+                className={`${style["footerNavLink"]} ${style["featured_link"]}`}
+              >
+                <h6 className="heading-6">Featured Links</h6>
+
+                <div className={style["List"]}>
+                  <Link href={`/news`} className="text-regular">
+                    News
                   </Link>
-                  <Link href={`/finantial-committee`} className="text-regular">
-                    finantial-committee
+                  <Link href={`/Gallery`} className="text-regular">
+                    Gallery
                   </Link>
-                  <Link href={`/annual-report`} className="text-regular">
-                    annual-report
+                  <Link href={`/Magazine`} className="text-regular">
+                    Magazine
                   </Link>
-                  <Link href={`/in-house-committee`} className="text-regular">
-                    in-house-committee
+                  <Link href={`/Chronicles`} className="text-regular">
+                    Chronicles
                   </Link>
-                  <Link href={`/policy`} className="text-regular">
-                    Privacy policy
+                  <Link
+                    href={`https://www.mponline.gov.in/portal/`}
+                    target="_blank"
+                    className="text-regular"
+                  >
+                    MP Online
+                  </Link>
+                  <Link
+                    href={`https://nlist.inflibnet.ac.in/`}
+                    target="_blank"
+                    className="text-regular"
+                  >
+                    N-List
+                  </Link>
+                  <Link href={`/news`} className="text-regular">
+                    Newsletter
+                  </Link>
+                  <Link href={`/news`} className="text-regular">
+                    Journals
+                  </Link>
+                  <Link href={`/news`} className="text-regular">
+                    DAVV
+                  </Link>
+                  <Link href={`/news`} className="text-regular">
+                    Announcements
                   </Link>
                 </div>
-               </div>
+              </div>
 
-              <div className={`${style["footerNavLink"]} ${style['info_dtn']}`}>
-                <h6 className="heading-6">Information
-                </h6>
+              <div className={`${style["footerNavLink"]} ${style["info_dtn"]}`}>
+                <h6 className="heading-6">Information</h6>
                 <div className={style["List"]}>
                   <Link href={`#`} className="text-regular">
                     <Image src={Facebook} alt="" width={24} height={24} />
@@ -104,14 +127,13 @@ const Footer = () => {
                     </span>
                   </Link>
                   <Link href={`#`} className="text-regular">
-                  <Image src={Facebook} alt="" width={24} height={24} />
-                  +91 731 2499911, 2490114
+                    <Image src={Facebook} alt="" width={24} height={24} />
+                    +91 731 2499911, 2490114
                   </Link>
                   <Link href={`#`} className="text-regular">
-                  <Image src={Facebook} alt="" width={24} height={24} />
-                  info@spipsindore.ac.in
+                    <Image src={Facebook} alt="" width={24} height={24} />
+                    info@spipsindore.ac.in
                   </Link>
-                  
                 </div>
               </div>
             </div>

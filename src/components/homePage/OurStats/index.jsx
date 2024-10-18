@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import style from "./style.module.scss";
 import SectionHeading from "@/components/comman/sectionHeading";
+import { Stats } from "@/data";
 
 // Helper function to animate counting numbers
 const animateValue = (start, end, duration, setStatValue) => {
@@ -47,12 +48,11 @@ const OurStats = ({ sectionGap }) => {
       <div className="container">
         <SectionHeading title="Our Stats" />
         <div className={style["stats_list"]}>
-          <StatItem endValue={124} label="Online Programs" />
-          <StatItem endValue={250} label="Courses Available" />
-          <StatItem endValue={300} label="Certified Instructors" />
-          <StatItem endValue={1000} label="Happy Students" />
-          <StatItem endValue={95} label="Completion Rate (%)" />
-          <StatItem endValue={150} label="Workshops Conducted" />
+          {Stats?.map((item, index) => (
+            <React.Fragment key={index}>
+              <StatItem endValue={item.number} label={item.title} />
+            </React.Fragment>
+          ))}
         </div>
       </div>
     </div>
