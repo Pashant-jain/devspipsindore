@@ -4,8 +4,15 @@
         justify-content:space-between;
         align-items: center;
         gap: 90px;
+       
         @media (max-width: 767px) {
             flex-direction: column-reverse;
+        }
+        &.feature_reverse{
+            flex-direction: row-reverse;
+            @media (max-width: 767px) {
+                flex-direction: column;
+            }
         }
         .features_lft{
             width: 60%;
