@@ -1,12 +1,35 @@
 @import '../../styles/variable';
 
+.front_banner_main{
+    position: relative;
+    video.bg-video {
+        min-width: 100%;
+        min-height: 100%;
+        width: 100%;
+        height: 100%;
+        // transform: translateX(-50%) translateY(-50%);
+        z-index: 0;
+      }
+      .front_banner_wrp{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+}
+
+
+
 .front_banner_wrp {
-    background-color: $primary;
+    // background-color: $primary;
+    background: linear-gradient(280.89deg, rgba(0, 33, 71, 0) 5.88%, #002147 73.28%);
 
     .front_banner_inner {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
+        height: 100%;
 
         .bannner_content {
             span {
@@ -34,6 +57,9 @@
                 background-color: #00142A;
                 padding: 12px 16px;
                 border-radius: 12px;
+                @media (max-width: 767px) {
+                    display: none; 
+                }
 
             }
         }

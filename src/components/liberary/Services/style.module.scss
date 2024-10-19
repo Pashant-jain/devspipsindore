@@ -3,7 +3,7 @@
 .Services_wrp {
     background-image: url('/assets/images/liberary-services-back-new.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: bottom left;
     padding: 120px 0 500px;
     // background-color: $White;
@@ -15,5 +15,9 @@
         gap: 24px;
         margin-top: 80px;
         margin-bottom: -50%;
+        @media (max-width: 767px) {
+        grid-template-columns: 1fr ;
+            
+        }
     }
 }

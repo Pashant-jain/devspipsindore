@@ -3,6 +3,7 @@ import style from "./style.module.scss";
 
 import SearchIcon from "/public/assets/icons/Search.svg";
 import arrowRight from "/public/assets/icons/Arrow-right.svg";
+import SpipsVideo from '/public/assets/video/spips.mp4'
 
 import Image from "next/image";
 import {
@@ -17,17 +18,20 @@ const Banner = ({ isFrontBanner, bannerImg,heading,description }) => {
   return (
     <>
       {isFrontBanner ? (
+        <div className={style['front_banner_main']} >
+        <video class={style['bg-video']} playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src={SpipsVideo} type="video/mp4" /></video>
+
         <div className={style["front_banner_wrp"]}>
-          <div className="container">
+          <div className="container h-100">
             <div className={style["front_banner_inner"]}>
               <div className={style["bannner_content"]}>
                 <span>We are the leaders</span>
                 <h1 className="heading-1">
-                  Discover the key to grow your business
+                  Discover the key<br/> to grow your business
                 </h1>
                 <p className="text-regular">
                   Lorem ipsum dolor sit amet consectetur adipiscing elidolor
-                  mattis sit phasellus mollis sit aliquam sit nullam neques.
+                  mattis sit<br/> phasellus mollis sit aliquam sit nullam neques.
                 </p>
                 <Form>
                   <div class={`front_banner_form ${style["front_banner_form"]}`} >
@@ -67,20 +71,21 @@ const Banner = ({ isFrontBanner, bannerImg,heading,description }) => {
                 </Form>
               </div>
               <div>
-                <Image
-                  src={bannerImg}
-                  alt="Banner Img"
-                  loading="lazy"
-                  width={700}
-                  height={700}
-                />
+                  {/* <Image
+                    src={bannerImg}
+                    alt="Banner Img"
+                    loading="lazy"
+                    width={700}
+                    height={700}
+                  /> */}
               </div>
             </div>
           </div>
         </div>
+        </div>
       ) : (
         <div
-          className={style["Banner_wrp"]}
+          className={`${style["Banner_wrp"]} Banner_wrp`}
           style={{ backgroundImage: `url(${bannerImg.src})` }}
         >
           <div className={style["Banner_overlay"]}>

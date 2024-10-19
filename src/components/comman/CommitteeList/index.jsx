@@ -19,7 +19,8 @@ const CommitteeList = ({ title, description, sectionGap,tablehead,tableData }) =
       <div className="container">
         <SectionHeading title={title} description={description} className={'mb-5'}  />
 
-        <div className={style["table_wrp"]}>
+       <div className={style['table_main']} >
+       <div className={style["table_wrp"]}>
   {tablehead && (
     <div className={style["tHead"]}>
       {tablehead.map((item, index) => (
@@ -43,6 +44,7 @@ const CommitteeList = ({ title, description, sectionGap,tablehead,tableData }) =
     ))}
   </div>
 </div>
+       </div>
 
       </div>
     </div>

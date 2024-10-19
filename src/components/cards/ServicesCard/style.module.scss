@@ -9,6 +9,11 @@
     justify-content: flex-start;
     align-items: flex-start;
     gap: 32px;
+    @media (max-width: 767px) {
+        flex-direction: column;
+        padding: 16px;
+        gap: 16px;
+    }
 
     .icon {
         width: 76px;
