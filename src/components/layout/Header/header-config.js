@@ -683,7 +683,7 @@ export const headerData = [
     child: [
       {
         subItemName: "Contact Us",
-        link: "https://spipsindore.com/contact/contact-us/",
+        link: "/contact-us",
         target: "",
       },
       {

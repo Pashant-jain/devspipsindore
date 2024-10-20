@@ -6,11 +6,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import {
-  Dialog,
-  DialogContent,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 import Image from "next/image";
 
@@ -24,7 +20,7 @@ export default function PhotoGallery() {
           {photoGalleryData.images.map((image, index) => (
             <>
               <Dialog key={index}>
-                <DialogTrigger asChild >
+                <DialogTrigger asChild>
                   <CarouselItem
                     className="md:basis-1/2 lg:basis-1/3"
                     onClick={() => {}}
