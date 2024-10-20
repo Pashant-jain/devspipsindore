@@ -4,8 +4,7 @@ import SectionHeading from "../../comman/sectionHeading";
 
 import Image from "next/image";
 
-
-const TopRecruiters = ({ sectionGap,title,description,data }) => {
+const TopRecruiters = ({ sectionGap, title, description, data }) => {
   return (
     <div
       className={`${style["TopRecruiters_wrp"]} ${
@@ -19,14 +18,11 @@ const TopRecruiters = ({ sectionGap,title,description,data }) => {
       } `}
     >
       <div className="container">
-        <SectionHeading
-          title={title}
-          description={description}
-        />
+        <SectionHeading title={title} description={description} />
         <div className={style["Recruiters_list"]}>
-        {data?.map((item, index) => (
-              <div key={index}>
-                 <Image
+          {data?.map((item, index) => (
+            <div key={index}>
+              <Image
                 src={item.image}
                 alt=""
                 loading="lazy"
@@ -34,9 +30,8 @@ const TopRecruiters = ({ sectionGap,title,description,data }) => {
                 height={item?.height || 48}
                 className={style["card_img"]}
               />
-              </div>
-            ))}
-         
+            </div>
+          ))}
         </div>
       </div>
     </div>

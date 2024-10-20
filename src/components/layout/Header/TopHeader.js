@@ -10,7 +10,6 @@ import Image from "next/image";
 import { Button } from "react-bootstrap";
 
 const TopHeader = ({ handleShow }) => {
-
   return (
     <div className="text-center">
       <div className={styles["topHeader_sect"]}>

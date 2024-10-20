@@ -1,38 +1,38 @@
 @mixin respond($type) {
-    @if ($type == xxxl) {
-      @media only screen and (max-width: 1400px) {
-        @content;
-      }
+  @if ($type == xxxl) {
+    @media only screen and (max-width: 1400px) {
+      @content;
     }
-    @if ($type == xxl) {
-        @media only screen and (max-width: 1199px) {
-          @content;
-        }
-      }
-      @if ($type == xl) {
-        @media only screen and (max-width: 1024px) {
-          @content;
-        }
-      }
-      @if ($type == tab) {
-        @media only screen and (max-width: 979px) {
-          @content;
-        }
-      }
-      
-      @if ($type == lg) {
-        @media only screen and (max-width: 767px) {
-          @content;
-        }
-      }
-      @if ($type == md) {
-        @media only screen and (max-width: 649px) {
-          @content;
-        }
-      }
-      @if ($type == sm) {
-        @media only screen and (max-width: 374px) {
-          @content;
-        }
-      }
   }
+  @if ($type == xxl) {
+    @media only screen and (max-width: 1199px) {
+      @content;
+    }
+  }
+  @if ($type == xl) {
+    @media only screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+  @if ($type == tab) {
+    @media only screen and (max-width: 979px) {
+      @content;
+    }
+  }
+
+  @if ($type == lg) {
+    @media only screen and (max-width: 767px) {
+      @content;
+    }
+  }
+  @if ($type == md) {
+    @media only screen and (max-width: 649px) {
+      @content;
+    }
+  }
+  @if ($type == sm) {
+    @media only screen and (max-width: 374px) {
+      @content;
+    }
+  }
+}

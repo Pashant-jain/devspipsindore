@@ -1,23 +1,23 @@
-@import '../../../styles/variable';
+@import "../../../styles/variable";
 
 .courses_card {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 24px 0px #0000000F;
+  background: #ffffff;
+  box-shadow: 0px 4px 24px 0px #0000000f;
+  border-radius: 16px;
+  padding: 24px;
+  margin: 0 8px;
+  .card_img {
     border-radius: 16px;
-    padding: 24px;
-    margin: 0 8px;
-    .card_img{
-        border-radius: 16px;
-        width: 100%;
-        height: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  .courses_card_dtl {
+    padding: 24px 0;
+    .courses_card_speciality {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 16px;
     }
-    .courses_card_dtl{
-        padding: 24px 0;
-        .courses_card_speciality{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 16px;
-        }
-    }
+  }
 }

@@ -48,17 +48,17 @@ const CalendarComponent = ({ sectionGap }) => {
           }
         />
         <div className={style["calander_inner"]}>
-        <div className={`${style['calendar-container']} calendar-container`}>
-          <Calendar
-            aria-label="Date (Invalid on weekends)"
-            errorMessage={isInvalid ? "We are closed on weekends" : undefined}
-            isInvalid={isInvalid}
-            value={selectedDate}
-            onChange={handleDateChange}
-            weekdayStyle="short"
-            showMonthAndYearPickers={true}
-            className="calander"
-          />
+          <div className={`${style["calendar-container"]} calendar-container`}>
+            <Calendar
+              aria-label="Date (Invalid on weekends)"
+              errorMessage={isInvalid ? "We are closed on weekends" : undefined}
+              isInvalid={isInvalid}
+              value={selectedDate}
+              onChange={handleDateChange}
+              weekdayStyle="short"
+              showMonthAndYearPickers={true}
+              className="calander"
+            />
           </div>
           {selectedDate && <p>Selected Date: {formatter.format(jsDate)}</p>}
         </div>

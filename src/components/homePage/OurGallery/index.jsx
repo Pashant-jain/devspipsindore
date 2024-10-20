@@ -24,24 +24,24 @@ const OurGallery = ({ sectionGap }) => {
     >
       <div className="container">
         <SectionHeading title="Our Gallery" />
-          <div class={style['carousel']}>
-         <Link href={'/gallery'} >
-         <Image
-            src={gallery1}
-            alt=""
-            loading="lazy"
-            width={241}
-            height={239}
-            className={`${style["card_img"]} ${style['item']}`}
-          />
-         </Link>
+        <div className={style["carousel"]}>
+          <Link href={"/gallery"}>
+            <Image
+              src={gallery1}
+              alt=""
+              loading="lazy"
+              width={241}
+              height={239}
+              className={`${style["card_img"]} ${style["item"]}`}
+            />
+          </Link>
           <Image
             src={gallery2}
             alt=""
             loading="lazy"
             width={241}
             height={361}
-            className={`${style["card_img"]} ${style['item']}`}
+            className={`${style["card_img"]} ${style["item"]}`}
           />
           <Image
             src={gallery3}
@@ -49,7 +49,7 @@ const OurGallery = ({ sectionGap }) => {
             loading="lazy"
             width={241}
             height={239}
-            className={`${style["card_img"]} ${style['item']}`}
+            className={`${style["card_img"]} ${style["item"]}`}
           />
           <Image
             src={gallery4}
@@ -57,7 +57,7 @@ const OurGallery = ({ sectionGap }) => {
             loading="lazy"
             width={241}
             height={361}
-            className={`${style["card_img"]} ${style['item']}`}
+            className={`${style["card_img"]} ${style["item"]}`}
           />
           <Image
             src={gallery5}
@@ -65,10 +65,9 @@ const OurGallery = ({ sectionGap }) => {
             loading="lazy"
             width={241}
             height={239}
-            className={`${style["card_img"]} ${style['item']}`}
+            className={`${style["card_img"]} ${style["item"]}`}
           />
-          </div>
-         
+        </div>
       </div>
     </div>
   );

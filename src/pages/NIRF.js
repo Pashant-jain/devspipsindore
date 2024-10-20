@@ -10,7 +10,12 @@ import PageContent from "@/components/comman/PageContent";
 import Features from "@/components/liberary/Features";
 import Services from "@/components/liberary/Services";
 import CommitteeList from "@/components/comman/CommitteeList";
-import { LibraryAdvisoryCommeitteeTableData, LibraryAdvisoryCommeitteeTablehead, LibraryWorkingTableData, LibraryWorkingTablehead } from "@/config";
+import {
+  LibraryAdvisoryCommeitteeTableData,
+  LibraryAdvisoryCommeitteeTablehead,
+  LibraryWorkingTableData,
+  LibraryWorkingTablehead,
+} from "@/config";
 
 const inter = Inter({ subsets: ["latin"] }); // Example of font setup
 
@@ -24,7 +29,11 @@ const NIRF = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-      <Banner bannerImg={bannerImg} heading="National Institutional Ranking Framework (NIRF)" description="Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam."  />
+        <Banner
+          bannerImg={bannerImg}
+          heading="National Institutional Ranking Framework (NIRF)"
+          description="Lorem ipsum dolor sit amet consectetur adipiscing eli mattis sit phasellus mollis sit aliquam sit nullam."
+        />
         <PageContent sectionGap="both" />
         <CommitteeList
           sectionGap="both"
@@ -36,7 +45,7 @@ const NIRF = () => {
               <br /> phasellus mollis sit aliquam sit nullam neques.
             </>
           }
-          tablehead={LibraryAdvisoryCommeitteeTablehead} 
+          tablehead={LibraryAdvisoryCommeitteeTablehead}
           tableData={LibraryAdvisoryCommeitteeTableData}
         />
         <div></div>

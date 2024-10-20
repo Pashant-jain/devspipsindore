@@ -2,7 +2,7 @@ import React from "react";
 import style from "./style.module.scss";
 import SectionHeading from "../sectionHeading";
 
-const PageContent = ({ sectionGap,title,description ,className}) => {
+const PageContent = ({ sectionGap, title, description, className }) => {
   return (
     <div
       className={`${style["NewsAndAnnouncements_Wrp"]} ${className} ${
@@ -17,7 +17,7 @@ const PageContent = ({ sectionGap,title,description ,className}) => {
     >
       <div className="container">
         <SectionHeading
-        descriptionClass={'mt-4 text-start'}
+          descriptionClass={"mt-4 text-start"}
           title={title}
           description={description}
         />

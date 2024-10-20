@@ -1,51 +1,51 @@
-@import '../../../styles/Mixins';
+@import "../../../styles/Mixins";
 @import "../../../styles/variable";
 
-.CollegeLogo_section{
+.CollegeLogo_section {
   background-color: $White;
   .CollegeLogo_wrp {
     background-color: $White;
-  
+
     @media (max-width: 767px) {
       display: flex;
       justify-content: center;
       align-items: center;
     }
-  
+
     .mobileMenu {
       display: none;
-  
+
       @media (max-width: 767px) {
         display: block;
       }
     }
-  
+
     .mobileMenu {
       display: none;
       background-color: transparent;
       border: transparent;
-  
+
       img {
         filter: invert(1);
       }
-  
+
       @media (max-width: 1199px) {
         display: block;
       }
-  
+
       @media (max-width: 767px) {
         img {
           filter: invert(0);
         }
       }
     }
-  
+
     .CollegeLogo {
       width: 100%;
       height: unset;
       max-width: 1400px;
       margin: auto;
-  
+
       @media (max-width: 767px) {
         width: 75%;
       }
@@ -53,9 +53,8 @@
   }
 }
 
-.topHeader_sect{
+.topHeader_sect {
   background-color: $primary;
-
 }
 .topHeader {
   padding: 17px 60px;
@@ -92,7 +91,6 @@
         }
       }
     }
-
   }
 
   .ContactInfo {
@@ -146,7 +144,6 @@
   a {
     font-family: $font-ABeeZee;
     color: $White;
-
   }
 }
 
@@ -159,7 +156,6 @@
   background-color: $White;
 
   @media (max-width: 1500px) {
-
     gap: 12px;
   }
 
@@ -173,13 +169,12 @@
     &.mobileMenu {
       display: block;
       padding: unset;
-
     }
   }
 
   a {
     font-family: $font-ABeeZee;
-    color: #1E1E1E;
+    color: #1e1e1e;
     //  display: flex;
     //  justify-content: center;
     //  align-items: center;

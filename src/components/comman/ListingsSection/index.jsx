@@ -33,7 +33,12 @@ const ListingsSection = ({
           <ul>
             {listData?.map((item, index) => (
               <li key={index}>
-                <Link  className="text-regular" href={item.link} target={item.target} download={item.download} >
+                <Link
+                  className="text-regular"
+                  href={item.link}
+                  target={item.target}
+                  download={item.download}
+                >
                   {item.label}
                 </Link>
               </li>

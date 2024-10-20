@@ -134,14 +134,23 @@ const Director = () => {
             </>
           }
         />
-       
-        <PageContent className="bg_white" title="Remaining Sections " description={<><ul><li>ACADEMIC QUALIFICATION</li>
-        
-        <li>TRAINING & WORKSHOPS</li>
-        <li>ACHIEVEMENTS</li>
-        <li>CONTACT INFORMATION</li>
-        </ul></>} />
-       
+
+        <PageContent
+          className="bg_white"
+          title="Remaining Sections "
+          description={
+            <>
+              <ul>
+                <li>ACADEMIC QUALIFICATION</li>
+
+                <li>TRAINING & WORKSHOPS</li>
+                <li>ACHIEVEMENTS</li>
+                <li>CONTACT INFORMATION</li>
+              </ul>
+            </>
+          }
+        />
+
         <div></div>
       </main>
     </>

@@ -17,7 +17,6 @@ import Calander from "@/components/homePage/Calendar";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  
   return (
     <>
       <Head>
@@ -27,13 +26,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-          <Banner isFrontBanner={true} bannerImg={bannerImg} />
-        <NewsAndAnnouncements sectionGap="both"  />
+        <Banner isFrontBanner={true} bannerImg={bannerImg} />
+        <NewsAndAnnouncements sectionGap="both" />
         <OurStats sectionGap="bottom" />
-       {/* <FeaturedCourses sectionGap="both" /> */}
-       <Calander sectionGap="both" />
-         <Testimonials sectionGap="both"/>
-        <TopRecruiters sectionGap="both" title="Our Top Recruiters"  description={
+        {/* <FeaturedCourses sectionGap="both" /> */}
+        <Calander sectionGap="both" />
+        <Testimonials sectionGap="both" />
+        <TopRecruiters
+          sectionGap="both"
+          title="Our Top Recruiters"
+          description={
             <>
               Lorem ipsum dolor sit amet consectetur adipiscing elitdolor mattis
               sit phasellus mollis sit <br />
@@ -41,8 +43,11 @@ export default function Home() {
             </>
           }
           data={Recruiters}
-          />
-          <TopRecruiters sectionGap="both" title="Affiliation With"  description={
+        />
+        <TopRecruiters
+          sectionGap="both"
+          title="Affiliation With"
+          description={
             <>
               Lorem ipsum dolor sit amet consectetur adipiscing elitdolor mattis
               sit phasellus mollis sit <br />
@@ -50,10 +55,9 @@ export default function Home() {
             </>
           }
           data={Affiliation}
-          />
-        <OurGallery sectionGap="bottom"/>
-        
-      </main> 
+        />
+        <OurGallery sectionGap="bottom" />
+      </main>
     </>
   );
 }

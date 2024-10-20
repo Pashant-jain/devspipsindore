@@ -3,7 +3,15 @@ import style from "./style.module.scss";
 import Image from "next/image";
 import SectionHeading from "@/components/comman/sectionHeading";
 
-const Features = ({ sectionGap,SectionImage,content, title,leftImage,descriptionClass,className }) => {
+const Features = ({
+  sectionGap,
+  SectionImage,
+  content,
+  title,
+  leftImage,
+  descriptionClass,
+  className,
+}) => {
   return (
     <div
       className={`${style["features_wrp"]} ${className} ${
@@ -17,7 +25,11 @@ const Features = ({ sectionGap,SectionImage,content, title,leftImage,description
       }`}
     >
       <div className="container">
-        <div className={`${style["features_inner"]} ${leftImage && style['feature_reverse'] }`}>
+        <div
+          className={`${style["features_inner"]} ${
+            leftImage && style["feature_reverse"]
+          }`}
+        >
           <div className={style["features_lft"]}>
             <SectionHeading
               className="text-start"

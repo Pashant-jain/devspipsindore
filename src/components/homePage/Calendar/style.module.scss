@@ -1,10 +1,10 @@
 .calander_wrp {
-    .calander_inner {
-        display: flex;
-        justify-content: center;
-        gap: 60px;
-        @media (max-width: 767px) {
-            flex-direction: column;
-        }
+  .calander_inner {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    @media (max-width: 767px) {
+      flex-direction: column;
     }
+  }
 }

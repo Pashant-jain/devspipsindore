@@ -1,11 +1,13 @@
-import React from "react";
+
+// style imports
 import style from "./style.module.scss";
+
+// component imports
 import SectionHeading from "../sectionHeading";
-import bgTop from "/public/assets/images/testimonial-bg-wave-top.png";
-import bgBottom from "/public/assets/images/testimonial-bg-wave-bottom.png";
-import Image from "next/image";
-import TestimonialsCard from "@/components/cards/TestimonialsCard";
 import Slider from "react-slick";
+import TestimonialsCard from "@/components/cards/TestimonialsCard";
+
+import Image from "next/image";
 
 const Testimonials = () => {
   const settings = {
@@ -48,7 +50,7 @@ const Testimonials = () => {
   return (
     <>
       <Image
-        src={bgTop}
+        src={"/assets/images/testimonial-bg-wave-top.png"}
         alt=""
         loading="lazy"
         width={800}
@@ -58,16 +60,16 @@ const Testimonials = () => {
       <div className={style["testmonials_wrp"]}>
         <div className="container">
           <SectionHeading title="Our Alumini" />
-          <div className={style['testimonial_list']} >
-          <Slider {...settings}>
-         <TestimonialsCard/>
-         <TestimonialsCard/>
-         </Slider>
+          <div className={style["testimonial_list"]}>
+            <Slider {...settings}>
+              <TestimonialsCard />
+              <TestimonialsCard />
+            </Slider>
           </div>
         </div>
       </div>
       <Image
-        src={bgBottom}
+        src={"/assets/images/testimonial-bg-wave-bottom.png"}
         alt=""
         loading="lazy"
         width={800}
