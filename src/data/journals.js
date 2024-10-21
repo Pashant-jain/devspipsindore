@@ -1,0 +1,123 @@
+const journalData = [
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Journal of Modern Science Vol 1",
+    description: "Exploring the latest trends in modern science.",
+    link: "/journal/1",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Advanced Research in AI",
+    description: "New frontiers in artificial intelligence research.",
+    link: "/journal/2",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Journal of Quantum Mechanics Vol 2",
+    description: "Deep dive into the mysteries of quantum physics.",
+    link: "/journal/3",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Environmental Science Today",
+    description: "Sustainability and climate change research.",
+    link: "/journal/4",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Journal of Medical Innovations",
+    description: "Latest advancements in the medical field.",
+    link: "/journal/5",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Theoretical Physics Vol 3",
+    description: "Breaking new ground in theoretical physics.",
+    link: "/journal/6",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Artificial Intelligence Ethics",
+    description: "Understanding ethical implications of AI.",
+    link: "/journal/7",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Journal of Biotechnology Vol 4",
+    description: "Biotech breakthroughs reshaping the future.",
+    link: "/journal/8",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Data Science Applications",
+    description: "Real-world applications of data science.",
+    link: "/journal/9",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Journal of Cognitive Neuroscience",
+    description: "Exploring the brain's capabilities.",
+    link: "/journal/10",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Advanced Robotics Journal",
+    description: "Latest innovations in robotics and automation.",
+    link: "/journal/11",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Cybersecurity & Privacy Vol 2",
+    description: "Ensuring privacy in the digital age.",
+    link: "/journal/12",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Journal of Space Exploration",
+    description: "New research in space exploration and astronomy.",
+    link: "/journal/13",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Nano Technology Innovations",
+    description: "Tiny tech making big impacts.",
+    link: "/journal/14",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Journal of Marine Biology",
+    description: "Studies on marine ecosystems and species.",
+    link: "/journal/15",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Renewable Energy Research",
+    description: "Exploring renewable energy sources and their future.",
+    link: "/journal/16",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Journal of Social Sciences Vol 5",
+    description: "Understanding societal behaviors and trends.",
+    link: "/journal/17",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Blockchain Technology & Crypto",
+    description: "Disruptions in finance and technology.",
+    link: "/journal/18",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Journal of Human Genetics",
+    description: "Advances in genetic research and technologies.",
+    link: "/journal/19",
+  },
+  {
+    image: "https://via.placeholder.com/500",
+    title: "Journal of Chemical Engineering",
+    description: "Innovations in chemical processes and engineering.",
+    link: "/journal/20",
+  },
+];
+export default journalData;

@@ -15,6 +15,7 @@ import { Textarea } from "@nextui-org/react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, FacebookIcon } from "lucide-react";
 import Link from "next/link";
+import HeroSection from "@/components/layout/HeroSection";
 
 function ContactUs() {
   return (
@@ -23,24 +24,19 @@ function ContactUs() {
         <title>SPIPS - Contact Us</title>
       </Head>
       <div>
-        <div className="flex">
-          <div className="hidden md:block w-1/2">
-            <Image
-              src="/assets/images/gallery1.jpeg"
-              className="object-cover h-[300px]"
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className="flex flex-col justify-center w-full md:w-1/2 text-white bg-[#002147] gap-2 p-10">
-            <div className="uppercase font-bold text-2xl">Contact Us</div>
-            <div className="w-2/3">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere,
-              ex. Amet libero commodi quam delectus iure dicta, explicabo soluta
-              eius praesentium quidem nam velit odio?
-            </div>
-          </div>
-        </div>
+        <HeroSection
+          leftImage={"/assets/images/gallery1.jpeg"}
+          rightContent={
+            <>
+              <div className="uppercase font-bold text-2xl">Contact Us</div>
+              <div className="w-2/3">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Facere, ex. Amet libero commodi quam delectus iure dicta,
+                explicabo soluta eius praesentium quidem nam velit odio?
+              </div>
+            </>
+          }
+        />
         <div className="flex flex-col items-center">
           <div className="flex flex-col gap-3 items-center mt-10 lg:mt-20">
             <div className="font-bold text-2xl md:text-4xl lg:text-6xl text-[#002147]">

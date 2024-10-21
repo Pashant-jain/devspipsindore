@@ -104,7 +104,7 @@ const Footer = () => {
                   <Link href={`/news`} className="text-regular">
                     Newsletter
                   </Link>
-                  <Link href={`/news`} className="text-regular">
+                  <Link href={`/journals`} className="text-regular">
                     Journals
                   </Link>
                   <Link href={`/news`} className="text-regular">
