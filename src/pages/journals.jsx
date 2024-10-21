@@ -24,7 +24,7 @@ function JournalsPage() {
           </>
         }
       />
-      <CardGrid className={"my-10 md:my-16"}>
+      <CardGrid className="mt-10">
         {journalData.map((journal) => (
           <JournalCard {...journal} />
         ))}

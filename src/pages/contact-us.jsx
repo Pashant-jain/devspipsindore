@@ -47,7 +47,7 @@ function ContactUs() {
               cumque eligendi iste?
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-[min(1300px,85vw)] justify-around my-10 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-[min(1300px,85vw)] justify-around gap-5">
             {[
               {
                 image: "/assets/images/pages/contact-us/placeholder.svg",

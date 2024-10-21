@@ -51,9 +51,8 @@ const Chairman = () => {
               </h3>
               <br />
               <strong className="small-text">
-                {" "}
                 “O Lord, grant us success” Psalms 118:25.
-              </strong>{" "}
+              </strong>
               This word of God has brought forth fruits and I am happy to see
               the impact SPIPS has made in the city and its surroundings during
               these years. The blessings of God, the prayers of St. Paul, the
@@ -62,12 +61,12 @@ const Chairman = () => {
               Additional structures have been built and the facilities have been
               expanded, making SPIPS one of the colleges with best
               infrastructure and facilities. Believing what is mentioned in the
-              Holy Bible,{" "}
+              Holy Bible,
               <strong className="small-text">
                 “For I know the plans I have for you,” declares the LORD, “plans
                 to prosper you and not to harm you, plans to give you hope and a
                 future.” Jeremiah 29:11,
-              </strong>{" "}
+              </strong>
               I encourage all students who are serious about their future to
               join the bandwagon and work for the development of their gifts and
               abilities under the able guidance of the faculty members. We want
