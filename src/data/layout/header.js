@@ -1,4 +1,25 @@
-export const headerData = [
+export const headerLevel1Data = {
+  email: "contact@brixagency.com",
+  links: [
+    { href: "#", text: "Pay Prof. Course Fee", target: "" },
+    { href: "https://www.nirfindia.org/", text: "NIRF", target: "" },
+    { href: "mailto:info@spipsindore.com", text: "E-Mail", target: "" },
+    { href: "https://ecare.spipsindore.com/app/login", text: "E-Care", target: "" },
+  ],
+};
+
+export const headerLevel2Data = {
+  links: [
+    { href: "#", text: "Library", target: "" },
+    { href: "#", text: "Clubs", target: "" },
+    { href: "#", text: "Students", target: "" },
+    { href: "#", text: "Staff", target: "" },
+    { href: "#", text: "Photo Gallery", target: "" },
+    { href: "#", text: "NIRF", target: "" },
+  ],
+};
+
+export const headerLevel3Data = [
   {
     itemName: "Home",
     link: "/",
@@ -36,7 +57,7 @@ export const headerData = [
         submenuChild: [
           {
             innerSubItemName: "Motto, Vision and Mission",
-            link: "/about-spips/strategic-imperative/motto-vision-mission/",
+            link: "/about-spips/strategic-imperative/motto-vision-and-mission/",
             target: "",
           },
           {
@@ -63,7 +84,7 @@ export const headerData = [
           },
           {
             innerSubItemName: "In-house Committees",
-            link: "/about-spips/administrative-bodies/academic-council-2/",
+            link: "/about-spips/administrative-bodies/in-house-committees/",
             target: "",
           },
           {
@@ -152,7 +173,7 @@ export const headerData = [
     child: [
       {
         subItemName: "Dept. of Commerce & Management",
-        link: "/departments/management/commerce-management/",
+        link: "/departments/commerce-and-management/",
         target: "",
       },
       {

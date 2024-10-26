@@ -11,7 +11,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Textarea } from "@nextui-org/react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, FacebookIcon } from "lucide-react";
 import Link from "next/link";

@@ -44,7 +44,7 @@ const FeaturedCourses = ({ sectionGap }) => {
           : ""
       } `}
     >
-      <div className="container">
+      <div className="flex flex-col gap-5 container">
         <SectionHeading
           title="Explore Featured Online Courses"
           description={

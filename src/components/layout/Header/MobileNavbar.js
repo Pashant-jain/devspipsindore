@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./style.module.scss";
 import Link from "next/link";
-import { Accordion, Card, Offcanvas } from "react-bootstrap";
-import { headerData } from "./header-config";
+import { Accordion, Offcanvas } from "react-bootstrap";
+import { headerLevel3Data } from "@/data/layout/header";
 
 const MobileNavbar = ({ handleClose, show }) => {
   return (
@@ -15,7 +15,7 @@ const MobileNavbar = ({ handleClose, show }) => {
           className={`${style["MainNavbar"]} ${style["mobileMenu"]} mobileMenu`}
         >
           <Accordion defaultActiveKey="0">
-            {headerData?.map((menu, index) => (
+            {headerLevel3Data?.map((menu, index) => (
               <Accordion.Item eventKey={String(index)} key={menu.id || index}>
                 <Accordion.Header>{menu.itemName}</Accordion.Header>
                 <Accordion.Body>
@@ -33,6 +33,7 @@ const MobileNavbar = ({ handleClose, show }) => {
                                   (innerSubmenu, innerIndex) => {
                                     return innerSubmenu.link ? ( // Check if link is defined
                                       <Link
+                                        onClick={handleClose}
                                         href={innerSubmenu.link}
                                         className="text-regular"
                                         key={innerSubmenu.id || innerIndex}
@@ -55,6 +56,7 @@ const MobileNavbar = ({ handleClose, show }) => {
                           </Accordion>
                         ) : submenu.link ? ( // Check if submenu link is defined
                           <Link
+                            onClick={handleClose}
                             href={submenu.link}
                             className="text-regular"
                             target={submenu.target}

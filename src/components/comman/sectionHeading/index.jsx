@@ -13,7 +13,7 @@ const SectionHeading = ({
     <div
       className={`${style["SectionHeading"]} ${
         varient == "white" && style["text-white"]
-      } ${className}`}
+      } ${className} flex flex-col gap-3`}
     >
       <h2 className="heading-2">{title}</h2>
       {description && (

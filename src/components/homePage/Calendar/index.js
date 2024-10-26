@@ -1,28 +1,14 @@
-import React from "react";
-import { Calendar } from "@nextui-org/react";
-import { today, getLocalTimeZone, isWeekend } from "@internationalized/date";
-import { useLocale } from "@react-aria/i18n";
-import { DateFormatter } from "@internationalized/date";
+import { Calendar } from "@/components/ui/calendar";
+import { useEffect, useState } from "react";
 import style from "./style.module.scss";
 import SectionHeading from "@/components/comman/sectionHeading";
 
 const CalendarComponent = ({ sectionGap }) => {
-  const [selectedDate, setSelectedDate] = React.useState(
-    today(getLocalTimeZone())
-  );
-  let { locale } = useLocale();
-  let isInvalid = isWeekend(selectedDate, locale);
+  const [date, setDate] = useState(null);
 
-  // Create a DateFormatter for the locale
-  const formatter = new DateFormatter(locale);
-
-  // Convert selectedDate to a JS Date object
-  const jsDate = selectedDate.toDate(getLocalTimeZone());
-
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-    console.log("Selected Date: ", date);
-  };
+  useEffect(() => {
+    setDate(new Date());
+  }, []);
 
   return (
     <div
@@ -36,9 +22,9 @@ const CalendarComponent = ({ sectionGap }) => {
           : ""
       }`}
     >
-      <div className="container">
+      <div className="container flex flex-col gap-5">
         <SectionHeading
-          title="Spips Calander"
+          title="SPIPS Calander"
           description={
             <>
               Lorem ipsum dolor sit amet consectetur adipiscing elitdolor mattis
@@ -48,19 +34,18 @@ const CalendarComponent = ({ sectionGap }) => {
           }
         />
         <div className={style["calander_inner"]}>
-          <div className={`${style["calendar-container"]} calendar-container`}>
+          <div className="h-50">
             <Calendar
-              aria-label="Date (Invalid on weekends)"
-              errorMessage={isInvalid ? "We are closed on weekends" : undefined}
-              isInvalid={isInvalid}
-              value={selectedDate}
-              onChange={handleDateChange}
-              weekdayStyle="short"
-              showMonthAndYearPickers={true}
-              className="calander"
+              mode="single"
+              selected={date}
+              onSelect={(d) => {
+                if (!d) return;
+                setDate(d);
+              }}
+              className="rounded-md border"
             />
           </div>
-          {selectedDate && <p>Selected Date: {formatter.format(jsDate)}</p>}
+          {date && <div>Selected Date : {date?.toString()} </div>}
         </div>
       </div>
     </div>

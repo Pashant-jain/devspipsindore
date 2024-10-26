@@ -8,7 +8,7 @@ import Instagram from "/public/assets/icons/Instagram.svg";
 import LinkedIn from "/public/assets/icons/LinkedIn.svg";
 import Twitter from "/public/assets/icons/Twitter.svg";
 import YouTube from "/public/assets/icons/YouTube.svg";
-import arrowRight from "/public/assets/icons/Arrow-right.svg";
+import { ArrowRight } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -21,13 +21,13 @@ const Footer = () => {
               <br /> Career with us?
             </h2>
             <div className={style["btn_wrp"]}>
-              <Link href={"#"} className={style["btn_primary"]}>
-                Search Course{" "}
-                <Image src={arrowRight} alt="" width={8} height={8} />{" "}
+              <Link href={"#"} className={`flex gap-2 items-center ${style["btn_primary"]}`}>
+                Search Course
+                <ArrowRight />
               </Link>
-              <Link href={"#"} className={style["btn_secondary"]}>
-                Search Course{" "}
-                <Image src={arrowRight} alt="" width={8} height={8} />{" "}
+              <Link href={"#"} className={`flex gap-2 items-center ${style["btn_secondary"]}`}>
+                Search Course
+                <ArrowRight />
               </Link>
             </div>
           </div>
