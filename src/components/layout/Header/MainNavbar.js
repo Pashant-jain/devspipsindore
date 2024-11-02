@@ -1,15 +1,12 @@
-import React from "react";
 import style from "./style.module.scss";
-import ArrowDown from "/public/assets/icons/arrow-down.svg";
 import Link from "next/link";
-import Image from "next/image";
 import { Dropdown } from "react-bootstrap";
-import { headerData } from "./header-config";
+import { headerLevel3Data } from "@/data/layout/header";
 
 const MainNavbar = () => {
   return (
     <div className={`${style["MainNavbar"]} ${style["desktopMenu"]}`}>
-      {headerData?.map((menu, index) => (
+      {headerLevel3Data?.map((menu, index) => (
         <div key={index}>
           {menu.child ? (
             <Dropdown>
@@ -27,23 +24,19 @@ const MainNavbar = () => {
                           {submenu.subItemName}
                         </Dropdown.Toggle>
 
-                        <Dropdown.Menu>
+                        <Dropdown.Menu
+                          className={"!translate-x-48 !translate-y-10"}
+                        >
                           {submenu.submenuChild.map(
                             (innerSubmenu, innerIndex) => (
                               <Dropdown.Item as="div" key={innerIndex}>
-                                {innerSubmenu.link ? (
-                                  <Link
-                                    href={innerSubmenu.link}
-                                    className="text-regular"
-                                    target={innerSubmenu.target}
-                                  >
-                                    {innerSubmenu.innerSubItemName}
-                                  </Link>
-                                ) : (
-                                  <span className="text-regular">
-                                    {innerSubmenu.innerSubItemName}
-                                  </span>
-                                )}
+                                <Link
+                                  href={innerSubmenu.link || "#"}
+                                  className="text-regular"
+                                  target={innerSubmenu.target}
+                                >
+                                  {innerSubmenu.innerSubItemName}
+                                </Link>
                               </Dropdown.Item>
                             )
                           )}
@@ -51,19 +44,13 @@ const MainNavbar = () => {
                       </Dropdown>
                     ) : (
                       <Dropdown.Item as="div" key={subIndex}>
-                        {submenu.link ? (
-                          <Link
-                            href={submenu.link}
-                            className="text-regular"
-                            target={submenu.target}
-                          >
-                            {submenu.subItemName}
-                          </Link>
-                        ) : (
-                          <span className="text-regular">
-                            {submenu.subItemName}
-                          </span>
-                        )}
+                        <Link
+                          href={submenu.link || "#"}
+                          className="text-regular"
+                          target={submenu.target}
+                        >
+                          {submenu.subItemName}
+                        </Link>
                       </Dropdown.Item>
                     )}
                   </div>

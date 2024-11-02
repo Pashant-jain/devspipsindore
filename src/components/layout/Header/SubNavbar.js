@@ -1,28 +1,16 @@
 import React from "react";
 import style from "./style.module.scss";
 import Link from "next/link";
+import { headerLevel2Data } from "@/data/layout/header";
 
 const SubNavbar = () => {
   return (
     <div className={style["sumNavbar"]}>
-      <Link href={"/liberary"} className="text-regular">
-        Library
-      </Link>
-      <Link href={"/clubs"} className="text-regular">
-        Clubs
-      </Link>
-      <Link href={"#"} className="text-regular">
-        Students
-      </Link>
-      <Link href={"#"} className="text-regular">
-        Staff
-      </Link>
-      <Link href={"#"} className="text-regular">
-        Photo Gallery
-      </Link>
-      <Link href={"/NIRF"} className="text-regular">
-        NIRF
-      </Link>
+      {headerLevel2Data.links.map((link , index) => (
+        <Link key={index} href={link.href} className="text-regular" target={link.target}>
+          {link.text}
+        </Link>
+      ))}
     </div>
   );
 };

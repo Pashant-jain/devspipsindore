@@ -1,9 +1,5 @@
-import React from "react";
 import style from "./style.module.scss";
-
-import SearchIcon from "/public/assets/icons/Search.svg";
-import arrowRight from "/public/assets/icons/Arrow-right.svg";
-import SpipsVideo from "/public/assets/video/spips.mp4";
+import SPIPSVideo from "/public/assets/video/spips.mp4";
 
 import Image from "next/image";
 import {
@@ -13,6 +9,7 @@ import {
   Form,
   InputGroup,
 } from "react-bootstrap";
+import { ArrowRight, Search } from "lucide-react";
 
 const Banner = ({ isFrontBanner, bannerImg, heading, description }) => {
   return (
@@ -26,13 +23,13 @@ const Banner = ({ isFrontBanner, bannerImg, heading, description }) => {
             muted={true}
             loop="loop"
           >
-            <source src={SpipsVideo} type="video/mp4" />
+            <source src={SPIPSVideo} type="video/mp4" />
           </video>
 
           <div className={style["front_banner_wrp"]}>
             <div className="container h-100">
               <div className={style["front_banner_inner"]}>
-                <div className={style["bannner_content"]}>
+                <div className={`${style["bannner_content"]}`}>
                   <span>We are the leaders</span>
                   <h1 className="heading-1">
                     Discover the key
@@ -49,12 +46,7 @@ const Banner = ({ isFrontBanner, bannerImg, heading, description }) => {
                     >
                       <InputGroup className="w-100">
                         <InputGroup.Text className="p-0">
-                          <Image
-                            src={SearchIcon}
-                            alt=""
-                            width={24}
-                            height={24}
-                          />
+                          <Search color="white" />
                         </InputGroup.Text>
 
                         <Form.Control
@@ -64,12 +56,7 @@ const Banner = ({ isFrontBanner, bannerImg, heading, description }) => {
                       </InputGroup>
                       <InputGroup className="w-100">
                         <InputGroup.Text className="p-0">
-                          <Image
-                            src={SearchIcon}
-                            alt=""
-                            width={24}
-                            height={24}
-                          />
+                          <Search color="white" />
                         </InputGroup.Text>
                         <DropdownButton
                           variant="outline-secondary"
@@ -90,8 +77,8 @@ const Banner = ({ isFrontBanner, bannerImg, heading, description }) => {
                         variant="secondary"
                         className="w-100"
                       >
-                        Search Course{" "}
-                        <Image src={arrowRight} alt="" width={8} height={8} />
+                        Search Course
+                        <ArrowRight />
                       </Button>
                     </div>
                   </Form>
@@ -118,12 +105,12 @@ const Banner = ({ isFrontBanner, bannerImg, heading, description }) => {
             <div className="container">
               <div className={style["Banner_inner"]}>
                 <div className="w-100"></div>
-                <div className={`w-75 ps-5 ${style["bannner_content"]}`}>
+                <div className={`w-75 ps-5 flex-col items-start max-w-xl ${style["bannner_content"]}`}>
                   <h1 className="heading-1">{heading}</h1>
                   <p className="text-regular my-4">{description}</p>
                   <Button type="submit" variant="secondary">
                     Contact Us
-                    <Image src={arrowRight} alt="" width={8} height={8} />
+                    <ArrowRight />
                   </Button>
                 </div>
               </div>

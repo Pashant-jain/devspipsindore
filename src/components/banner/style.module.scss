@@ -34,6 +34,10 @@
     height: 100%;
 
     .bannner_content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 50px;
       span {
         font-family: $font-ABeeZee;
         font-size: 24px;
@@ -81,6 +85,8 @@
       align-items: center;
       padding: 100px 0;
       .bannner_content {
+        display: flex;
+        gap: 3px;
         h1 {
           font-family: $font-Roboto;
           color: $White;

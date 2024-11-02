@@ -8,6 +8,7 @@ import search from "/public/assets/icons/Search-dark.svg";
 import styles from "./style.module.scss";
 import Image from "next/image";
 import { Button } from "react-bootstrap";
+import { headerLevel1Data } from "@/data/layout/header";
 
 const TopHeader = ({ handleShow }) => {
   return (
@@ -26,38 +27,21 @@ const TopHeader = ({ handleShow }) => {
               <div className={styles["ContactInfo"]}>
                 <Link href="" className="text-regular">
                   <Image src={email} alt="emailIcon" width={20} height={20} />{" "}
-                  <span>contact@brixagency.com</span>
+                  {headerLevel1Data.email}
                 </Link>
               </div>
             </div>
             <div className={styles["External_Links"]}>
-              <Link href={"#"} className="text-regular">
-                Pay Prof. Course Fee
-              </Link>
-              <Link
-                href={"https://www.nirfindia.org/"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-regular"
-              >
-                NIRF
-              </Link>
-              <Link
-                href={"mailto:info@spipsindore.com"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-regular"
-              >
-                E-Mail
-              </Link>
-              <Link
-                href={"https://ecare.spipsindore.com/app/login"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-regular"
-              >
-                E-Care
-              </Link>
+              {headerLevel1Data.links.map((link, index) => (
+                <Link
+                  key={index}
+                  href={link.href}
+                  className="text-regular"
+                  target={link.target}
+                >
+                  {link.text}
+                </Link>
+              ))}
             </div>
           </div>
         </div>
