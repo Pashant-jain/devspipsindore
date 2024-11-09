@@ -3,7 +3,7 @@ import CardGrid from "@/components/layout/CardGrid";
 import HeroSection from "@/components/layout/HeroSection";
 import { Button } from "@/components/ui/button";
 import journalData from "@/data/journals";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Key } from "lucide-react";
 
 function JournalsPage() {
   return (
@@ -25,8 +25,10 @@ function JournalsPage() {
         }
       />
       <CardGrid className="mt-10">
-        {journalData.map((journal) => (
+        {journalData.map((journal,index) => (
+         <div Key={index} >
           <JournalCard {...journal} />
+         </div>
         ))}
       </CardGrid>
     </div>

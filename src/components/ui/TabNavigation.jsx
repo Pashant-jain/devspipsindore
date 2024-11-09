@@ -41,12 +41,16 @@ function TabNavigation({ tabsData }) {
   return (
     <Tabs defaultValue={tabKeys[0]} className="p-14 w-full">
       <TabsList className="flex w-full">
-        {tabKeys.map((tab) => (
-          <TabsTrigger value={tab}>{tab}</TabsTrigger>
+        {tabKeys.map((tab,index) => (
+          <div key={index} >
+            <TabsTrigger value={tab}>{tab}</TabsTrigger>
+          </div>
         ))}
       </TabsList>
       {tabContents.map((content, i) => (
-        <TabsContent value={tabKeys[i]}>{content}</TabsContent>
+        <div key={i} >
+          <TabsContent value={tabKeys[i]}>{content}</TabsContent>
+        </div>
       ))}
     </Tabs>
   );

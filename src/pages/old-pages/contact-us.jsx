@@ -69,8 +69,8 @@ function ContactUs() {
                 contactType: "Office Hours : ",
                 contact: "Monday - Friday <br> 8:00 am to 5:00 PM",
               },
-            ].map((contact) => (
-              <div className="flex gap-2 items-center">
+            ].map((contact,index) => (
+              <div key={index} className="flex gap-2 items-center">
                 <div>
                   <Image
                     src={contact.image}
@@ -166,8 +166,8 @@ function ContactUs() {
                     { icon: "/assets/icons/Instagram.svg", link: "" },
                     { icon: "/assets/icons/LinkedIn.svg", link: "" },
                     { icon: "/assets/icons/YouTube.svg", link: "" },
-                  ].map((social) => (
-                    <Link href={social.link}>
+                  ].map((social,index) => (
+                    <Link key={social} href={social.link}>
                       <Image
                         src={social.icon}
                         className="object-cover h-[30px] w-[30px]"

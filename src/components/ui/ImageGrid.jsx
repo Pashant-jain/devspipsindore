@@ -56,8 +56,8 @@ function ImageGrid() {
 
   return (
     <div className="grid grid-cols-6">
-      {images.map((image) => (
-        <Image className="w-full h-full" src={image.url} width={250} height={250} alt={image.alt} />
+      {images.map((image,index) => (
+        <Image key={index} className="w-full h-full" src={image.url} width={250} height={250} alt={image.alt} />
       ))}
     </div>
   );

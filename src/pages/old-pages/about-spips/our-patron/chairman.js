@@ -6,13 +6,17 @@ import BishopSign from "/public/assets/images/Bishop-sign.png";
 import Features from "@/components/liberary/Features";
 import SectionImage from "/public/assets/images/Bishop_Chacko.jpg";
 import styles from "@/styles/Home.module.scss";
+import Image from "next/image";
 
 
 const Chairman = () => {
   return (
     <>
       <Head>
-        <title>Chairman’s Message - SPIPS</title>
+      <title>SPIPS &#8211; St. Paul Institute of Professional Studies, Indore</title>
+        <meta name="description" content="SPIPS - St. Paul Institute of Professional Studies, Indore: A premier educational institution offering top-tier programs in management, commerce, science, and arts. Empowering students with academic excellence, holistic development, and career-oriented learning in a dynamic and inclusive environment." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         {/* <Banner
