@@ -35,13 +35,13 @@ export default function Home() {
         <TopRecruiters
           sectionGap="both"
           title="Our Top Recruiters"
-          description={
-            <>
-              Lorem ipsum dolor sit amet consectetur adipiscing elitdolor mattis
-              sit phasellus mollis sit <br />
-              aliquam sit nullam neques.
-            </>
-          }
+          // description={
+          //   <>
+          //     Lorem ipsum dolor sit amet consectetur adipiscing elitdolor mattis
+          //     sit phasellus mollis sit <br />
+          //     aliquam sit nullam neques.
+          //   </>
+          // }
           data={Recruiters}
         />
         <TopRecruiters
