@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./style.module.scss";
 import SectionHeading from "../../comman/sectionHeading";
-import gallery1 from "/public/assets/images/gallery1.jpeg";
+import gallery1 from "/public/assets/images/photoGalary.jpg";
 import gallery2 from "/public/assets/images/gallery2.jpeg";
 import gallery3 from "/public/assets/images/gallery3.jpeg";
 import gallery4 from "/public/assets/images/gallery4.jpeg";
@@ -25,48 +25,56 @@ const OurGallery = ({ sectionGap }) => {
       <div className="container">
         <SectionHeading title="Our Gallery" />
         <div className={style["carousel"]}>
-          <Link href={"/gallery"}>
+          <Link className={`${style["item"]}`} href={"/gallery"}>
             <Image
               src={gallery1}
               alt=""
               loading="lazy"
               width={241}
               height={239}
-              className={`${style["card_img"]} ${style["item"]}`}
+              className={`${style["card_img"]}`}
             />
           </Link>
+          <Link className={`${style["item"]}`} href={"/gallery"}>
           <Image
             src={gallery2}
             alt=""
             loading="lazy"
             width={241}
             height={361}
-            className={`${style["card_img"]} ${style["item"]}`}
+            className={`${style["card_img"]}`}
           />
+          </Link>
+          <Link className={`${style["item"]}`} href={"/gallery"}>
           <Image
             src={gallery3}
             alt=""
             loading="lazy"
             width={241}
             height={239}
-            className={`${style["card_img"]} ${style["item"]}`}
+            className={`${style["card_img"]}`}
           />
+          </Link>
+          <Link className={`${style["item"]}`} href={"/gallery"}>
           <Image
             src={gallery4}
             alt=""
             loading="lazy"
             width={241}
             height={361}
-            className={`${style["card_img"]} ${style["item"]}`}
+            className={`${style["card_img"]}`}
           />
+          </Link>
+          <Link className={`${style["item"]}`} href={"/gallery"}>
           <Image
             src={gallery5}
             alt=""
             loading="lazy"
             width={241}
             height={239}
-            className={`${style["card_img"]} ${style["item"]}`}
+            className={`${style["card_img"]}`}
           />
+          </Link>
         </div>
       </div>
     </div>

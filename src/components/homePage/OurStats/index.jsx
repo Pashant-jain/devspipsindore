@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import style from "./style.module.scss";
 import SectionHeading from "@/components/comman/sectionHeading";
 import { Stats } from "@/data";
@@ -19,15 +19,41 @@ const animateValue = (start, end, duration, setStatValue) => {
 
 const StatItem = ({ endValue, label }) => {
   const [statValue, setStatValue] = useState(0); // State to hold current stat value
+  const statRef = useRef(null); // Reference to the stat element
+  const [isVisible, setIsVisible] = useState(false); // State to track visibility
 
   useEffect(() => {
-    animateValue(0, endValue, 2000, setStatValue); // Animate from 0 to endValue over 2 seconds
-  }, [endValue]);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setIsVisible(true); // Set visibility to true when in viewport
+          observer.disconnect(); // Stop observing after the animation starts
+        }
+      },
+      { threshold: 0.1 } // Adjust threshold as needed
+    );
+
+    if (statRef.current) {
+      observer.observe(statRef.current);
+    }
+
+    return () => {
+      if (statRef.current) {
+        observer.unobserve(statRef.current);
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isVisible) {
+      animateValue(0, endValue, 2000, setStatValue); // Animate from 0 to endValue over 2 seconds
+    }
+  }, [endValue, isVisible]);
 
   return (
-    <div className={style["stats"]}>
+    <div className={style["stats"]} ref={statRef}>
       <strong className="heading-2">{statValue}+</strong>
-      <span className=".text-regular">{label}</span>
+      <span className="text-regular">{label}</span>
     </div>
   );
 };

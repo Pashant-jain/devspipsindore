@@ -15,5 +15,8 @@
     @media (max-width: 649px) {
       gap: 16px;
     }
+    .card_img{
+      object-fit: contain;
+    }
   }
 }

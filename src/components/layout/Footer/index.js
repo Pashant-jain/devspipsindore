@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Facebook from "/public/assets/icons/Facebook.svg";
 import Instagram from "/public/assets/icons/Instagram.svg";
-import LinkedIn from "/public/assets/icons/LinkedIn.svg";
-import Twitter from "/public/assets/icons/Twitter.svg";
-import YouTube from "/public/assets/icons/YouTube.svg";
+import Location from "/public/assets/icons/location.svg";
+import Email from "/public/assets/icons/Email.svg";
+import Contact from "/public/assets/icons/contact.svg";
 import { ArrowRight } from "lucide-react";
 
 const Footer = () => {
@@ -51,13 +51,13 @@ const Footer = () => {
                 Vishwavidyalaya, Indore.
               </p>
               <div className={style["socialMedia"]}>
-                <Link href={`#`}>
+                <Link href={`https://www.facebook.com/stpaulinstituteindore/`} target="_blank">
                   <Image src={Facebook} alt="" width={24} height={24} />
                 </Link>
-                <Link href={`#`}>
+                <Link href={`https://www.instagram.com/spips_official/`} target="_blank">
                   <Image src={Instagram} alt="" width={24} height={24} />
                 </Link>
-                <Link href={`#`}>
+                {/* <Link href={`#`}>
                   <Image src={LinkedIn} alt="" width={24} height={24} />
                 </Link>
                 <Link href={`#`}>
@@ -65,7 +65,7 @@ const Footer = () => {
                 </Link>
                 <Link href={`#`}>
                   <Image src={YouTube} alt="" width={24} height={24} />
-                </Link>
+                </Link> */}
               </div>
             </div>
             <div className={style["footerNavLinkWrp"]}>
@@ -120,18 +120,18 @@ const Footer = () => {
                 <h6 className="heading-6">Information</h6>
                 <div className={style["List"]}>
                   <Link href={`#`} className="text-regular">
-                    <Image src={Facebook} alt="" width={24} height={24} />
+                    <Image src={Location} alt="" width={24} height={24} />
                     <span>
                       7/1, Boundary Road, Lalaram Nagar, Indore, Madhya Pradesh
                       - 452001.
                     </span>
                   </Link>
                   <Link href={`#`} className="text-regular">
-                    <Image src={Facebook} alt="" width={24} height={24} />
+                    <Image src={Email} alt="" width={24} height={24} />
                     +91 731 2499911, 2490114
                   </Link>
                   <Link href={`#`} className="text-regular">
-                    <Image src={Facebook} alt="" width={24} height={24} />
+                    <Image src={Contact} alt="" width={24} height={24} />
                     info@spipsindore.ac.in
                   </Link>
                 </div>

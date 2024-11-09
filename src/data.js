@@ -1,45 +1,54 @@
-import Recruiter1 from "/public/assets/images/Recruiter1.png";
-import Recruiter2 from "/public/assets/images/Recruiter2.png";
-import Recruiter3 from "/public/assets/images/Recruiter3.png";
-import Recruiter4 from "/public/assets/images/Recruiter4.png";
-import Recruiter5 from "/public/assets/images/Recruiter5.png";
+import Recruiter1 from "/public/assets/images/infosys.png";
+import Recruiter2 from "/public/assets/images/wipro.png";
+import Recruiter3 from "/public/assets/images/AXISBANK.png";
+import Recruiter4 from "/public/assets/images/TCS.png";
+import Recruiter5 from "/public/assets/images/BANKBARODA.png";
 import MP from "/public/assets/images/MP.png";
 import NSS from "/public/assets/images/NSS.png";
 import DAVV from "/public/assets/images/DAVV.png";
+// import BCAPracticalNotice from './public/assets/uploads/2024/08/BCA-practial-exam-18-4-2024.pdf'
 
 
 export const latestAnnouncements = [
     {
-        AnnouncementType: "News",
-        date: 17,
-        month: 'August',
-        title:'Lorem ipsum dolor sit amet consectetur adipiscing elidolor',
+        AnnouncementType: "Notice",
+        date: String(18).padStart(2, '0'),
+        month: 'April',
+        title:'BCA Practical Exam Notification which is Sheduled on 22nd April 2024',
         link: '',
-        target: '',
+        target: '_blank',
     },
     {
-        AnnouncementType: "News",
-        date: 17,
-        month: 'August',
-        title:'Lorem ipsum dolor sit amet consectetur adipiscing elidolor',
+        AnnouncementType: "Notice",
+        date: String(27).padStart(2, '0'),
+        month: 'April',
+        title:'Salesmanship (CRM) Final Viava Notification which is Sheduled on 6th April 2024',
         link: '',
-        target: '',
+        target: '_blank',
     },
     {
-        AnnouncementType: "News",
-        date: 17,
-        month: 'August',
-        title:'Lorem ipsum dolor sit amet consectetur adipiscing elidolor',
+      AnnouncementType: "Notice",
+      date: String(4).padStart(2, '0'),
+      month: 'April',
+      title:'Project/Internship Exam date BCA Notification which is Sheduled on 13th April 2024',
+      link: '',
+      target: '_blank',
+  },
+    {
+        AnnouncementType: "Notice",
+        date: String(22).padStart(2, '0'),
+        month: 'March',
+        title:'Physics Practical Exams Notification which is Sheduled on 2nd April 2024',
         link: '',
-        target: '',
+        target: '_blank',
     },
     {
-        AnnouncementType: "News",
-        date: 17,
-        month: 'August',
-        title:'Lorem ipsum dolor sit amet consectetur adipiscing elidolor',
+        AnnouncementType: "Notice",
+        date: String(3).padStart(2, '0'),
+        month: 'April',
+        title:'Vocational Web Designing II Final Practical Notification which is Sheduled on 6th April 2024',
         link: '',
-        target: '',
+        target: '_blank',
     },
 ]
 export const Stats =[

@@ -1,17 +1,16 @@
 export const headerLevel1Data = {
-  email: "contact@brixagency.com",
+  email: { href: "mailto:info@spipsindore.com", text: "info@spipsindore.com", target: ""},
   links: [
     { href: "#", text: "Pay Prof. Course Fee", target: "" },
     { href: "https://www.nirfindia.org/", text: "NIRF", target: "" },
-    { href: "mailto:info@spipsindore.com", text: "E-Mail", target: "" },
     { href: "https://ecare.spipsindore.com/app/login", text: "E-Care", target: "" },
   ],
 };
 
 export const headerLevel2Data = {
   links: [
-    { href: "#", text: "Library", target: "" },
-    { href: "#", text: "Clubs", target: "" },
+    { href: "library", text: "Library", target: "" },
+    { href: "clubs", text: "Clubs", target: "" },
     { href: "#", text: "Students", target: "" },
     { href: "#", text: "Staff", target: "" },
     { href: "#", text: "Photo Gallery", target: "" },
@@ -580,17 +579,17 @@ export const headerLevel3Data = [
       },
       {
         subItemName: "Sports Facility",
-        link: "https://spipsindore.com/facilities/sports-facility/",
+        link: "/facilities/sports-facility/",
         target: "",
       },
       {
         subItemName: "Health Facility",
-        link: "https://spipsindore.com/facilities/health-facility/",
+        link: "/facilities/health-facility/",
         target: "",
       },
       {
         subItemName: "Facilities For Differently Abled",
-        link: "https://spipsindore.com/facilities/facilities-for-differently-abled/",
+        link: "/facilities/facilities-for-differently-abled/",
         target: "",
       },
     ],
@@ -601,12 +600,12 @@ export const headerLevel3Data = [
     child: [
       {
         subItemName: "Photo Gallery",
-        link: "https://spipsindore.com/gallery/photo-gallery/",
+        link: "/gallery/photo-gallery/",
         target: "",
       },
       {
         subItemName: "Video Gallery",
-        link: "https://spipsindore.com/gallery/video-gallery/",
+        link: "/gallery/video-gallery/",
         target: "",
       },
       {
@@ -614,17 +613,17 @@ export const headerLevel3Data = [
         child: [
           {
             subItemName: "Magazine",
-            link: "https://spipsindore.com/gallery/publications/magazine/",
+            link: "/gallery/publications/magazine/",
             target: "",
           },
           {
             subItemName: "SPIPS Memoir",
-            link: "https://spipsindore.com/gallery/publications/spips-memoir/",
+            link: "/gallery/publications/spips-memoir/",
             target: "",
           },
           {
             subItemName: "Newsletter",
-            link: "https://spipsindore.com/gallery/publications/newsletter/",
+            link: "/gallery/publications/newsletter/",
             target: "",
           },
         ],
@@ -634,19 +633,19 @@ export const headerLevel3Data = [
         child: [
           {
             subItemName: "Awards",
-            link: "https://spipsindore.com/gallery/awards-recognitions/awards/",
+            link: "/gallery/awards-recognitions/awards/",
             target: "",
           },
           {
             subItemName: "Newspaper Coverage",
-            link: "https://spipsindore.com/gallery/awards-recognitions/newspaper-coverage/",
+            link: "/gallery/awards-recognitions/newspaper-coverage/",
             target: "",
           },
         ],
       },
       {
         subItemName: "Physical Facilities Gallery",
-        link: "https://spipsindore.com/gallery/physical-facilities-gallery/",
+        link: "/gallery/physical-facilities-gallery/",
         target: "",
       },
     ],
@@ -657,32 +656,32 @@ export const headerLevel3Data = [
     child: [
       {
         subItemName: "Projects",
-        link: "https://spipsindore.com/research/projects/",
+        link: "/research/projects/",
         target: "",
       },
       {
         subItemName: "Research Guides",
-        link: "https://spipsindore.com/research/research-guides/",
+        link: "/research/research-guides/",
         target: "",
       },
       {
         subItemName: "Events & Activities",
-        link: "https://spipsindore.com/research/events-activities/",
+        link: "/research/events-activities/",
         target: "",
       },
       {
         subItemName: "Collaboration & Linkages",
-        link: "https://spipsindore.com/research/collaboration-linkages/",
+        link: "/research/collaboration-linkages/",
         target: "",
       },
       {
         subItemName: "Journals",
-        link: "https://spipsindore.com/research/journals/",
+        link: "/research/journals/",
         target: "",
       },
       {
         subItemName: "Faculty Development",
-        link: "https://spipsindore.com/gallery/faculty-development/",
+        link: "/gallery/faculty-development/",
         target: "",
       },
     ],
@@ -693,7 +692,7 @@ export const headerLevel3Data = [
     child: [
       {
         subItemName: "Public Disclosure- View file",
-        link: "https://spipsindore.com/naac/public-disclosure-view-file/",
+        link: "/naac/public-disclosure-view-file/",
         target: "",
       },
     ],
@@ -709,7 +708,7 @@ export const headerLevel3Data = [
       },
       {
         subItemName: "Apply For Jobs",
-        link: "https://spipsindore.com/wp-content/uploads/2020/12/JOb.pdf",
+        link: "/wp-content/uploads/2020/12/JOb.pdf",
         target: "",
       },
     ],

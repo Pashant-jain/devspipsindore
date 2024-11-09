@@ -25,9 +25,9 @@ const TopHeader = ({ handleShow }) => {
                 <Image src={hamburgerIcon} alt="" width={30} height={30} />
               </Button>
               <div className={styles["ContactInfo"]}>
-                <Link href="" className="text-regular">
+                <Link href={headerLevel1Data.email.href} target={headerLevel1Data.email.target} className="text-regular">
                   <Image src={email} alt="emailIcon" width={20} height={20} />{" "}
-                  {headerLevel1Data.email}
+                  {headerLevel1Data.email.text}
                 </Link>
               </div>
             </div>

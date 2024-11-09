@@ -74,18 +74,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center left;
+  min-height: 300px;
   .Banner_overlay {
     background-image: url("/assets/images/banner-overlay.svg");
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
+    min-height: 300px;
     .Banner_inner {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 100px 0;
       .bannner_content {
-        display: flex;
         gap: 3px;
         h1 {
           font-family: $font-Roboto;

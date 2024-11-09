@@ -11,7 +11,7 @@ import {
 } from "react-bootstrap";
 import { ArrowRight, Search } from "lucide-react";
 
-const Banner = ({ isFrontBanner, bannerImg, heading, description }) => {
+const Banner = ({ isFrontBanner, bannerImg, heading, description,Contact }) => {
   return (
     <>
       {isFrontBanner ? (
@@ -40,7 +40,7 @@ const Banner = ({ isFrontBanner, bannerImg, heading, description }) => {
                     mattis sit
                     <br /> phasellus mollis sit aliquam sit nullam neques.
                   </p>
-                  <Form>
+                  {/* <Form>
                     <div
                       className={`front_banner_form ${style["front_banner_form"]}`}
                     >
@@ -81,7 +81,7 @@ const Banner = ({ isFrontBanner, bannerImg, heading, description }) => {
                         <ArrowRight />
                       </Button>
                     </div>
-                  </Form>
+                  </Form> */}
                 </div>
                 <div>
                   {/* <Image
@@ -105,13 +105,16 @@ const Banner = ({ isFrontBanner, bannerImg, heading, description }) => {
             <div className="container">
               <div className={style["Banner_inner"]}>
                 <div className="w-100"></div>
-                <div className={`w-75 ps-5 flex-col items-start max-w-xl ${style["bannner_content"]}`}>
+                <div className={`w-75 ps-5  ${style["bannner_content"]}`}>
                   <h1 className="heading-1">{heading}</h1>
                   <p className="text-regular my-4">{description}</p>
-                  <Button type="submit" variant="secondary">
-                    Contact Us
-                    <ArrowRight />
-                  </Button>
+                  {Contact &&
+                  (
+                    <Button type="submit" variant="secondary">
+                      Contact Us
+                      <ArrowRight />
+                    </Button>
+                  )}
                 </div>
               </div>
             </div>

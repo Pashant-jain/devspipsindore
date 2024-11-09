@@ -1,14 +1,31 @@
 import { Calendar } from "@/components/ui/calendar";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import style from "./style.module.scss";
 import SectionHeading from "@/components/comman/sectionHeading";
+import { eventList } from "./events";
 
 const CalendarComponent = ({ sectionGap }) => {
-  const [date, setDate] = useState(null);
+  const [date, setDate] = useState(new Date());
+  const [eventsForDate, setEventsForDate] = useState([]);
 
-  useEffect(() => {
-    setDate(new Date());
-  }, []);
+  const handleDateSelect = (selectedDate) => {
+    if (!selectedDate) return;
+
+    setDate(selectedDate);
+
+    // Format selected date to "YYYY-MM-DD"
+    const formattedDate = selectedDate.toISOString().split("T")[0];
+
+    // Filter events that match the selected date
+    const events = eventList
+      .filter((item) => {
+        const eventDate = new Date(item.date).toISOString().split("T")[0];
+        return eventDate === formattedDate;
+      })
+      .flatMap((item) => item.events);
+
+    setEventsForDate(events);
+  };
 
   return (
     <div
@@ -24,12 +41,12 @@ const CalendarComponent = ({ sectionGap }) => {
     >
       <div className="container flex flex-col gap-5">
         <SectionHeading
-          title="SPIPS Calander"
+          title="SPIPS Calendar"
           description={
             <>
-              Lorem ipsum dolor sit amet consectetur adipiscing elitdolor mattis
+              Lorem ipsum dolor sit amet consectetur adipiscing elit dolor mattis
               sit phasellus mollis sit <br />
-              aliquam sit nullam neques.
+              aliquam sit nullam neque.
             </>
           }
         />
@@ -38,14 +55,28 @@ const CalendarComponent = ({ sectionGap }) => {
             <Calendar
               mode="single"
               selected={date}
-              onSelect={(d) => {
-                if (!d) return;
-                setDate(d);
-              }}
+              onSelect={handleDateSelect}
               className="rounded-md border"
             />
           </div>
-          {date && <div>Selected Date : {date?.toString()} </div>}
+          {date && (
+            <div className="mt-4">
+              <div>Selected Date: {date.toDateString()}</div>
+              <div className="mt-2">
+                {eventsForDate.length > 0 ? (
+                  eventsForDate.map((event, index) => (
+                    <div key={index} className="p-2 border-b">
+                      <h4 className="font-semibold">{event.title}</h4>
+                      <p>{event.location}</p>
+                      <p>{event.description}</p>
+                    </div>
+                  ))
+                ) : (
+                  <p>No events for this date.</p>
+                )}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
