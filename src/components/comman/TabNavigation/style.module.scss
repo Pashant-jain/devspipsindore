@@ -1,0 +1,24 @@
+@import '../../../styles/variable';
+.TabNavigation_wrp{
+    .tab_list{
+        display: flex;
+        flex-wrap: nowrap;
+        border-bottom: 1px solid $primary;
+        .tab_btn{
+            background-color: transparent;
+            border: unset;
+            color: $primary;
+            font-weight: 500;
+            &.active{
+                border-bottom: 3px solid $primary;
+                margin-bottom: -2px;
+            }
+        }
+    }
+    .TabsContent{
+        padding: 30px;
+    }
+    p{
+        color: $Body;
+    }
+}

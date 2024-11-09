@@ -3,13 +3,13 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
-const Layout = ({ children }) => {
+const Layout = ({ children,showFooterCta }) => {
   return (
     <div>
       <Header />
       {children}
       <div className='h-20'></div>
-      <Footer/>
+      <Footer showFooterCta={showFooterCta} />
     </div>
   );
 };

@@ -12,7 +12,7 @@ const NewsAndAnnouncements = ({ sectionGap }) => {
     speed: 500,
     slidesToShow: 3, // Default for large screens
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 1000,
     adaptiveHeight: true,
     arrows: false,

@@ -10,9 +10,10 @@ import Email from "/public/assets/icons/Email.svg";
 import Contact from "/public/assets/icons/contact.svg";
 import { ArrowRight } from "lucide-react";
 
-const Footer = () => {
+const Footer = ({showFooterCta}) => {
   return (
     <>
+    {showFooterCta &&
       <div className={style["footer_cta_wrp"]}>
         <div className="container">
           <div className={style["footer_cta"]}>
@@ -33,6 +34,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      }
       <div className={style["footer"]}>
         <Container>
           <div className={style["footerInner"]}>

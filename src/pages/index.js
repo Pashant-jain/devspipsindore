@@ -1,20 +1,20 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.scss";
+import dynamic from "next/dynamic";
+
 import Banner from "@/components/banner";
 import NewsAndAnnouncements from "@/components/homePage/ NewsAndAnnouncements";
 import OurStats from "@/components/homePage/OurStats";
-import FeaturedCourses from "@/components/homePage/FeatruredCourses";
 import Testimonials from "@/components/comman/testimonials";
 import TopRecruiters from "@/components/homePage/TopRecruiters";
 import OurGallery from "@/components/homePage/OurGallery";
-
-import bannerImg from "/public/assets/images/front-banner-img.png";
-import { Affiliation, Recruiters } from "@/data";
 import Calander from "@/components/homePage/Calendar";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Affiliation, Recruiters } from "@/data";
+import { testimonialsData } from "@/config";
+
+const bannerImg = dynamic(
+  () => import("/public/assets/images/front-banner-img.png")
+);
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
         <OurStats sectionGap="bottom" />
         {/* <FeaturedCourses sectionGap="both" /> */}
         <Calander sectionGap="both" />
-        <Testimonials sectionGap="both" />
+        <Testimonials sectionGap="both" testimonialsData={testimonialsData} showborders={true} />
         <TopRecruiters
           sectionGap="both"
           title="Our Top Recruiters"
@@ -45,15 +45,15 @@ export default function Home() {
           data={Recruiters}
         />
         <TopRecruiters
-          sectionGap="both"
+          sectionGap="bottom"
           title="Affiliation With"
-          description={
-            <>
-              Lorem ipsum dolor sit amet consectetur adipiscing elitdolor mattis
-              sit phasellus mollis sit <br />
-              aliquam sit nullam neques.
-            </>
-          }
+          // description={
+          //   <>
+          //     Lorem ipsum dolor sit amet consectetur adipiscing elitdolor mattis
+          //     sit phasellus mollis sit <br />
+          //     aliquam sit nullam neques.
+          //   </>
+          // }
           data={Affiliation}
         />
         <OurGallery sectionGap="bottom" />

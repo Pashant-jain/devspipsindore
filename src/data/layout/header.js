@@ -1,9 +1,9 @@
 export const headerLevel1Data = {
   email: { href: "mailto:info@spipsindore.com", text: "info@spipsindore.com", target: ""},
   links: [
-    { href: "#", text: "Pay Prof. Course Fee", target: "" },
-    { href: "https://www.nirfindia.org/", text: "NIRF", target: "" },
-    { href: "https://ecare.spipsindore.com/app/login", text: "E-Care", target: "" },
+    { href: "https://ecare.spipsindore.com/app/login", text: "Pay Prof. Course Fee", target: "_blank" },
+    { href: "https://www.nirfindia.org/", text: "NIRF", target: "_blank" },
+    { href: "https://ecare.spipsindore.com/app/login", text: "E-Care", target: "_blank" },
   ],
 };
 
@@ -51,52 +51,52 @@ export const headerLevel3Data = [
       },
       {
         subItemName: "Strategic Imperative",
-        link: "#",
+        link: "/about-spips/strategic-imperative",
         target: "",
-        submenuChild: [
-          {
-            innerSubItemName: "Motto, Vision and Mission",
-            link: "/about-spips/strategic-imperative/motto-vision-and-mission/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Our Values",
-            link: "/about-spips/strategic-imperative/our-values/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Strategic Plan",
-            link: "/about-spips/strategic-imperative/strategic-plan/",
-            target: "",
-          },
-        ],
+        // submenuChild: [
+        //   {
+        //     innerSubItemName: "Motto, Vision and Mission",
+        //     link: "/about-spips/strategic-imperative/motto-vision-and-mission/",
+        //     target: "",
+        //   },
+        //   {
+        //     innerSubItemName: "Our Values",
+        //     link: "/about-spips/strategic-imperative/our-values/",
+        //     target: "",
+        //   },
+        //   {
+        //     innerSubItemName: "Strategic Plan",
+        //     link: "/about-spips/strategic-imperative/strategic-plan/",
+        //     target: "",
+        //   },
+        // ],
       },
       {
         subItemName: "Administrative Bodies",
-        link: "#",
+        link: "/about-spips/administrative-bodies",
         target: "",
-        submenuChild: [
-          {
-            innerSubItemName: "Managing Committee",
-            link: "/about-spips/administrative-bodies/managing-committee/",
-            target: "",
-          },
-          {
-            innerSubItemName: "In-house Committees",
-            link: "/about-spips/administrative-bodies/in-house-committees/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Statutory Bodies",
-            link: "/about-spips/administrative-bodies/statutory-bodies/",
-            target: "",
-          },
-        ],
+        // submenuChild: [
+        //   {
+        //     innerSubItemName: "Managing Committee",
+        //     link: "/about-spips/administrative-bodies/managing-committee/",
+        //     target: "",
+        //   },
+        //   {
+        //     innerSubItemName: "In-house Committees",
+        //     link: "/about-spips/administrative-bodies/in-house-committees/",
+        //     target: "",
+        //   },
+        //   {
+        //     innerSubItemName: "Statutory Bodies",
+        //     link: "/about-spips/administrative-bodies/statutory-bodies/",
+        //     target: "",
+        //   },
+        // ],
       },
       {
         subItemName: "Institutional Distinctiveness",
         link: "/about-spips/institutional-distinctive/",
-        target: "_blank",
+        target: "",
       },
     ],
   },

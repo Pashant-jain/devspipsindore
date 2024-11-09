@@ -1,4 +1,7 @@
 @import '../../../styles/variable';
+.background_fill{
+    background-color: $Secondary;
+}
 .bgImage{
     width: 100% !important;
     background-color: $White;
@@ -10,6 +13,6 @@
         justify-content: space-between;
         align-items: stretch;
         gap: 22px;
-        margin-top: 60px;
+        padding-top: 60px;
     }
 }

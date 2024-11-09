@@ -6,6 +6,9 @@ import Recruiter5 from "/public/assets/images/BANKBARODA.png";
 import MP from "/public/assets/images/MP.png";
 import NSS from "/public/assets/images/NSS.png";
 import DAVV from "/public/assets/images/DAVV.png";
+import NCC from "/public/assets/images/NCC.jpg";
+
+
 // import BCAPracticalNotice from './public/assets/uploads/2024/08/BCA-practial-exam-18-4-2024.pdf'
 
 
@@ -125,4 +128,10 @@ export const Recruiters = [
       width: 150,
       height: 150,
     },
+    {
+      image: NCC,
+      width: 150,
+      height: 150,
+    },
+
   ];
