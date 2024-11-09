@@ -2,7 +2,7 @@ import React from 'react'
 
 function CommerceAndManagementPage() {
   return (
-    <div>CommerceAndManagementPage</div>
+    <div>CommerceAndManagementPage fvfd</div>
   )
 }
 
