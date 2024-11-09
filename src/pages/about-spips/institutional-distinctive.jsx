@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Banner from "@/components/banner";
-import ImageGrid from "@/components/ui/ImageGrid";
 import Accordion from "@/components/comman/Accordion";
 import TabNavigation from "@/components/comman/TabNavigation";
 
@@ -111,7 +110,6 @@ const InstitutionalDistinctiveness = () => {
           )}
         </div>
       </div>
-      <ImageGrid />
     </>
   );
 };
