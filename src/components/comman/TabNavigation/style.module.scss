@@ -18,7 +18,11 @@
     .TabsContent{
         padding: 30px;
     }
-    p{
+    p,li{
         color: $Body;
+    }
+    img{
+        width: 100%;
+        height: 100%;
     }
 }

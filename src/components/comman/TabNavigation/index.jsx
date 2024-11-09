@@ -49,7 +49,8 @@ function TabNavigation({ tabsData }) {
       </TabsList>
       {tabKeys.map((tab, index) => (
         <TabsContent key={index} value={tab} className={style['TabsContent']} >
-          <div dangerouslySetInnerHTML={{ __html: tabsData[tab] }} />
+          {/* <div dangerouslySetInnerHTML={{ __html: tabsData[tab] }} /> */}
+          {tabsData[tab]}
         </TabsContent>
       ))}
     </Tabs>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import style from './style.module.scss'
 
 const AccordionItem = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,7 @@ const AccordionItem = ({ title, content }) => {
   };
 
   return (
-    <div className="accordion-item border-b">
+    <div className={` ${style['accordion_wrp']} accordion-item border-b`}>
       <div
         className="accordion-header cursor-pointer flex justify-between items-center p-4 bg-gray-100"
         onClick={toggleAccordion}
@@ -17,14 +18,14 @@ const AccordionItem = ({ title, content }) => {
         <span>{isOpen ? "-" : "+"}</span>
       </div>
       {isOpen && (
-        <div
-          className="accordion-content p-4"
-          dangerouslySetInnerHTML={{ __html: content }}
-        ></div>
+        <div className="accordion-content p-4">
+          {content} {/* Directly render the JSX content here */}
+        </div>
       )}
     </div>
   );
 };
+
 
 const Accordion = ({ tabsData }) => {
   const tabKeys = Object.keys(tabsData);
