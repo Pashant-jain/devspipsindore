@@ -57,7 +57,7 @@ const AdministrativeBodies = () => {
             <>
             <div className="d-flex justify-content-center" >
             <iframe
-        src={`https://docs.google.com/viewer?url=${currentDomain}/wp-content/uploads/2024/08/Statutory-Bodies.pdf&embedded=true`}
+        src={`https://docs.google.com/viewer?url=${currentDomain}/assets/documents/Statutory-Bodies.pdf&embedded=true`}
         style={{ width: "640px", height: "800px" }}
         allowFullScreen
         title="Statutory Bodies PDF Viewer"
