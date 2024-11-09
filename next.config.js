@@ -6,11 +6,11 @@ const nextConfig = {
 
   images: {
     unoptimized: true,
-    remotePatterns: [
-      {
-        hostname: "spipsindore.com",
-      },
-    ],
+    // remotePatterns: [
+    //   {
+    //     hostname: "spipsindore.com",
+    //   },
+    // ],
   },
   webpack: (config, { isServer }) => {
     // Add a rule for loading mp4 video files
