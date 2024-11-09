@@ -39,7 +39,7 @@ const AdministrativeBodies = () => {
       <main >
         <Banner
           bannerImg={bannerImg}
-          heading="Managing Committee"
+          heading="Administrative Bodies"
           />
         <CommitteeList
           sectionGap="both"
@@ -69,7 +69,26 @@ const AdministrativeBodies = () => {
             </>
           }
         />
+    <PageContent
+          sectionGap="bottom"
+          className="bg_white"
+          title="In-house Committees"
+          content={
+            <>
+            <div className="d-flex justify-content-center" >
+            <iframe
+        src={`https://docs.google.com/viewerng/viewer?url=${currentDomain}/assets/documents/In-house-Committees.pdf&embedded=true`}
+        style={{ width: "640px", height: "800px" }}
+        allowFullScreen
+        title="Statutory Bodies PDF Viewer"
+      />
 
+      
+            </div>
+           
+            </>
+          }
+        />
         <div></div>
       </main>
     </>
