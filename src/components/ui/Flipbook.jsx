@@ -1,8 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
-import * as pdfjsLib from "pdfjs-dist";
-import "turn.js";
-import $ from "jquery";
+import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf";
+
+import dynamic from "next/dynamic";
 import "./Flipbook.module.css"; // Include CSS from your example
+
+// Dynamically import turn.js and jQuery
+const $ = dynamic(() => import("jquery"), { ssr: false });
+const turnJs = dynamic(() => import("turn.js"), { ssr: false });
 
 // Set up pdfjs worker path
 pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.14.305/pdf.worker.min.js`;
@@ -40,15 +44,20 @@ const Flipbook = ({ pdfUrl }) => {
   }, [pdfUrl]);
 
   useEffect(() => {
-    if (pages.length > 0 && magazineRef.current) {
-      $(magazineRef.current).turn({
-        width: 922,
-        height: 600,
-        elevation: 50,
-        gradients: true,
-        autoCenter: true,
-      });
-    }
+    const initializeFlipbook = async () => {
+      if (pages.length > 0 && magazineRef.current) {
+        await turnJs; // Ensure turn.js is loaded
+        $(magazineRef.current).turn({
+          width: 922,
+          height: 600,
+          elevation: 50,
+          gradients: true,
+          autoCenter: true,
+        });
+      }
+    };
+
+    initializeFlipbook();
   }, [pages]);
 
   const renderPages = () =>

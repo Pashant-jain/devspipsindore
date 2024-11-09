@@ -19,7 +19,7 @@ import {
 } from "@/config";
 import ListingsSection from "@/components/comman/ListingsSection";
 
-const inter = Inter({ subsets: ["latin"] }); // Example of font setup
+
 
 const MandateDisclosure = () => {
   return (
@@ -30,7 +30,7 @@ const MandateDisclosure = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
+      <main >
         <Banner
           bannerImg={bannerImg}
           heading="Policy"

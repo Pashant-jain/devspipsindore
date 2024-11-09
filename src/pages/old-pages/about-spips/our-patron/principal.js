@@ -6,7 +6,7 @@ import PageContent from "@/components/comman/PageContent";
 import styles from "@/styles/Home.module.scss";
 
 
-const inter = Inter({ subsets: ["latin"] }); // Example of font setup
+
 
 const Principal = () => {
   return (
@@ -18,7 +18,7 @@ const Principal = () => {
         <link rel="icon" href="/favicon.ico" />
 
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
+      <main >
         {/* <Banner
           bannerImg={bannerImg}
           heading="Principal"

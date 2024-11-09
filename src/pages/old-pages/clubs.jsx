@@ -18,7 +18,7 @@ import {
 } from "@/config";
 import CommitteeTable from "@/components/comman/CommitteeList";
 
-const inter = Inter({ subsets: ["latin"] }); // Example of font setup
+
 
 const Clubs = () => {
   return (
@@ -29,7 +29,7 @@ const Clubs = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
+      <main >
         <Banner
           bannerImg={bannerImg}
           heading="GREEN FEATURES"
