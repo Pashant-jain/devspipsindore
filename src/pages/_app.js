@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import Layout from "@/components/layout";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "@/styles/globals.scss";
+import { Toaster } from "react-hot-toast";
 
 export default function App({ Component, pageProps, router }) {
 
@@ -31,6 +32,7 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <Layout showFooterCta={showFooterCta} >
+       <Toaster position="top-right" reverseOrder={false} />
       <Component {...pageProps} />
     </Layout>
   );

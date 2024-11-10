@@ -28,7 +28,7 @@ export default function ContactPage() {
       </Head>
       <main >
       ContactPage
-      <ContactForm />
+      <ContactForm sectionGap="both" />
       </main>
     </>
   );
