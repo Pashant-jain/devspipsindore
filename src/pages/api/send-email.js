@@ -1,37 +1,36 @@
-import nodemailer from 'nodemailer';
+import sendgrid from '@sendgrid/mail';
+
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
-    return res.status(405).json({ message: 'Only POST requests allowed' });
+    return res.status(405).json({ message: 'Only POST requests are allowed' });
   }
 
   const { name, email, subject, message } = req.body;
 
+  // Validate required fields
   if (!name || !email || !subject || !message) {
     return res.status(400).json({ message: 'All fields are required' });
   }
 
   try {
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
+    // Log the email details being sent
+    console.log('Sending email to:', process.env.RECIPIENT_EMAIL);
+    console.log('From email:', process.env.SENDGRID_FROM_EMAIL);
 
-    const mailOptions = {
-      from: process.env.EMAIL_USER,
+    // Send the email using SendGrid
+    await sendgrid.send({
       to: process.env.RECIPIENT_EMAIL,
+      from: process.env.SENDGRID_FROM_EMAIL,
       subject: `${subject} (from ${name})`,
       text: message,
-    };
+      replyTo: email,
+    });
 
-    await transporter.sendMail(mailOptions);
-
-    res.status(200).json({ message: 'Email sent successfully' });
+    return res.status(200).json({ message: 'Email sent successfully' });
   } catch (error) {
-    console.error('Error sending email:', error);
-    res.status(500).json({ message: 'Error sending email' });
+    console.error('Error sending email:', error?.response?.body || error.message || error);
+    return res.status(500).json({ message: 'Error sending email', error: error.message });
   }
 }
