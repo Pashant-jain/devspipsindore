@@ -27,7 +27,7 @@ const SocialScience = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Banner bannerImg={bannerImg} heading="Dept. Commerce & Management" />
+        <Banner bannerImg={bannerImg} heading="Dept. of Humanities" />
 
         <Features
           sectionGap="both"

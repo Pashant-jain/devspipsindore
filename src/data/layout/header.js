@@ -688,14 +688,14 @@ export const headerLevel3Data = [
   },
   {
     itemName: "Public Self-Disclosure",
-    link: "",
-    child: [
-      {
-        subItemName: "Public Disclosure- View file",
-        link: "/naac/public-disclosure-view-file/",
-        target: "",
-      },
-    ],
+    link: "/public-disclosure",
+    // child: [
+    //   {
+    //     subItemName: "Public Disclosure- View file",
+    //     link: "/naac/public-disclosure-view-file/",
+    //     target: "",
+    //   },
+    // ],
   },
   {
     itemName: "Contact",
