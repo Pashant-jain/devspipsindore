@@ -8,6 +8,8 @@ import Instagram from "/public/assets/icons/Instagram.svg";
 import Location from "/public/assets/icons/location.svg";
 import Email from "/public/assets/icons/Email.svg";
 import Contact from "/public/assets/icons/contact.svg";
+import Logo from "/public/assets/images/logo.png";
+
 import { ArrowRight } from "lucide-react";
 
 const Footer = ({showFooterCta}) => {
@@ -40,10 +42,10 @@ const Footer = ({showFooterCta}) => {
           <div className={style["footerInner"]}>
             <div className={style["footer_info"]}>
               <Image
-                src={`https://spipsindore.com/wp-content/uploads/2020/09/school_logo.png`}
+                src={Logo}
                 alt="emailIcon"
-                width={100}
-                height={100}
+                width={150}
+                height={150}
               />
               <p className="text-regular">
                 SPIPS is a Self-financed Christian Minority Institute, approved

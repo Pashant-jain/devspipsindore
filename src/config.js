@@ -1,5 +1,5 @@
 import TestimonialImg from "/public/assets/images/testimonial.jpeg";
-import Logo from "/public/assets/images/logo.jpg";
+import Logo from "/public/assets/images/logo.png";
 
 
 export const LibraryAdvisoryCommeitteeTablehead = [

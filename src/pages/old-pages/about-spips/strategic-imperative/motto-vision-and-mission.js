@@ -5,7 +5,7 @@ import Image from "next/image";
 import Banner from "@/components/banner";
 import Features from "@/components/liberary/Features";
 import SectionImage from "/public/assets/images/Director.jpg";
-import Logo from "/public/assets/images/logo.jpg";
+import Logo from "/public/assets/images/logo.png";
 import Vision from "/public/assets/images/Vision.png";
 
 

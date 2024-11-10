@@ -34,7 +34,7 @@ const TabsContent = React.forwardRef(({ className, ...props }, ref) => (
 ));
 TabsContent.displayName = TabsPrimitive.Content.displayName;
 
-function TabNavigation({ tabsData }) {
+function TabNavigation({ tabsData, ...props  }) {
   const tabKeys = Object.keys(tabsData);
   const [activeTabValue, setActiveTabValue] = React.useState(tabKeys[0]);
 
@@ -42,7 +42,7 @@ function TabNavigation({ tabsData }) {
     <Tabs value={activeTabValue} onValueChange={setActiveTabValue} className={style.TabNavigation_wrp}>
       <TabsList className={style.tab_list}>
         {tabKeys.map((tab, index) => (
-          <TabsTrigger key={index} value={tab} activeTabValue={activeTabValue}>
+          <TabsTrigger key={index} value={tab} activeTabValue={activeTabValue} className={props.tabHeadClassName} >
             {tab}
           </TabsTrigger>
         ))}

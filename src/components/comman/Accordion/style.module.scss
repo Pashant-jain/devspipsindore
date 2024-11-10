@@ -1,6 +1,12 @@
 @import '../../../styles/variable';
 .accordion_wrp{
-    
+    .accordion-header{
+      &.open{
+        background-color: $primary;
+        color: $White;
+        border-radius: 8px 8px 0 0;
+      }  
+    }
    
     p{
         color: $Body;
