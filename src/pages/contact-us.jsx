@@ -1,21 +1,9 @@
 import Head from "next/head";
-import dynamic from "next/dynamic";
-
 import Banner from "@/components/banner";
-import NewsAndAnnouncements from "@/components/homePage/ NewsAndAnnouncements";
-import OurStats from "@/components/homePage/OurStats";
-import Testimonials from "@/components/comman/testimonials";
-import TopRecruiters from "@/components/homePage/TopRecruiters";
-import OurGallery from "@/components/homePage/OurGallery";
-import Calander from "@/components/homePage/Calendar";
-
-import { Affiliation, Recruiters } from "@/data";
-import { testimonialsData } from "@/config";
 import ContactForm from "@/components/ContactForm";
 
-const bannerImg = dynamic(
-  () => import("/public/assets/images/front-banner-img.png")
-);
+import bannerImg from "/public/assets/images/college-banner.png";
+
 
 export default function ContactPage() {
   return (
@@ -27,7 +15,10 @@ export default function ContactPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main >
-      ContactPage
+      <Banner
+          bannerImg={bannerImg}
+          heading="Contact Us"
+        />
       <ContactForm sectionGap="both" />
       </main>
     </>

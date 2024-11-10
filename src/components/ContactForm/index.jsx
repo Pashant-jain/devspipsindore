@@ -5,6 +5,10 @@ import { toast } from "react-hot-toast";
 import style from "./style.module.scss";
 import SectionHeading from "../comman/sectionHeading";
 import { Button, Form } from "react-bootstrap";
+import Call from "/public/assets/icons/contact-call.svg";
+import Fax from "/public/assets/icons/contact-fax.svg";
+import Mail from "/public/assets/icons/contact-mail.svg";
+import Image from "next/image";
 
 const ContactForm = ({ sectionGap }) => {
   // Initialize react-hook-form
@@ -24,13 +28,19 @@ const ContactForm = ({ sectionGap }) => {
         data,
         process.env.NEXT_PUBLIC_PUBLIC_KEY
       );
-      toast.success("I have received your message, I will get back to you soon!", {
-        id: toastId,
-      });
+      toast.success(
+        "I have received your message, I will get back to you soon!",
+        {
+          id: toastId,
+        }
+      );
     } catch (error) {
-      toast.error("There was an error sending your message, please try again later!", {
-        id: toastId,
-      });
+      toast.error(
+        "There was an error sending your message, please try again later!",
+        {
+          id: toastId,
+        }
+      );
     }
   };
 
@@ -54,7 +64,7 @@ const ContactForm = ({ sectionGap }) => {
     >
       <div className="container">
         <div className={style["contact_inner"]}>
-          <div className={style["contact_dtl"]}>
+          <div className={style["contact_dtl_wrp"]}>
             <SectionHeading title="Get in Touch" className="mb-5" />
             <Form autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
               {/* Name Input */}
@@ -64,7 +74,9 @@ const ContactForm = ({ sectionGap }) => {
                   placeholder="Name *"
                   {...register("name", { required: "Name is required" })}
                 />
-                {errors.name && <span className="text-danger">{errors.name.message}</span>}
+                {errors.name && (
+                  <span className="text-danger">{errors.name.message}</span>
+                )}
               </Form.Group>
 
               {/* Email Input */}
@@ -80,7 +92,9 @@ const ContactForm = ({ sectionGap }) => {
                     },
                   })}
                 />
-                {errors.email && <span className="text-danger">{errors.email.message}</span>}
+                {errors.email && (
+                  <span className="text-danger">{errors.email.message}</span>
+                )}
               </Form.Group>
 
               {/* Phone Number Input */}
@@ -96,19 +110,29 @@ const ContactForm = ({ sectionGap }) => {
                     },
                   })}
                 />
-                {errors.phone && <span className="text-danger">{errors.phone.message}</span>}
+                {errors.phone && (
+                  <span className="text-danger">{errors.phone.message}</span>
+                )}
               </Form.Group>
 
               {/* Dropdown Select */}
               <Form.Group className="mb-3" controlId="formWhereFind">
-                <Form.Select {...register("whereFind", { required: "Please select an option" })}>
+                <Form.Select
+                  {...register("whereFind", {
+                    required: "Please select an option",
+                  })}
+                >
                   <option value="">How did you find us?</option>
                   <option value="Google">Google</option>
                   <option value="Social Media">Social Media</option>
                   <option value="Friends/Relation">Friends/Relation</option>
                   <option value="Other">Other</option>
                 </Form.Select>
-                {errors.whereFind && <span className="text-danger">{errors.whereFind.message}</span>}
+                {errors.whereFind && (
+                  <span className="text-danger">
+                    {errors.whereFind.message}
+                  </span>
+                )}
               </Form.Group>
 
               {/* Message Textarea */}
@@ -119,7 +143,9 @@ const ContactForm = ({ sectionGap }) => {
                   rows={5}
                   {...register("message", { required: "Message is required" })}
                 />
-                {errors.message && <span className="text-danger">{errors.message.message}</span>}
+                {errors.message && (
+                  <span className="text-danger">{errors.message.message}</span>
+                )}
               </Form.Group>
 
               {/* Submit Button */}
@@ -127,6 +153,30 @@ const ContactForm = ({ sectionGap }) => {
                 Submit
               </Button>
             </Form>
+            <div className={style["contact_dtl"]}>
+              <div className={style["single_contact"]}>
+                <Image src={Call} alt="" width={24} height={24} />
+                <div>
+                  <h5 className="extrasmall-text text-uppercase">PHONE</h5>
+                  <p className="extrasmall-text">+91 731 2499911</p>
+                </div>
+              </div>
+              <div className={style["single_contact"]}>
+                <Image src={Call} alt="" width={24} height={24} />
+                <div>
+                  <h5 className="extrasmall-text text-uppercase">Fax</h5>
+                  <p className="extrasmall-text">
+                  +91 731 2490114</p>
+                </div>
+              </div>
+              <div className={style["single_contact"]}>
+                <Image src={Call} alt="" width={24} height={24} />
+                <div>
+                  <h5 className="extrasmall-text text-uppercase">Email</h5>
+                  <p className="extrasmall-text">info@spipsindore.ac.in</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Embedded Google Map */}

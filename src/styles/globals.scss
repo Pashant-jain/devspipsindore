@@ -357,3 +357,41 @@ a {
   background-color: $White;
 }
 
+.page_not_found_section{
+  .page_not_found_inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    img{
+      @media (max-width: 480px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .page_not_found_content{
+      max-width: 400px;
+      text-align: center;
+      h1{
+        color: $primary;
+        margin-top: 32px;
+        margin-bottom: 16px;
+      }
+      p{
+        color: $Body;
+
+      }
+      a{
+        color: $White;
+        background-color: $primary;
+        border-radius: 100px;
+        padding: 12px 16px;
+        text-align: center;
+        margin-top: 16px;
+        display: inline-block;
+      }
+    }
+   
+  }
+}

@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 60px;
-    .contact_dtl{
+    .contact_dtl_wrp{
       width: 100%;
       h2{
         text-align: left;
@@ -14,6 +14,27 @@
         background-color: $primary;
         padding: 16px;
         width: 100%;
+      }
+      .contact_dtl{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 32px;
+        gap: 30px;
+        .single_contact{
+          display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+          h5{
+            color: $primary;
+            margin-bottom: 8px;
+          }
+          p{
+            color: $Black;
+            margin: unset;
+          }
+        }
       }
     }
     .contact_map{
