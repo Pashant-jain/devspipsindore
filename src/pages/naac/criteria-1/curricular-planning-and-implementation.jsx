@@ -33,25 +33,25 @@ const CurricularPlanningAndImplementation = () => {
     }, []);
   
     // Function to render the iframe
-    const renderIframe = () => {
-      if (!currentDomain) return null; // Prevent rendering until currentDomain is set
-      return (
-        <div className="d-flex justify-content-center">
-          <iframe
-            src={`https://docs.google.com/viewerng/viewer?url=${currentDomain}/assets/documents/NACC2023/AQAR-2022-23.pdf&embedded=true`}
-            style={{ width: "640px", height: "800px" }}
-            allowFullScreen
-            title="AQAR-2022-23"
-          />
-        </div>
-      );
-    };
-  
+    const renderIframe = (fileName) => {
+        if (!currentDomain || !fileName) return null;
+        return (
+          <div className="d-flex justify-content-center">
+            <iframe
+              src={`https://docs.google.com/viewerng/viewer?url=${currentDomain}/assets/documents/NACC2023/${fileName}&embedded=true`}
+              style={{ width: "640px", height: "800px" }}
+              allowFullScreen
+              title={fileName}
+            />
+          </div>
+        );
+      };
+      
     const tabsData = {
-      "Curriculum Delivery": <PageContent sectionGap="both" content={renderIframe()} />,
-      "Adherence to Academic Calendar": <PageContent sectionGap="both" content={renderIframe()} />,
+      "Curriculum Delivery": <PageContent sectionGap="both" content={renderIframe('1.1.1 B.pdf')} />,
+      "Adherence to Academic Calendar": <PageContent sectionGap="both" content={renderIframe('1.1.1 A.pdf')} />,
       "Teachers Participation in Curriculum Development": (
-        <PageContent sectionGap="both" content={renderIframe()} />
+        <PageContent sectionGap="both" content={renderIframe('1.1.2 A.pdf')} />
       ),
     };
   
