@@ -10,7 +10,7 @@ import { aboutSpipsData } from "@/config";
 import Testimonials from "@/components/comman/testimonials";
 import PageContent from "@/components/comman/PageContent";
 
-const AboutSpips = () => {
+const SelfStudyReportCycle = () => {
      const [currentDomain, setCurrentDomain] = useState("");
 
   useEffect(() => {
@@ -57,4 +57,4 @@ const AboutSpips = () => {
   );
 };
 
-export default AboutSpips;
+export default SelfStudyReportCycle;

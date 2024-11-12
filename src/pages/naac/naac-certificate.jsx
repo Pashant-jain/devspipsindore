@@ -9,7 +9,7 @@ import Image from "next/image";
 import { aboutSpipsData } from "@/config";
 import Testimonials from "@/components/comman/testimonials";
 
-const AboutSpips = () => {
+const NaacCertificate = () => {
   return (
     <>
       <Head>
@@ -37,4 +37,4 @@ const AboutSpips = () => {
   );
 };
 
-export default AboutSpips;
+export default NaacCertificate;
