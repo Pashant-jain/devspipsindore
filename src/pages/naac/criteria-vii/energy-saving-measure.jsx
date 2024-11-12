@@ -5,11 +5,17 @@ import Banner from "@/components/banner";
 import Head from "next/head";
 
 import bannerImg from "/public/assets/images/college-banner.png";
+import energySavingMeasureImg from "/public/assets/documents/NACC2023/energy-saving-measure.png";
+
+import Logo from "/public/assets/images/logo.png";
+
 import Accordion from "@/components/comman/Accordion";
 import TabNavigation from "@/components/comman/TabNavigation";
+import Features from "@/components/liberary/Features";
+import Image from "next/image";
 
 
-const CurricularPlanningAndImplementation = () => {
+const EnergySavingMeasure = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [currentDomain, setCurrentDomain] = useState("");
   
@@ -47,36 +53,34 @@ const CurricularPlanningAndImplementation = () => {
         );
       };
       
-    const tabsData = {
-      "Curriculum Delivery": <PageContent sectionGap="both" content={renderIframe('1.1.1 B.pdf')} />,
-      "Adherence to Academic Calendar": <PageContent sectionGap="both" content={renderIframe('1.1.1 A.pdf')} />,
-      "Teachers Participation in Curriculum Development": (
-        <PageContent sectionGap="both" content={renderIframe('1.1.2 A.pdf')} />
-      ),
-    };
-  
     return (
       <>
         <Head>
-          <title>INSTITUTIONAL DISTINCTIVENESS - SPIPS</title>
-        </Head>
+        <title>
+          SPIPS &#8211; St. Paul Institute of Professional Studies, Indore
+        </title>
+        <meta
+          name="description"
+          content="SPIPS - St. Paul Institute of Professional Studies, Indore: A premier educational institution offering top-tier programs in management, commerce, science, and arts. Empowering students with academic excellence, holistic development, and career-oriented learning in a dynamic and inclusive environment."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
         <Banner
           isFrontBanner={false}
           bannerImg={bannerImg}
-          heading={"INSTITUTIONAL DISTINCTIVENESS"}
+          heading={"Energy Saving Measure"}
         />
-        <div className={`spacing_both`}>
+         <div className="spacing_both">
           <div className="container">
-            {isMobile ? (
-              <Accordion tabsData={tabsData} />
-            ) : (
-              <TabNavigation tabsData={tabsData} tabHeadClassName={"p-3"} />
-            )}
+            <div>
+              <Image src={energySavingMeasureImg} alt="" className="w-100" />
+            </div>
           </div>
         </div>
       </>
     );
   };
   
-  export default CurricularPlanningAndImplementation;
+  export default EnergySavingMeasure;
   

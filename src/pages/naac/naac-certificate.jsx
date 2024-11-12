@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "@/components/banner";
 import Head from "next/head";
 
-import NaacCertificate from "/public/assets/documents/NACC2023/naac-certificate.png";
+import NaacCertificateImg from "/public/assets/documents/NACC2023/naac-certificate.png";
 import bannerImg from "/public/assets/images/college-banner.png";
 
 import Image from "next/image";
@@ -28,7 +28,7 @@ const NaacCertificate = () => {
         <div className="spacing_both">
           <div className="container">
             <div>
-              <Image src={NaacCertificate} alt="" className="w-100" />
+              <Image src={NaacCertificateImg} alt="" className="w-100" />
             </div>
           </div>
         </div>
