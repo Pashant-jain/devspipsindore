@@ -1,3 +1,14 @@
+import { useEffect, useState } from "react";
+import PageContent from "@/components/comman/PageContent";
+
+import Banner from "@/components/banner";
+import Head from "next/head";
+
+import bannerImg from "/public/assets/images/college-banner.png";
+import Accordion from "@/components/comman/Accordion";
+import TabNavigation from "@/components/comman/TabNavigation";
+
+
 const CurricularPlanningAndImplementation = () => {
     const [isMobile, setIsMobile] = useState(false);
     const [currentDomain, setCurrentDomain] = useState("");
