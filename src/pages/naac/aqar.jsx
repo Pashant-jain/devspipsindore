@@ -33,17 +33,17 @@ const AboutSpips = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Banner bannerImg={bannerImg} heading="Self Study Report – Cycle 1" />
+        <Banner bannerImg={bannerImg} heading="AQAR" />
         <PageContent
           sectionGap="both"
           content={
             <>
             <div className="d-flex justify-content-center" >
             <iframe
-        src={`https://docs.google.com/viewerng/viewer?url=${currentDomain}/assets/documents/NACC2023/Self-Study-Report-Cycle-1.pdf&embedded=true`}
+        src={`https://docs.google.com/viewerng/viewer?url=${currentDomain}/assets/documents/NACC2023/AQAR-2022-23.pdf&embedded=true`}
         style={{ width: "640px", height: "800px" }}
         allowFullScreen
-        title="Self-Study-Report-Cycle-1"
+        title="AQAR-2022-23"
       />
 
       
