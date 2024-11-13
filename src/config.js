@@ -75,6 +75,21 @@ export const managingCommitteeDeatils = [
     role: "President of IDCP",
   },
 ];
+
+export const AntiRagingCommiteeHead = [
+  { id: "1", key: "Id", title: "S.No.", textAlign: "left" },
+  { id: "1", key: "name", title: "Name", textAlign: "center" },
+  { id: "1", key: "contact", title: "Contact No.", textAlign: "center" },
+];
+
+export const AntiRagingCommiteeDeatils = [
+  {
+    Id: "1",
+    name: "Prof. Rahat Ahmed",
+    contact: "+91 94250 86623",
+  },
+  
+];
   
   export const LibraryWorkingTablehead = [
     { id: "1", key: "Id", title: "Id", textAlign: "left" },

@@ -1,11 +1,12 @@
 // pages/index.js
 
+import NanoGallery from "@/components/NanoGallery";
 import dynamic from "next/dynamic";
 
-// Dynamically import NanoGallery to avoid SSR issues
-const NanoGallery = dynamic(() => import("@/components/ui/NanoGallery"), {
-  ssr: false,
-});
+// // Dynamically import NanoGallery to avoid SSR issues
+// const NanoGallery = dynamic(() => import("@/components/ui/NanoGallery"), {
+//   ssr: false,
+// });
 
 export default function Home() {
   const galleryImages = [
@@ -102,7 +103,8 @@ export default function Home() {
 
   return (
     <div>
-      <NanoGallery images={galleryImages} settings={gallerySettings} />
+        <NanoGallery />
+      {/* <NanoGallery images={galleryImages} settings={gallerySettings} /> */}
     </div>
   );
 }

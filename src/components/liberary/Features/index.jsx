@@ -2,6 +2,8 @@ import React from "react";
 import style from "./style.module.scss";
 import Image from "next/image";
 import SectionHeading from "@/components/comman/sectionHeading";
+import ReactImageGallery from "react-image-gallery";
+
 
 const Features = ({
   sectionGap,
@@ -11,7 +13,9 @@ const Features = ({
   leftImage,
   descriptionClass,
   className,
+  imageSlider,
 }) => {
+  
   return (
     <div
       className={`${style["features_wrp"]} ${className} ${
@@ -39,6 +43,11 @@ const Features = ({
             />
           </div>
           <div className={style["features_right"]}>
+            {imageSlider ? 
+           <ReactImageGallery items={imageSlider} />
+          :
+          
+          
             <Image
               src={SectionImage}
               alt=""
@@ -46,6 +55,7 @@ const Features = ({
               height={608}
               loading="lazy"
             />
+          }
           </div>
         </div>
       </div>
