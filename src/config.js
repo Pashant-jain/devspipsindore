@@ -94,27 +94,21 @@ export const AntiRagingCommiteeDeatils = [
   export const LibraryWorkingTablehead = [
     { id: "1", key: "Id", title: "Id", textAlign: "left" },
     { id: "1", key: "title", title: "Designated Member", textAlign: "center" },
-    { id: "1", key: "details", title: "Details", textAlign: "center" },
     { id: "1", key: "designation", title: "Designation", textAlign: "center" },
+    { id: "1", key: "qualification", title: "Qualification", textAlign: "center" },
   ];
   export const LibraryWorkingTableData = [
     {
       Id: "1",
-      title: "Dr. M.A. Lahori, Director",
-      details: "Director",
-      designation: "Chairman",
+      title: "Dr. SHILPA DHOBLE",
+      qualification: "Ph. D. M. Lib. Sc. , B. Sc., PGDCPA",
+      designation: "Librarian",
     },
     {
         Id: "2",
-        title: "Dr. M.A. Lahori, Director",
-        details: "Director",
-        designation: "Chairman",
-      },
-      {
-        Id: "3",
-        title: "Dr. M.A. Lahori, Director",
-        details: "Director",
-        designation: "Chairman",
+        title: "Mrs. Ritu Kochale",
+        designation: "Library Assistance",
+        qualification: "B.A., DCA, D. EL. ED., Diploma in Yoga",
       },
   ];
   
