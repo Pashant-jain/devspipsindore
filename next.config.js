@@ -5,14 +5,10 @@ const nextConfig = {
 
   images: {
     unoptimized: true,
-    // remotePatterns: [
-    //   {
-    //     hostname: "spipsindore.com",
-    //   },
-    // ],
   },
+
   webpack: (config, { isServer }) => {
-    // Add a rule for loading mp4 video files
+    // Add a rule for loading video files
     config.module.rules.push({
       test: /\.(mp4|webm|ogg|swf|ogv)$/,
       use: {
@@ -20,6 +16,20 @@ const nextConfig = {
         options: {
           publicPath: "/_next/static/videos/",
           outputPath: "static/videos/",
+          name: "[name].[hash].[ext]",
+          esModule: false,
+        },
+      },
+    });
+
+    // Add a rule for loading PDF files
+    config.module.rules.push({
+      test: /\.pdf$/,
+      use: {
+        loader: "file-loader",
+        options: {
+          publicPath: "/_next/static/documents/",
+          outputPath: "static/documents/",
           name: "[name].[hash].[ext]",
           esModule: false,
         },

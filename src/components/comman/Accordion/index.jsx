@@ -21,7 +21,7 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
 };
 
 const Accordion = ({ tabsData }) => {
-  const tabKeys = Object.keys(tabsData);
+  const tabKeys = Object.keys(tabsData || {}); // Add fallback to empty object
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
@@ -42,5 +42,6 @@ const Accordion = ({ tabsData }) => {
     </div>
   );
 };
+
 
 export default Accordion;
