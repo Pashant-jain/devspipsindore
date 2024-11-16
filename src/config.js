@@ -90,6 +90,54 @@ export const AntiRagingCommiteeDeatils = [
   },
   
 ];
+
+export const grivienceCommiteeHead = [
+  { id: "1", key: "Id", title: "S.No.", textAlign: "left" },
+  { id: "1", key: "name", title: "Staff Name", textAlign: "center" },
+  { id: "1", key: "designation", title: "Designation", textAlign: "center" },
+  { id: "1", key: "department", title: "Department", textAlign: "center" },
+
+];
+
+export const grivienceCommiteeDeatils = [
+  {
+    Id: "1",
+    name: "Prof. Rahat Ahmed",
+    designation: "Convener",
+    department: "Humanities",
+  },
+  {
+    Id: "2",
+    name: "Prof. Madhavi Tarani",
+    designation: "Joint Convener",
+    department: "Management",
+  },
+  {
+    Id: "3",
+    name: "Dr. Stafard Anthony",
+    designation: "Member",
+    department: "Management",
+  },
+  {
+    Id: "4",
+    name: "Prof. Vidhi Pariyani",
+    designation: "Member",
+    department: "Commerce",
+  },
+  {
+    Id: "5",
+    name: "Prof. Ashay Joshi",
+    designation: "Member",
+    department: "Commerce",
+  },
+  {
+    Id: "6",
+    name: "Dr. Avinash Yadav",
+    designation: "Member",
+    department: "Physical Education",
+  },
+];
+
   
   export const LibraryWorkingTablehead = [
     { id: "1", key: "Id", title: "Id", textAlign: "left" },

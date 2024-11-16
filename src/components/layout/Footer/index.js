@@ -24,12 +24,12 @@ const Footer = ({showFooterCta}) => {
               <br /> Career with us?
             </h2>
             <div className={style["btn_wrp"]}>
-              <Link href={"#"} className={`flex gap-2 items-center ${style["btn_primary"]}`}>
-                Search Course
+              <Link href={"/student-corner/admissions/admission-procedure/"} className={`flex gap-2 items-center ${style["btn_primary"]}`}>
+                Apply Now
                 <ArrowRight />
               </Link>
-              <Link href={"#"} className={`flex gap-2 items-center ${style["btn_secondary"]}`}>
-                Search Course
+              <Link href={"/contact-us/"} className={`flex gap-2 items-center ${style["btn_secondary"]}`}>
+                Contact Us
                 <ArrowRight />
               </Link>
             </div>
@@ -79,17 +79,26 @@ const Footer = ({showFooterCta}) => {
                 <h6 className="heading-6">Featured Links</h6>
 
                 <div className={style["List"]}>
-                  <Link href={`/news`} className="text-regular">
-                    News
+                <Link href={`https://www.nirfindia.org/`} className="text-regular" target="_blank">
+                  NIRF
                   </Link>
-                  <Link href={`/Gallery`} className="text-regular">
-                    Gallery
+                  <Link href={`/student-corner/examination-cell/exam-notifications/`} className="text-regular">
+                  Exam Notifications
                   </Link>
-                  <Link href={`/Magazine`} className="text-regular">
-                    Magazine
+                  <Link href={`https://ecare.spipsindore.com/app/login`} className="text-regular" target="_blank">
+                  E-Care
                   </Link>
-                  <Link href={`/Chronicles`} className="text-regular">
-                    Chronicles
+                  <Link href={`/student-corner/examination-cell/results/`} className="text-regular">
+                  Results
+                  </Link>
+                 
+                
+                  <Link href={`/naac/naac-certificate/`} className="text-regular">
+                  NAAC
+                  </Link>
+                  
+                  <Link href={`/iqac/about/`} className="text-regular">
+                  SPIPS IQAC
                   </Link>
                   <Link
                     href={`https://www.mponline.gov.in/portal/`}
@@ -97,6 +106,10 @@ const Footer = ({showFooterCta}) => {
                     className="text-regular"
                   >
                     MP Online
+                  </Link>
+                 
+                  <Link href={`/Chronicles`} className="text-regular">
+                    Chronicles
                   </Link>
                   <Link
                     href={`https://nlist.inflibnet.ac.in/`}
@@ -108,14 +121,12 @@ const Footer = ({showFooterCta}) => {
                   <Link href={`/news`} className="text-regular">
                     Newsletter
                   </Link>
-                  <Link href={`/journals`} className="text-regular">
-                    Journals
-                  </Link>
+                 
                   <Link href={`/news`} className="text-regular">
                     DAVV
                   </Link>
-                  <Link href={`/news`} className="text-regular">
-                    Announcements
+                  <Link href={`/careers`} className="text-regular">
+                    Careers
                   </Link>
                 </div>
               </div>

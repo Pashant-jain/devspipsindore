@@ -32,13 +32,11 @@ const Banner = ({ isFrontBanner, bannerImg, heading, description,Contact }) => {
                 <div className={`${style["bannner_content"]}`}>
                   <span>We are the leaders</span>
                   <h1 className="heading-1">
-                    Discover the key
-                    <br /> to grow your business
+                  LET YOUR LIGHT SHINE
+                 
                   </h1>
                   <p className="text-regular">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elidolor
-                    mattis sit
-                    <br /> phasellus mollis sit aliquam sit nullam neques.
+                  “LET YOUR LIGHT SHINE” celebrates individuality and self-expression.<br/> We strive to shape global citizens with professionalism, character,<br/> and integrity, empowering them to make a positive impact.
                   </p>
                   {/* <Form>
                     <div
@@ -110,7 +108,7 @@ const Banner = ({ isFrontBanner, bannerImg, heading, description,Contact }) => {
                   <p className="text-regular my-4">{description}</p>
                   {Contact &&
                   (
-                    <Button type="submit" variant="secondary">
+                    <Button type="link"  href="/contact-us/" variant="secondary">
                       Contact Us
                       <ArrowRight />
                     </Button>

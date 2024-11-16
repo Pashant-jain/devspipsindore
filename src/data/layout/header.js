@@ -493,34 +493,36 @@ export const headerLevel3Data = [
       },
       {
         subItemName: "Admission",
-        child: [
+        link: "#",
+        target: "",
+        submenuChild: [
           {
-            subItemName: "Prospectus",
+            innerSubItemName: "Prospectus",
             link: "/student-corner/admissions/prospectus/",
             target: "",
           },
           {
-            subItemName: "Fee Structure",
+            innerSubItemName: "Fee Structure",
             link: "/student-corner/admissions/fee-structure/",
             target: "",
           },
           {
-            subItemName: "Admission Procedure",
-            link: "/student-corner/admissions/admission-procedure-2/",
+            innerSubItemName: "Admission Procedure",
+            link: "/student-corner/admissions/admission-procedure/",
             target: "",
           },
           {
-            subItemName: "Student List",
+            innerSubItemName: "Student List",
             link: "/student-corner/admissions/student-list/",
             target: "",
           },
           {
-            subItemName: "Syllabus",
+            innerSubItemName: "Syllabus",
             link: "/student-corner/admissions/syllabus/",
             target: "",
           },
           {
-            subItemName: "Mode of Payment & Policies",
+            innerSubItemName: "Mode of Payment & Policies",
             link: "/student-corner/admissions/mode-of-payment-policies/",
             target: "",
           },
@@ -528,14 +530,16 @@ export const headerLevel3Data = [
       },
       {
         subItemName: "EXAMINATION CELL",
-        child: [
+        link: "#",
+        target: "",
+        submenuChild: [
           {
-            subItemName: "Exam Notifications",
+            innerSubItemName: "Exam Notifications",
             link: "/student-corner/examination-cell/exam-notifications/",
             target: "",
           },
           {
-            subItemName: "Results",
+            innerSubItemName: "Results",
             link: "/student-corner/examination-cell/results/",
             target: "",
           },
@@ -546,16 +550,16 @@ export const headerLevel3Data = [
         link: "/student-corner/internal-compliant-committee/",
         target: "",
       },
-      {
-        subItemName: "Equal Opportunity Cell",
-        link: "/student-corner/equal-opportunity-cell/",
-        target: "",
-      },
-      {
-        subItemName: "Social Economically Disadvantaged Groups",
-        link: "/facilities/social-economically-disadvantaged-groups/",
-        target: "",
-      },
+      // {
+      //   subItemName: "Equal Opportunity Cell",
+      //   link: "/student-corner/equal-opportunity-cell/",
+      //   target: "",
+      // },
+      // {
+      //   subItemName: "Social Economically Disadvantaged Groups",
+      //   link: "/facilities/social-economically-disadvantaged-groups/",
+      //   target: "",
+      // },
     ],
   },
   {
@@ -699,18 +703,18 @@ export const headerLevel3Data = [
   },
   {
     itemName: "Contact",
-    link: "",
-    child: [
-      {
-        subItemName: "Contact Us",
-        link: "/contact-us",
-        target: "",
-      },
-      {
-        subItemName: "Apply For Jobs",
-        link: "/wp-content/uploads/2020/12/JOb.pdf",
-        target: "",
-      },
-    ],
+    link: "/contact-us",
+    // child: [
+    //   {
+    //     subItemName: "Contact Us",
+    //     link: "/contact-us",
+    //     target: "",
+    //   },
+    //   {
+    //     subItemName: "Apply For Jobs",
+    //     link: "/wp-content/uploads/2020/12/JOb.pdf",
+    //     target: "",
+    //   },
+    // ],
   },
 ];

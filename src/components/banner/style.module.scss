@@ -55,6 +55,10 @@
         font-family: $font-ABeeZee;
         color: $White;
       }
+      button{
+        width: 180px;
+    display: block;
+      }
       .front_banner_form {
         display: flex;
         justify-content: space-between;
