@@ -20,29 +20,29 @@ const ContactForm = ({ sectionGap }) => {
 
   // Email sending function using EmailJS
   const sendEmail = async (data) => {
+
+    // console.log("Data to send:", data);  // Log the data being sent
     const toastId = toast.loading("Sending your message, please wait...");
     try {
       await emailjs.send(
         'service_xj6vceg',
-        'service_xj6vceg',
-        data,
+        'template_coobn8j',  // Use correct template ID
+        {
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          message: data.message,
+          whereFind: data.whereFind
+        },
         '9RQeYekv_rL9W-Lmg'
       );
-      toast.success(
-        "I have received your message, I will get back to you soon!",
-        {
-          id: toastId,
-        }
-      );
+      toast.success("Message sent successfully", { id: toastId });
     } catch (error) {
-      toast.error(
-        "There was an error sending your message, please try again later!",
-        {
-          id: toastId,
-        }
-      );
+      // console.error("EmailJS Error:", error);
+      toast.error("Error sending message, try again later.", { id: toastId });
     }
   };
+  
 
   // Handle form submission
   const onSubmit = (data) => {
