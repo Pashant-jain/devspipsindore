@@ -42,13 +42,13 @@ const CalendarComponent = ({ sectionGap }) => {
       <div className="container flex flex-col gap-5">
         <SectionHeading
           title="SPIPS Calendar"
-          description={
-            <>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit dolor mattis
-              sit phasellus mollis sit <br />
-              aliquam sit nullam neque.
-            </>
-          }
+          // description={
+          //   <>
+          //     Lorem ipsum dolor sit amet consectetur adipiscing elit dolor mattis
+          //     sit phasellus mollis sit <br />
+          //     aliquam sit nullam neque.
+          //   </>
+          // }
         />
         <div className={style["calander_inner"]}>
           <div className="h-50">

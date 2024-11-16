@@ -4,7 +4,7 @@ import React from "react";
 
 import BishopSign from "/public/assets/images/Bishop-sign.png";
 import Features from "@/components/liberary/Features";
-import SectionImage from "/public/assets/images/Bishop_Chacko.jpg";
+import SectionImage from "/public/assets/images/Bishop_Thoman.jpeg";
 import bannerImg from "/public/assets/images/college-banner.png";
 
 import Image from "next/image";
@@ -30,52 +30,13 @@ const Chairman = () => {
           SectionImage={SectionImage}
           descriptionClass="about_message"
           className="bg_white"
+          title={'About The Chairman'}
           content={
-            <>
-              <h3 className="heading-5">
-                St. Paul Institute of Professional Studies began its humble
-                journey in the year 2010 and ever since, has been endeavoring to
-                successfully march ahead, offering its service in the city of
-                Indore.
-              </h3>
-              <br />
-              <strong className="small-text">
-                “O Lord, grant us success” Psalms 118:25.
-              </strong>
-              This word of God has brought forth fruits and I am happy to see
-              the impact SPIPS has made in the city and its surroundings during
-              these years. The blessings of God, the prayers of St. Paul, the
-              dedicated staff, and the goodwill of the parents and the hard work
-              of the students have contributed to make its light shine.
-              Additional structures have been built and the facilities have been
-              expanded, making SPIPS one of the colleges with best
-              infrastructure and facilities. Believing what is mentioned in the
-              Holy Bible,
-              <strong className="small-text">
-                “For I know the plans I have for you,” declares the LORD, “plans
-                to prosper you and not to harm you, plans to give you hope and a
-                future.” Jeremiah 29:11,
-              </strong>
-              I encourage all students who are serious about their future to
-              join the bandwagon and work for the development of their gifts and
-              abilities under the able guidance of the faculty members. We want
-              you to become good leaders and serve our nation.
-              <br />
-              <br />
-              <Image
-                src={BishopSign}
-                alt=""
-                width={120}
-                height={57}
-                loading="lazy"
-              />
-              <br />
-              <br />
-              <strong className="small-text">
-                Most Rev. Bp. Dr. Chacko Thottumarickal, SVD Bishop of Catholic
-                Diocese of Indore
-              </strong>
-            </>
+            <p className="small-text">
+              Bishop Thomas Mathew Kuttimackal is the current Bishop of Indore, India. Born on February 25, 1962, in Kalloorkad, Kerala, in the Diocese of Kothamangalam, he was ordained a priest on November 25, 1987, for the Diocese of Indore. Pope Francis appointed him as the Bishop of Indore on February 17, 2024, and he was ordained as bishop on April 5, 2024.
+<br/><br/>
+Throughout his ecclesiastical journey, Bishop Kuttimackal has held various positions, including assistant parish priest at Indore Cathedral, vice-principal and principal of St. Paul School Indore, rector of Jhabua and Dewas Minor Seminaries, and parish priest in Dewas and Indore. His dedication to the church and his extensive experience in education and parish work have been instrumental in his leadership roles
+            </p>
           }
         />
       

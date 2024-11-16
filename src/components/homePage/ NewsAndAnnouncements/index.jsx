@@ -58,13 +58,13 @@ const NewsAndAnnouncements = ({ sectionGap }) => {
       <div className="container">
         <SectionHeading
           title="Announcements and News"
-          description={
-            <>
-              Lorem ipsum dolor sit amet consectetur adipiscing elitdolor mattis
-              sit phasellus mollis sit <br />
-              aliquam sit nullam neques.
-            </>
-          }
+          // description={
+          //   <>
+          //     Lorem ipsum dolor sit amet consectetur adipiscing elitdolor mattis
+          //     sit phasellus mollis sit <br />
+          //     aliquam sit nullam neques.
+          //   </>
+          // }
         />
         <div className={`Announcements_list ${style["Announcements_list"]}`}>
           <Slider {...settings}>
