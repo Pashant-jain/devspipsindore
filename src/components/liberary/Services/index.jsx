@@ -17,8 +17,8 @@ const Services = () => {
           }
         />
         <div className={style["services_list"]}>
-          <ServicesCard />
-          <ServicesCard />
+          <ServicesCard title={'Access to e-resources'} description={''} />
+          <ServicesCard  title={'1Lack+ Books'} description={''}  />
           <ServicesCard />
           <ServicesCard />
         </div>

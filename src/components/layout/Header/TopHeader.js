@@ -10,10 +10,10 @@ import Image from "next/image";
 import { Button } from "react-bootstrap";
 import { headerLevel1Data } from "@/data/layout/header";
 
-const TopHeader = ({ handleShow }) => {
+const TopHeader = ({ handleShow,scrolled }) => {
   return (
     <div className="text-center">
-      <div className={styles["topHeader_sect"]}>
+      <div className={`${styles["topHeader_sect"]} ${scrolled && 'fixedTopMenu'}`}>
         <div className="container">
           <div className={styles["topHeader"]}>
             <div className={styles["topHeader_inner"]}>
@@ -46,7 +46,7 @@ const TopHeader = ({ handleShow }) => {
           </div>
         </div>
       </div>
-
+{!scrolled && 
       <div className={styles["CollegeLogo_section"]}>
         <div className="container">
           <div className={styles["CollegeLogo_wrp"]}>
@@ -70,6 +70,7 @@ const TopHeader = ({ handleShow }) => {
           </div>
         </div>
       </div>
+      }
     </div>
   );
 };

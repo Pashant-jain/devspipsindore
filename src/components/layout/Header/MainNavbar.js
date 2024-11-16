@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Dropdown } from "react-bootstrap";
 import { headerLevel3Data } from "@/data/layout/header";
 
-const MainNavbar = () => {
+const MainNavbar = ({className}) => {
   return (
-    <div className={`${style["MainNavbar"]} ${style["desktopMenu"]}`}>
+    <div className={`${style["MainNavbar"]} ${style["desktopMenu"]} ${className}`}>
       {headerLevel3Data?.map((menu, index) => (
         <div key={index}>
           {menu.child ? (
