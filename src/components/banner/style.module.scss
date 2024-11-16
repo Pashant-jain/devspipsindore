@@ -38,6 +38,7 @@
       flex-direction: column;
       gap: 20px;
       padding-left: 50px;
+      
       span {
         font-family: $font-ABeeZee;
         font-size: 24px;
@@ -55,10 +56,7 @@
         font-family: $font-ABeeZee;
         color: $White;
       }
-      button{
-        width: 180px;
-    display: block;
-      }
+     
       .front_banner_form {
         display: flex;
         justify-content: space-between;
@@ -101,9 +99,11 @@
           font-family: $font-ABeeZee;
           color: $White;
         }
-        button {
+        button,a {
           color: $Black;
           font-weight: 600;
+          width: 180px;
+          display: block;
         }
       }
     }

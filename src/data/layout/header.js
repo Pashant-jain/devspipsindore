@@ -9,12 +9,12 @@ export const headerLevel1Data = {
 
 export const headerLevel2Data = {
   links: [
-    { href: "library", text: "Library", target: "" },
+    { href: "/facilities/library/", text: "Library", target: "" },
     { href: "clubs", text: "Clubs", target: "" },
     { href: "#", text: "Students", target: "" },
-    { href: "#", text: "Staff", target: "" },
-    { href: "#", text: "Photo Gallery", target: "" },
-    { href: "#", text: "NIRF", target: "" },
+    { href: "/spips-core/alumni-corner/", text: "Alumni", target: "" },
+    { href: "/facilities/labs/", text: "Labs", target: "" },
+    { href: "https://www.nirfindia.org/", text: "NIRF", target: "_blank" },
   ],
 };
 
@@ -598,98 +598,98 @@ export const headerLevel3Data = [
       },
     ],
   },
-  {
-    itemName: "Gallery",
-    link: "",
-    child: [
-      {
-        subItemName: "Photo Gallery",
-        link: "/gallery/photo-gallery/",
-        target: "",
-      },
-      {
-        subItemName: "Video Gallery",
-        link: "/gallery/video-gallery/",
-        target: "",
-      },
-      {
-        subItemName: "Publications",
-        child: [
-          {
-            subItemName: "Magazine",
-            link: "/gallery/publications/magazine/",
-            target: "",
-          },
-          {
-            subItemName: "SPIPS Memoir",
-            link: "/gallery/publications/spips-memoir/",
-            target: "",
-          },
-          {
-            subItemName: "Newsletter",
-            link: "/gallery/publications/newsletter/",
-            target: "",
-          },
-        ],
-      },
-      {
-        subItemName: "Awards & Recognitions",
-        child: [
-          {
-            subItemName: "Awards",
-            link: "/gallery/awards-recognitions/awards/",
-            target: "",
-          },
-          {
-            subItemName: "Newspaper Coverage",
-            link: "/gallery/awards-recognitions/newspaper-coverage/",
-            target: "",
-          },
-        ],
-      },
-      {
-        subItemName: "Physical Facilities Gallery",
-        link: "/gallery/physical-facilities-gallery/",
-        target: "",
-      },
-    ],
-  },
-  {
-    itemName: "Research",
-    link: "",
-    child: [
-      {
-        subItemName: "Projects",
-        link: "/research/projects/",
-        target: "",
-      },
-      {
-        subItemName: "Research Guides",
-        link: "/research/research-guides/",
-        target: "",
-      },
-      {
-        subItemName: "Events & Activities",
-        link: "/research/events-activities/",
-        target: "",
-      },
-      {
-        subItemName: "Collaboration & Linkages",
-        link: "/research/collaboration-linkages/",
-        target: "",
-      },
-      {
-        subItemName: "Journals",
-        link: "/research/journals/",
-        target: "",
-      },
-      {
-        subItemName: "Faculty Development",
-        link: "/gallery/faculty-development/",
-        target: "",
-      },
-    ],
-  },
+  // {
+  //   itemName: "Gallery",
+  //   link: "",
+  //   child: [
+  //     {
+  //       subItemName: "Photo Gallery",
+  //       link: "/gallery/photo-gallery/",
+  //       target: "",
+  //     },
+  //     {
+  //       subItemName: "Video Gallery",
+  //       link: "/gallery/video-gallery/",
+  //       target: "",
+  //     },
+  //     {
+  //       subItemName: "Publications",
+  //       child: [
+  //         {
+  //           subItemName: "Magazine",
+  //           link: "/gallery/publications/magazine/",
+  //           target: "",
+  //         },
+  //         {
+  //           subItemName: "SPIPS Memoir",
+  //           link: "/gallery/publications/spips-memoir/",
+  //           target: "",
+  //         },
+  //         {
+  //           subItemName: "Newsletter",
+  //           link: "/gallery/publications/newsletter/",
+  //           target: "",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       subItemName: "Awards & Recognitions",
+  //       child: [
+  //         {
+  //           subItemName: "Awards",
+  //           link: "/gallery/awards-recognitions/awards/",
+  //           target: "",
+  //         },
+  //         {
+  //           subItemName: "Newspaper Coverage",
+  //           link: "/gallery/awards-recognitions/newspaper-coverage/",
+  //           target: "",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       subItemName: "Physical Facilities Gallery",
+  //       link: "/gallery/physical-facilities-gallery/",
+  //       target: "",
+  //     },
+  //   ],
+  // },
+  // {
+  //   itemName: "Research",
+  //   link: "",
+  //   child: [
+  //     {
+  //       subItemName: "Projects",
+  //       link: "/research/projects/",
+  //       target: "",
+  //     },
+  //     {
+  //       subItemName: "Research Guides",
+  //       link: "/research/research-guides/",
+  //       target: "",
+  //     },
+  //     {
+  //       subItemName: "Events & Activities",
+  //       link: "/research/events-activities/",
+  //       target: "",
+  //     },
+  //     {
+  //       subItemName: "Collaboration & Linkages",
+  //       link: "/research/collaboration-linkages/",
+  //       target: "",
+  //     },
+  //     {
+  //       subItemName: "Journals",
+  //       link: "/research/journals/",
+  //       target: "",
+  //     },
+  //     {
+  //       subItemName: "Faculty Development",
+  //       link: "/gallery/faculty-development/",
+  //       target: "",
+  //     },
+  //   ],
+  // },
   {
     itemName: "Public Self-Disclosure",
     link: "/public-disclosure",
