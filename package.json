@@ -23,6 +23,7 @@
     "embla-carousel-react": "^8.3.0",
     "file-loader": "^6.2.0",
     "lucide-react": "^0.453.0",
+    "nanogallery2": "^3.0.5",
     "next": "^14.2.15",
     "pdfjs-dist": "^4.7.76",
     "react": "^18",
