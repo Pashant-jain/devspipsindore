@@ -9,6 +9,7 @@ import missionImg from "/public/assets/images/our-mission.png";
 import motoImg from "/public/assets/images/education-img.png";
 
 
+
 import Vision from "/public/assets/images/Vision.png";
 import PageContent from "@/components/comman/PageContent";
 import { useEffect, useState } from "react";
