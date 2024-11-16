@@ -4,7 +4,7 @@ import React from "react";
 import styles from "@/styles/Home.module.scss";
 import { Inter } from "next/font/google"; // Replace with actual font import if using
 
-import bannerImg from "/public/assets/images/liberary-banner.png";
+import bannerImg from "/public/assets/images/college-banner.png";
 import SectionHeading from "@/components/comman/sectionHeading";
 import PageContent from "@/components/comman/PageContent";
 import Features from "@/components/liberary/Features";
