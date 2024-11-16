@@ -10,10 +10,9 @@ export const headerLevel1Data = {
 export const headerLevel2Data = {
   links: [
     { href: "/facilities/library/", text: "Library", target: "" },
-    { href: "clubs", text: "Clubs", target: "" },
-    { href: "#", text: "Students", target: "" },
-    { href: "/spips-core/alumni-corner/", text: "Alumni", target: "" },
+    { href: "student-corner/clubs", text: "Clubs", target: "" },
     { href: "/facilities/labs/", text: "Labs", target: "" },
+    { href: "/spips-core/alumni-corner/", text: "Alumni", target: "" },
     { href: "https://www.nirfindia.org/", text: "NIRF", target: "_blank" },
   ],
 };

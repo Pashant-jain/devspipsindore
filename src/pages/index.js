@@ -14,6 +14,17 @@ import { testimonialsData } from "@/config";
 import Features from "@/components/liberary/Features";
 import FeaturedCourses from "@/components/homePage/FeatruredCourses";
 
+
+import DeptOfScience from '/public/assets/images/department-of-science.jpg'
+import DeptOfCommerce from '/public/assets/images/DEPARTMENT-OF-COMMERCE.png'
+import DeptOfComputerScience from '/public/assets/images/dept-of-computer-science.jpg'
+import DeptOfManagement from '/public/assets/images/dept-of-computer-management.jpg'
+import DeptOfhumanities from '/public/assets/images/dept-of-computer-humanities.jpg'
+import DeptOfPHysicalEdu from '/public/assets/images/department-of-phy-edu.jpg'
+
+
+
+
 const bannerImg = dynamic(() =>
   import("/public/assets/images/front-banner-img.png")
 );
@@ -27,6 +38,7 @@ const contentData = [
       {/* Department of Commerce Section */}
       <Features
         descriptionClass="about_message"
+        SectionImage={DeptOfCommerce}
         content={
           <>
             <h3 className="heading-5">DEPARTMENT OF COMMERCE</h3>
@@ -64,6 +76,7 @@ const contentData = [
       <Features
         descriptionClass="about_message"
         leftImage={true}
+        SectionImage={DeptOfManagement}
         content={
           <>
             <h3 className="heading-5">DEPARTMENT OF MANAGEMENT</h3>
@@ -98,6 +111,7 @@ const contentData = [
     content: (
       <>
       <Features
+      SectionImage={DeptOfScience}
         descriptionClass="about_message"
         content={
           <>
@@ -133,6 +147,7 @@ const contentData = [
       <Features
         descriptionClass="about_message"
         leftImage={true}
+        SectionImage={DeptOfComputerScience}
         content={
           <>
             <h3 className="heading-5">DEPARTMENT OF COMPUTER SCIENCE</h3>
@@ -178,7 +193,7 @@ const contentData = [
     content: (
       <>
       <Features
-       
+       SectionImage={DeptOfhumanities}
         descriptionClass="about_message"
         content={
           <>
@@ -216,7 +231,7 @@ const contentData = [
       />
 
       <Features
-       
+       SectionImage={DeptOfPHysicalEdu}
         descriptionClass="about_message"
         leftImage={true}
        

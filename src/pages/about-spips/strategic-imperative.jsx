@@ -4,11 +4,15 @@ import Image from "next/image";
 
 import Banner from "@/components/banner";
 import Features from "@/components/liberary/Features";
-import SectionImage from "/public/assets/images/Director.jpg";
 import Logo from "/public/assets/images/logo.png";
+import missionImg from "/public/assets/images/our-mission.png";
+import motoImg from "/public/assets/images/education-img.png";
+
+
 import Vision from "/public/assets/images/Vision.png";
 import PageContent from "@/components/comman/PageContent";
 import { useEffect, useState } from "react";
+
 
 
 
@@ -37,7 +41,7 @@ function StrategicImperativePage() {
       />
       <Features
           sectionGap="both"
-          SectionImage={Logo}
+          SectionImage={motoImg}
           descriptionClass="about_message"
           className="bg_white"
           title={'Our Motto'}
@@ -69,7 +73,7 @@ function StrategicImperativePage() {
         />
          <Features
           sectionGap="bottom"
-          SectionImage={Logo}
+          SectionImage={missionImg}
           descriptionClass="about_message"
           className="bg_white"
           title={'Our Mission'}
