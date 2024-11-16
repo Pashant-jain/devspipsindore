@@ -247,7 +247,7 @@ making.
 
 equation to analyze the effect of business transactions
 
-on an organization's accounting records and financial
+on an organization&apos;s accounting records and financial
 
 statements.
 
@@ -539,7 +539,7 @@ making.
 
 equation to analyze the effect of business transactions
 
-on an organization's accounting records and financial
+on an organization&apos;s accounting records and financial
 
 statements.
 
@@ -622,7 +622,7 @@ Business Communication
 <td colspan="3" width="149">Desktop Publishing &amp; Multimedia</td>
 <td width="396">1.Used properly, <strong>desktop publishing</strong> enhances visual communication and streamlines the process of disseminating information of all kinds.
 
-2.It's also the method of file preparation that ensures files print properly so that communications get out in a timely manner.</td>
+2.It&apos;s also the method of file preparation that ensures files print properly so that communications get out in a timely manner.</td>
 
 </tr>
 <tr>
@@ -698,9 +698,9 @@ Business Communication
 
 4. Explain how organizations adapt to an uncertain environment and identify techniques managers use to influence and control the internal environment.
 
-5. Practice the process of management's four functions: planning, organizing, leading, and controlling.
+5. Practice the process of management&apos;s four functions: planning, organizing, leading, and controlling.
 
-6. Identify and properly use vocabularies within the field of management to articulate one's own position on a specific management issue and communicate effectively with varied audiences.
+6. Identify and properly use vocabularies within the field of management to articulate one&apos;s own position on a specific management issue and communicate effectively with varied audiences.
 
 7. Evaluate leadership styles to anticipate the consequences of each leadership style.
 
@@ -863,7 +863,7 @@ making.
 
 equation to analyze the effect of business transactions
 
-on an organization's accounting records and financial
+on an organization&apos;s accounting records and financial
 
 statements.
 
@@ -1020,9 +1020,9 @@ Business Communication
 
 4. Explain how organizations adapt to an uncertain environment and identify techniques managers use to influence and control the internal environment.
 
-5. Practice the process of management's four functions: planning, organizing, leading, and controlling.
+5. Practice the process of management&apos;s four functions: planning, organizing, leading, and controlling.
 
-6. Identify and properly use vocabularies within the field of management to articulate one's own position on a specific management issue and communicate effectively with varied audiences.
+6. Identify and properly use vocabularies within the field of management to articulate one&apos;s own position on a specific management issue and communicate effectively with varied audiences.
 
 7. Evaluate leadership styles to anticipate the consequences of each leadership style.
 
@@ -1165,7 +1165,7 @@ making.
 
 equation to analyze the effect of business transactions
 
-on an organization's accounting records and financial
+on an organization&apos;s accounting records and financial
 
 statements.
 
@@ -1322,9 +1322,9 @@ Business Communication
 
 4. Explain how organizations adapt to an uncertain environment and identify techniques managers use to influence and control the internal environment.
 
-5. Practice the process of management's four functions: planning, organizing, leading, and controlling.
+5. Practice the process of management&apos;s four functions: planning, organizing, leading, and controlling.
 
-6. Identify and properly use vocabularies within the field of management to articulate one's own position on a specific management issue and communicate effectively with varied audiences.
+6. Identify and properly use vocabularies within the field of management to articulate one&apos;s own position on a specific management issue and communicate effectively with varied audiences.
 
 7. Evaluate leadership styles to anticipate the consequences of each leadership style.
 
@@ -1406,7 +1406,7 @@ Business Communication
 </tr>
 <tr>
 <td colspan="3" width="150">Entrepreneurship Development</td>
-<td colspan="2" width="398">It enables the student to understand the means of enhancing the knowledge and skill of <strong>entrepreneurs</strong> through several classroom coaching and programs, and training. This <strong>entrepreneur development</strong> process helps new firms or ventures get better in achieving their goals, improve business and the nation's economy.</td>
+<td colspan="2" width="398">It enables the student to understand the means of enhancing the knowledge and skill of <strong>entrepreneurs</strong> through several classroom coaching and programs, and training. This <strong>entrepreneur development</strong> process helps new firms or ventures get better in achieving their goals, improve business and the nation&apos;s economy.</td>
 
 </tr>
 <tr>
@@ -1467,7 +1467,7 @@ making.
 
 equation to analyze the effect of business transactions
 
-on an organization's accounting records and financial
+on an organization&apos;s accounting records and financial
 
 statements.
 
@@ -1624,9 +1624,9 @@ Business Communication
 
 4. Explain how organizations adapt to an uncertain environment and identify techniques managers use to influence and control the internal environment.
 
-5. Practice the process of management's four functions: planning, organizing, leading, and controlling.
+5. Practice the process of management&apos;s four functions: planning, organizing, leading, and controlling.
 
-6. Identify and properly use vocabularies within the field of management to articulate one's own position on a specific management issue and communicate effectively with varied audiences.
+6. Identify and properly use vocabularies within the field of management to articulate one&apos;s own position on a specific management issue and communicate effectively with varied audiences.
 
 7. Evaluate leadership styles to anticipate the consequences of each leadership style.
 

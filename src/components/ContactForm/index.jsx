@@ -23,10 +23,10 @@ const ContactForm = ({ sectionGap }) => {
     const toastId = toast.loading("Sending your message, please wait...");
     try {
       await emailjs.send(
-        process.env.NEXT_PUBLIC_SERVICE_ID,
-        process.env.NEXT_PUBLIC_TEMPLATE_ID,
+        'service_xj6vceg',
+        'service_xj6vceg',
         data,
-        process.env.NEXT_PUBLIC_PUBLIC_KEY
+        '9RQeYekv_rL9W-Lmg'
       );
       toast.success(
         "I have received your message, I will get back to you soon!",

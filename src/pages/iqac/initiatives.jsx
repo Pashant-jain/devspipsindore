@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Banner from "@/components/banner";
-import Accordion from "@/components/comman/Accordion";
 import TabNavigation from "@/components/comman/TabNavigation";
 
 import bannerImg from "/public/assets/images/college-banner.png";
+import { Accordion } from "react-bootstrap";
 
 // Initiatives Data
 
@@ -43,18 +43,19 @@ const InstitutionalDistinctiveness = () => {
   }, []);
 
      // Function to render the iframe
-     const RenderAccordian = ({contantData}) => {
-        if (!contantData) return null;
-        return (
-          <Accordian content={contantData} />
-        );
-      };
+     const RenderAccordion = ({ contantData }) => {
+      if (!contantData) return null;
+      return (
+        <Accordion>{contantData}</Accordion> // Use Accordion instead of Accordian
+      );
+    };
+    
       
 
   // Tabs Data
 const tabsData = {
     "Key initiatives taken by IQAC in the Academic Year 2021-22": (
-        RenderAccordian(initiatives2021To22)
+      RenderAccordion(initiatives2021To22)
   ),
     "Key initiatives taken by IQAC in the Academic Year 2020-21": <p>Content for 2020-21</p>,
     "Key initiatives taken by IQAC in the Academic Year 2019-20": <p>Content for 2019-20</p>,
