@@ -1,5 +1,7 @@
 // pages/index.js
 
+import NanoGallery from "@/components/ui/NanoGallery";
+
 // import NanoGallery from "@/components/NanoGallery";
 // import dynamic from "next/dynamic";
 
@@ -104,7 +106,7 @@ export default function Home() {
   return (
     <div>
         {/* <NanoGallery /> */}
-      {/* <NanoGallery images={galleryImages} settings={gallerySettings} /> */}
+      <NanoGallery images={galleryImages} settings={gallerySettings} />
     </div>
   );
 }

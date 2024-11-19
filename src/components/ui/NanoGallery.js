@@ -37,7 +37,7 @@ const NanoGallery = ({
     <>
       {loading && <Spinner size={"lg"} />}
       <div id="nanogallery2">
-        {images.map((image, index) => (
+        {images?.map((image, index) => (
           <a
             key={index}
             href={image.url}

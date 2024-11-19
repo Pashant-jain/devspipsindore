@@ -653,42 +653,42 @@ export const headerLevel3Data = [
   //     },
   //   ],
   // },
-  // {
-  //   itemName: "Research",
-  //   link: "",
-  //   child: [
-  //     {
-  //       subItemName: "Projects",
-  //       link: "/research/projects/",
-  //       target: "",
-  //     },
-  //     {
-  //       subItemName: "Research Guides",
-  //       link: "/research/research-guides/",
-  //       target: "",
-  //     },
-  //     {
-  //       subItemName: "Events & Activities",
-  //       link: "/research/events-activities/",
-  //       target: "",
-  //     },
-  //     {
-  //       subItemName: "Collaboration & Linkages",
-  //       link: "/research/collaboration-linkages/",
-  //       target: "",
-  //     },
-  //     {
-  //       subItemName: "Journals",
-  //       link: "/research/journals/",
-  //       target: "",
-  //     },
-  //     {
-  //       subItemName: "Faculty Development",
-  //       link: "/gallery/faculty-development/",
-  //       target: "",
-  //     },
-  //   ],
-  // },
+  {
+    itemName: "Research",
+    link: "",
+    child: [
+      {
+        subItemName: "Projects",
+        link: "/research/projects/",
+        target: "",
+      },
+      {
+        subItemName: "Research Guides",
+        link: "/research/research-guides/",
+        target: "",
+      },
+      {
+        subItemName: "Events & Activities",
+        link: "/research/events-activities/",
+        target: "",
+      },
+      {
+        subItemName: "Collaboration & Linkages",
+        link: "/research/collaboration-linkages/",
+        target: "",
+      },
+      {
+        subItemName: "Journals",
+        link: "/research/journals/",
+        target: "",
+      },
+      {
+        subItemName: "Faculty Development",
+        link: "/gallery/faculty-development/",
+        target: "",
+      },
+    ],
+  },
   {
     itemName: "Public Self-Disclosure",
     link: "/public-disclosure",
