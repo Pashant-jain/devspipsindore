@@ -1,66 +1,106 @@
-// components/NanoGallery.js
-"use client";
+import { useEffect } from 'react';
+import Head from 'next/head';
+import dynamic from 'next/dynamic';
+// import 'nanogallery2/dist/jquery.nanogallery2.min.js'; // Import NanoGallery2 JS
+// import 'nanogallery2/dist/css/nanogallery2.min.css'; 
+// import '../../styles/nanogallery.scss'
 
-import PropTypes from "prop-types";
-import { loadScript, loadStylesheet } from "@/lib/utils";
-import { useEffect, useState } from "react";
-import { Spinner } from "./spinner";
+const $ = dynamic(() => import('jquery'), { ssr: false });
 
-const NanoGallery = ({
-  images,
-  settings = {
-    thumbnailHeight: 150,
-    thumbnailWidth: 150,
-    itemsBaseURL: "https://nanogallery2.nanostudio.org/samples/",
-  },
-}) => {
-  const [loading, setLoading] = useState(true);
+const NanoGallery = () => {
 
   useEffect(() => {
-    async function asyncHandler() {
-      await loadScript("https://code.jquery.com/jquery-3.6.0.min.js");
-      await loadScript(
-        "https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"
-      );
-      await loadStylesheet(
-        "https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css"
-      );
-      if (!$ || !$("").nanogallery2) return;
-      $("#nanogallery2").nanogallery2(settings);
-      setLoading(false);
-    }
+    if (typeof window !== 'undefined') {
+      const $ = require('jquery');
+      require('nanogallery2/dist/jquery.nanogallery2.min.js');
 
-    asyncHandler();
+      $("#nanogallery").nanogallery2({
+        kind: 'nano_photos_provider2',
+        dataProvider: 'https://nano.gallery/ngy2/demo7/nano_photos_provider2/nano_photos_provider2.php',
+        // ... other options
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Ensure the plugin is available
+      if ($.fn.nanogallery2) {
+        $("#nanogallery").nanogallery2({
+          kind: 'nano_photos_provider2',
+          dataProvider: 'https://nano.gallery/ngy2/demo7/nano_photos_provider2/nano_photos_provider2.php',
+          galleryL1DisplayMode: 'fullContent',
+          galleryDisplayMode: 'rows',
+          galleryMaxRows: 4,
+          gallerySorting: 'random',
+          thumbnailL1Height: 400,
+          thumbnailL1Width: 600,
+          thumbnailL1GutterWidth: 20,
+          thumbnailL1GutterHeight: 20,
+          thumbnailL1BorderHorizontal: 0,
+          thumbnailL1BorderVertical: 0,
+          thumbnailHeight: 400,
+          thumbnailWidth: 'auto',
+          thumbnailGutterWidth: 2,
+          thumbnailGutterHeight: 2,
+          thumbnailBorderHorizontal: 0,
+          thumbnailBorderVertical: 0,
+          thumbnailAlignment: 'fillWidth',
+          thumbnailToolbarImage: null,
+          thumbnailToolbarAlbum: null,
+          thumbnailL1Label: {
+            display: true,
+            valign: 'bottom',
+            hideIcons: true,
+            titleFontSize: '3em',
+            align: 'left',
+            titleMultiLine: true,
+            displayDescription: false,
+          },
+          thumbnailLabel: {
+            display: true,
+            position: 'overImageOnBottom',
+            hideIcons: true,
+            titleFontSize: '1em',
+            align: 'center',
+            titleMultiLine: true,
+            displayDescription: false,
+          },
+          thumbnailL1DisplayTransition: 'flipUp',
+          thumbnailDisplayTransition: 'slideDown',
+          thumbnailDisplayTransitionDuration: 500,
+          thumbnailDisplayInterval: 30,
+          thumbnailL1BuildInit2:
+            'title_font-weight_bold|image_scale_0.8|label_left_-25px|label_top_95%|label_rotateZ_-90deg|label_transform-origin_top left',
+          thumbnailL1HoverEffect2: 'imageGrayOff|title_color_#46D6AB_#aaaaaa|labelOpacity50',
+          touchAnimation: false,
+          touchAutoOpenDelay: 800,
+          galleryTheme: {
+            thumbnail: {
+              background: '#111',
+              titleShadow: '',
+              descriptionShadow: 'none',
+              titleColor: '#fff',
+              borderColor: '#000',
+            },
+            navigationBreadcrumb: { background: '#3C4B5B' },
+          },
+          locationHash: false,
+        });
+      } else {
+        console.error('nanogallery2 is not loaded!');
+      }
+    }
   }, []);
 
   return (
     <>
-      {loading && <Spinner size={"lg"} />}
-      <div id="nanogallery2">
-        {images?.map((image, index) => (
-          <a
-            key={index}
-            href={image.url}
-            data-ngthumb={image.thumbnail}
-            title={image.title}
-          >
-            {image.title}
-          </a>
-        ))}
-      </div>
+      <Head>
+        <title>NanoGallery</title>
+      </Head>
+      <div id="nanogallery" />
     </>
   );
-};
-
-NanoGallery.propTypes = {
-  images: PropTypes.arrayOf(
-    PropTypes.shape({
-      url: PropTypes.string.isRequired,
-      thumbnail: PropTypes.string.isRequired,
-      title: PropTypes.string,
-    })
-  ).isRequired,
-  settings: PropTypes.object,
 };
 
 export default NanoGallery;

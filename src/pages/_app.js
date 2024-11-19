@@ -4,9 +4,12 @@ import "slick-carousel/slick/slick-theme.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import { Toaster } from "react-hot-toast";
 import Layout from "@/components/layout";
+import "@/styles/nanogallery.scss";
 import "@/styles/globals.scss";
 
 export default function App({ Component, pageProps, router }) {
+
+  
 
   useEffect(() => {
     const { pathname } = router;
