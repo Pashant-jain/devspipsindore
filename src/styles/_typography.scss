@@ -20,6 +20,15 @@
     line-height: 18px;
   }
 }
+
+.header{
+  .text-regular{
+    @media (max-width: 1400px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
 .small-text {
   font-size: 18px;
   font-weight: 400;
