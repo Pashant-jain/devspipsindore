@@ -45,7 +45,7 @@ const tabsData = {
               Training Programme on Project based Learning and Need of Academic
               Audit in Enhancing the Quality of Higher Education
             </td>
-            <td width="265">St. Aloysius' College, Jabalpur</td>
+            <td width="265">St. Aloysius&apos; College, Jabalpur</td>
             <td width="96">2016-17</td>
             <td width="68">2 days</td>
           </tr>
@@ -55,7 +55,7 @@ const tabsData = {
               Workshop on Revised Assessment and accreditation Framework for
               Higher Education Institutions in India
             </td>
-            <td width="265">St. Aloysius' College, Jabalpur</td>
+            <td width="265">St. Aloysius&apos; College, Jabalpur</td>
             <td width="96">2018-19</td>
             <td width="68">2 days</td>
           </tr>
@@ -78,7 +78,7 @@ const tabsData = {
             <td width="252">
               Workshop on Forensic Accounting and Forensic Audit
             </td>
-            <td width="265">St. Aloysius' College, Jabalpur</td>
+            <td width="265">St. Aloysius&apos; College, Jabalpur</td>
             <td width="96">2020-21</td>
             <td width="68">1 day</td>
           </tr>
@@ -88,14 +88,14 @@ const tabsData = {
               Guest Lecture on Triple Talaq-Present Judgement and its various
               dimensions
             </td>
-            <td width="265">St. Aloysius' College, Jabalpur</td>
+            <td width="265">St. Aloysius&apos; College, Jabalpur</td>
             <td width="96">2020-21</td>
             <td width="68">1 day</td>
           </tr>
           <tr>
             <td width="32">8</td>
             <td width="252">Confluence 2020</td>
-            <td width="265">St. Aloysius' College, Jabalpur</td>
+            <td width="265">St. Aloysius&apos; College, Jabalpur</td>
             <td width="96">2020-21</td>
             <td width="68">5 Days</td>
           </tr>
@@ -111,7 +111,7 @@ const tabsData = {
           <tr>
             <td width="32">10</td>
             <td width="252">
-              International Virtual Conference on '‘Emerging Trends and
+              International Virtual Conference on &apos;‘Emerging Trends and
               Technologies in Area of I.T., Science, Social Sciences, Commerce
               and Management’
             </td>
@@ -122,7 +122,7 @@ const tabsData = {
           <tr>
             <td width="32">11</td>
             <td width="252">
-              Student Exchange Programme on '7 Dimensions of wellness'
+              Student Exchange Programme on &apos;7 Dimensions of wellness&apos;
             </td>
             <td width="265">Research Foundation of India</td>
             <td width="96">2020-21</td>
@@ -131,8 +131,8 @@ const tabsData = {
           <tr>
             <td width="32">12</td>
             <td width="252">
-              Student Exchange Programme on 'Science &amp; Spirituality for a
-              harmonious and fulfilling Human Community'
+              Student Exchange Programme on &apos;Science &amp; Spirituality for a
+              harmonious and fulfilling Human Community&apos;
             </td>
             <td width="265">Research Foundation of India</td>
             <td width="96">2020-21</td>
@@ -141,8 +141,8 @@ const tabsData = {
           <tr>
             <td width="32">13</td>
             <td width="252">
-              Student Exchange Programme on 'Career Planning and Career
-              Management'
+              Student Exchange Programme on &apos;Career Planning and Career
+              Management&apos;
             </td>
             <td width="265">Research Foundation of India</td>
             <td width="96">2020-21</td>
@@ -182,7 +182,7 @@ const tabsData = {
           <tr>
             <td width="32">17</td>
             <td width="252">Benchmarking in Service Industry</td>
-            <td width="265">St. Xavier's College Mumbai (Maharashtra)</td>
+            <td width="265">St. Xavier&apos;s College Mumbai (Maharashtra)</td>
             <td width="96">2022-23</td>
             <td width="68">1 Day</td>
           </tr>
@@ -219,7 +219,7 @@ const tabsData = {
           <tr>
             <td width="32">22</td>
             <td width="252">Nutrition and Wellbeing of Students</td>
-            <td width="265">St. Theresa's College Kerala</td>
+            <td width="265">St. Theresa&apos;s College Kerala</td>
             <td width="96">2022-23</td>
             <td width="68">1  Day</td>
           </tr>
@@ -243,7 +243,7 @@ const tabsData = {
             <td width="32">25</td>
             <td width="252">Learning SPSS to strengthen Research</td>
             <td width="265">
-              St. Thomas College Pala Kerala, St. Albert's College Kerala,
+              St. Thomas College Pala Kerala, St. Albert&apos;s College Kerala,
               Alphonsa College Kerala
             </td>
             <td width="96">2022-23</td>
@@ -316,7 +316,7 @@ const tabsData = {
             <td width="32">33</td>
             <td width="252">Striking Work-Life balance for Young Managers</td>
             <td width="265">
-              St. Xavier's College Mumbai (Maharashtra) &amp; St. Anthony's
+              St. Xavier&apos;s College Mumbai (Maharashtra) &amp; St. Anthony&apos;s
               College, Shillong
             </td>
             <td width="96">2022-23</td>
@@ -360,16 +360,16 @@ const tabsData = {
         <li>All India Association for Christian Higher Education</li>
         <li>Alphonsa College, Pala</li>
         <li>St. Anthony’s College, Shillong</li>
-        <li>St. Aloysius' College (Autonomous), Jabalpur</li>
+        <li>St. Aloysius&apos; College (Autonomous), Jabalpur</li>
         <li>Kristu Jayanti College (Autonomous), Bangalore</li>
-        <li>St. Xavier's College (Autonomous), Mumbai</li>
+        <li>St. Xavier&apos;s College (Autonomous), Mumbai</li>
         <li>Assam Don Bosco University, Sonapur</li>
         <li>Xavier Board of Higher Education in India</li>
-        <li>St. Teresa's (Autonomous) College, Ernakulam</li>
+        <li>St. Teresa&apos;s (Autonomous) College, Ernakulam</li>
         <li>St. Francis De Sales College, Nagpur</li>
-        <li>St. Joseph's College, Irinjalakuda</li>
+        <li>St. Joseph&apos;s College, Irinjalakuda</li>
         <li>De Paul College, Mysore</li>
-        <li>St. Albert's College(Autonomous), Ernakulam</li>
+        <li>St. Albert&apos;s College(Autonomous), Ernakulam</li>
         <li>St. Thomas College, Palai</li>
         <li>Carmel College, Mala</li>
         <li>
