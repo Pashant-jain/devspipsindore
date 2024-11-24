@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Facebook from "/public/assets/icons/Facebook.svg";
 import Instagram from "/public/assets/icons/Instagram.svg";
+import  Youtube from "/public/assets/icons/YouTube.svg";
 import Location from "/public/assets/icons/location.svg";
 import Email from "/public/assets/icons/Email.svg";
 import Contact from "/public/assets/icons/contact.svg";
@@ -56,15 +57,15 @@ const Footer = ({showFooterCta}) => {
               </p>
               <div className={style["socialMedia"]}>
                 <Link href={`https://www.facebook.com/stpaulinstituteindore/`} target="_blank">
-                  <Image src={Facebook} alt="" width={24} height={24} />
+                  <Image src={Facebook} alt="" width={36} height={36} />
                 </Link>
-                <Link href={`https://www.instagram.com/spips_official/`} target="_blank">
-                  <Image src={Instagram} alt="" width={24} height={24} />
+                <Link href={`https://www.instagram.com/officialspips.indore`} target="_blank">
+                  <Image src={Instagram} alt="" width={36} height={36} />
+                </Link>
+                 <Link href={`https://www.youtube.com/@spipsofficial1671`} target="_blank">
+                  <Image src={Youtube} alt="" width={36} height={36} />
                 </Link>
                 {/* <Link href={`#`}>
-                  <Image src={LinkedIn} alt="" width={24} height={24} />
-                </Link>
-                <Link href={`#`}>
                   <Image src={Twitter} alt="" width={24} height={24} />
                 </Link>
                 <Link href={`#`}>

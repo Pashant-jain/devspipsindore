@@ -30,7 +30,7 @@ function StudentList() {
       <Banner
         // isFrontBanner={false}
         bannerImg={bannerImg}
-        heading={"Fee Structure"}
+        heading={"Student List"}
         Contact={true}
       />
       <PageContent

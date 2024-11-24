@@ -32,7 +32,7 @@ const bannerImg = dynamic(() =>
 const contentData = [
   {
     key: "tab1",
-    title: "Department of Management",
+    title: "Department of COmmerce & Management",
     content: (
       <>
       {/* Department of Commerce Section */}

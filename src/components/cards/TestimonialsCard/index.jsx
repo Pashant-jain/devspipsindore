@@ -30,9 +30,9 @@ const TestimonialsCard = ({title,role,cardImage,description,link}) => {
           }
         </div>
       </div>
-      <p className="text-regular">
+      {/* <p className="text-regular">
        {description}
-      </p>
+      </p> */}
     </div>
   );
 };

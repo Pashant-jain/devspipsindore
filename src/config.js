@@ -222,26 +222,26 @@ export const grivienceCommiteeDeatils = [
     designation: "Joint Convener",
     department: "Management",
   },
+  // {
+  //   Id: "3",
+  //   name: "Dr. Stafard Anthony",
+  //   designation: "Member",
+  //   department: "Management",
+  // },
   {
     Id: "3",
-    name: "Dr. Stafard Anthony",
-    designation: "Member",
-    department: "Management",
-  },
-  {
-    Id: "4",
     name: "Prof. Vidhi Pariyani",
     designation: "Member",
     department: "Commerce",
   },
   {
-    Id: "5",
+    Id: "4",
     name: "Prof. Ashay Joshi",
     designation: "Member",
     department: "Commerce",
   },
   {
-    Id: "6",
+    Id: "5",
     name: "Dr. Avinash Yadav",
     designation: "Member",
     department: "Physical Education",
@@ -264,7 +264,7 @@ export const grivienceCommiteeDeatils = [
     },
     {
         Id: "2",
-        title: "Mrs. Ritu Kochale",
+        title: "Ms. RITU KOCHALE",
         designation: "Library Assistance",
         qualification: "B.A., DCA, D. EL. ED., Diploma in Yoga",
       },

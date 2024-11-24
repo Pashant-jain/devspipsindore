@@ -349,39 +349,39 @@ const tabsData = {
       </table>
     </>
   ),
-  "New Collaborations Initiated": (
-    <>
-      The institute looks forward to following collaborations for the benefit
-      and the betterment of the students
-      <ul>
-        <li>Bhopal School of Social Sciences</li>
-        <li>Jain Diwakar College</li>
-        <li>Research Foundation of India</li>
-        <li>All India Association for Christian Higher Education</li>
-        <li>Alphonsa College, Pala</li>
-        <li>St. Anthony’s College, Shillong</li>
-        <li>St. Aloysius&apos; College (Autonomous), Jabalpur</li>
-        <li>Kristu Jayanti College (Autonomous), Bangalore</li>
-        <li>St. Xavier&apos;s College (Autonomous), Mumbai</li>
-        <li>Assam Don Bosco University, Sonapur</li>
-        <li>Xavier Board of Higher Education in India</li>
-        <li>St. Teresa&apos;s (Autonomous) College, Ernakulam</li>
-        <li>St. Francis De Sales College, Nagpur</li>
-        <li>St. Joseph&apos;s College, Irinjalakuda</li>
-        <li>De Paul College, Mysore</li>
-        <li>St. Albert&apos;s College(Autonomous), Ernakulam</li>
-        <li>St. Thomas College, Palai</li>
-        <li>Carmel College, Mala</li>
-        <li>
-          Annai Vailankanni Arts and Science College, Thanjavur, Tamil Nadu
-        </li>
-        <li>Abhakunj Welfare Society (NGO), Indore</li>
-        <li>Unnat Association (NGO), Indore</li>
-        <li>Saman Welfare Society (NGO), Indore</li>
-        <li>Indo-Global Social Service Society (NGO), Indore</li>
-      </ul>
-    </>
-  ),
+  // "New Collaborations Initiated": (
+  //   <>
+  //     The institute looks forward to following collaborations for the benefit
+  //     and the betterment of the students
+  //     <ul>
+  //       <li>Bhopal School of Social Sciences</li>
+  //       <li>Jain Diwakar College</li>
+  //       <li>Research Foundation of India</li>
+  //       <li>All India Association for Christian Higher Education</li>
+  //       <li>Alphonsa College, Pala</li>
+  //       <li>St. Anthony’s College, Shillong</li>
+  //       <li>St. Aloysius&apos; College (Autonomous), Jabalpur</li>
+  //       <li>Kristu Jayanti College (Autonomous), Bangalore</li>
+  //       <li>St. Xavier&apos;s College (Autonomous), Mumbai</li>
+  //       <li>Assam Don Bosco University, Sonapur</li>
+  //       <li>Xavier Board of Higher Education in India</li>
+  //       <li>St. Teresa&apos;s (Autonomous) College, Ernakulam</li>
+  //       <li>St. Francis De Sales College, Nagpur</li>
+  //       <li>St. Joseph&apos;s College, Irinjalakuda</li>
+  //       <li>De Paul College, Mysore</li>
+  //       <li>St. Albert&apos;s College(Autonomous), Ernakulam</li>
+  //       <li>St. Thomas College, Palai</li>
+  //       <li>Carmel College, Mala</li>
+  //       <li>
+  //         Annai Vailankanni Arts and Science College, Thanjavur, Tamil Nadu
+  //       </li>
+  //       <li>Abhakunj Welfare Society (NGO), Indore</li>
+  //       <li>Unnat Association (NGO), Indore</li>
+  //       <li>Saman Welfare Society (NGO), Indore</li>
+  //       <li>Indo-Global Social Service Society (NGO), Indore</li>
+  //     </ul>
+  //   </>
+  // ),
   Linkages: (
     <>
       The institute looks forward to following Linkages for the benefit and the
@@ -407,7 +407,8 @@ const CollaborationLinkages = () => {
       <Banner
         isFrontBanner={false}
         bannerImg={bannerImg}
-        heading={"INSTITUTIONAL DISTINCTIVENESS"}
+        heading={"Collaboration & Linkages"}
+Contact={true}
       />
       <div className={`spacing_both`}>
         <div className="container">

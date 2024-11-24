@@ -17,7 +17,7 @@ const animateValue = (start, end, duration, setStatValue) => {
   window.requestAnimationFrame(step);
 };
 
-const StatItem = ({ endValue, label }) => {
+const StatItem = ({ endValue, label,extention }) => {
   const [statValue, setStatValue] = useState(0); // State to hold current stat value
   const statRef = useRef(null); // Reference to the stat element
   const [isVisible, setIsVisible] = useState(false); // State to track visibility
@@ -52,7 +52,7 @@ const StatItem = ({ endValue, label }) => {
 
   return (
     <div className={style["stats"]} ref={statRef}>
-      <strong className="heading-2">{statValue}+</strong>
+      <strong className="heading-2">{statValue}{extention}</strong>
       <span className="text-regular">{label}</span>
     </div>
   );
@@ -72,11 +72,11 @@ const OurStats = ({ sectionGap }) => {
       }`}
     >
       <div className="container">
-        <SectionHeading title="Our Stats" />
+        <SectionHeading title="Our Current Stats" />
         <div className={style["stats_list"]}>
           {Stats?.map((item, index) => (
             <React.Fragment key={index}>
-              <StatItem endValue={item.number} label={item.title} />
+              <StatItem endValue={item.number} label={item.title} extention={item.extention} />
             </React.Fragment>
           ))}
         </div>

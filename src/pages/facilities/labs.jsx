@@ -51,7 +51,7 @@ const Labs = () => {
           title={"COMPUTER LAB"}
           content={
             <>
-            The Computer Science Department of the Colleges well equipped with modern computing resources to cater to the ever growing technological needs.
+            The College has two well equipped Computer Labs with modern computing resources to cater to the ever growing technological needs.
 <br/><br/>
 The Computer Labs have state-of-the-art equipment relating to various subjects of computer science and information technology.
 <br/><br/>

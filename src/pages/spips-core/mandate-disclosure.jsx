@@ -78,9 +78,9 @@ const MandateDisclosure = () => {
                 <li className="heading-6" >
                     <Link href={''} target="_blank" >Feedback from Stakeholders.</Link>
                 </li> <br/>
-                <li className="heading-6" >
+                {/* <li className="heading-6" >
                     <Link href={''} target="_blank" >Financial Management 22-23</Link>
-                </li> <br/>
+                </li> <br/> */}
                 <li className="heading-6" >
                     <Link href={AduitReport} target="_blank" >Audit Report</Link>
                 </li> <br/>

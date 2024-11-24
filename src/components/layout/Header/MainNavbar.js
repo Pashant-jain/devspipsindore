@@ -10,7 +10,7 @@ const MainNavbar = ({className}) => {
         <div key={index}>
           {menu.child ? (
             <Dropdown>
-              <Dropdown.Toggle className="text-regular menu_toggle">
+              <Dropdown.Toggle className="menu_item menu_toggle">
                 {menu.itemName}
               </Dropdown.Toggle>
 
@@ -20,7 +20,7 @@ const MainNavbar = ({className}) => {
                     {/* If there are submenuChild items, create a nested dropdown */}
                     {submenu.submenuChild ? (
                       <Dropdown drop="left" key={subIndex}>
-                        <Dropdown.Toggle className="text-regular">
+                        <Dropdown.Toggle className="menu_item">
                           {submenu.subItemName}
                         </Dropdown.Toggle>
 
@@ -32,7 +32,7 @@ const MainNavbar = ({className}) => {
                               <Dropdown.Item as="div" key={innerIndex}>
                                 <Link
                                   href={innerSubmenu.link || "#"}
-                                  className="text-regular"
+                                  className="menu_item"
                                   target={innerSubmenu.target}
                                 >
                                   {innerSubmenu.innerSubItemName}
@@ -46,7 +46,7 @@ const MainNavbar = ({className}) => {
                       <Dropdown.Item as="div" key={subIndex}>
                         <Link
                           href={submenu.link || "#"}
-                          className="text-regular"
+                          className="menu_item"
                           target={submenu.target}
                         >
                           {submenu.subItemName}
@@ -60,11 +60,11 @@ const MainNavbar = ({className}) => {
           ) : (
             <div>
               {menu.link ? (
-                <Link href={menu.link} className="text-regular">
+                <Link href={menu.link} className="menu_item">
                   {menu.itemName}
                 </Link>
               ) : (
-                <span className="text-regular">{menu.itemName}</span> // Render non-link if no valid URL
+                <span className="menu_item">{menu.itemName}</span> // Render non-link if no valid URL
               )}
             </div>
           )}

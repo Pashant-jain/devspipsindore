@@ -2,7 +2,7 @@ export const headerLevel1Data = {
   email: { href: "mailto:info@spipsindore.com", text: "info@spipsindore.com", target: ""},
   links: [
     { href: "https://ecare.spipsindore.com/app/login", text: "Pay Prof. Course Fee", target: "_blank" },
-    { href: "https://www.nirfindia.org/", text: "NIRF", target: "_blank" },
+    { href: "https://nlist.inflibnet.ac.in/", text: "N-List", target: "_blank" },
     { href: "https://ecare.spipsindore.com/app/login", text: "E-Care", target: "_blank" },
   ],
 };
@@ -32,7 +32,7 @@ export const headerLevel3Data = [
         target: "",
         submenuChild: [
           {
-            innerSubItemName: "Chairman’s Message",
+            innerSubItemName: "Our Chairman",
             link: "/about-spips/our-patron/chairman/",
             target: "",
           },
@@ -100,7 +100,7 @@ export const headerLevel3Data = [
     ],
   },
   {
-    itemName: "SPIPS @ CORE",
+    itemName: "SPIPS@Core",
     link: "",
     child: [
       {
@@ -258,187 +258,187 @@ export const headerLevel3Data = [
         link: "/naac/aqar/",
         target: "",
       },
-      {
-        subItemName: "Criteria I",
-        link: "#",
-        target: "",
-        submenuChild: [
-          {
-            innerSubItemName: "Curricular Planning and Implementation",
-            link: "/naac/criteria-i/curricular-planning-and-implementation/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Academic Flexibility",
-            link: "/naac/criteria-i/academic-flexibility/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Curriculum Enrichment",
-            link: "/naac/criteria-i/curriculum-enrichment/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Feedback System",
-            link: "/naac/criteria-i/feedback-system/",
-            target: "",
-          },
-        ],
-      },
-      {
-        subItemName: "Criteria II",
-        link: "#",
-        target: "",
-        submenuChild: [
-          {
-            innerSubItemName: "Catering to Students’ Diversity",
-            link: "/naac/criteria-ii/tering-to-students-diversity/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Teaching-Learning Process",
-            link: "/naac/criteria-ii/teaching-learning-process/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Evaluation Process and Reforms",
-            link: "/naac/criteria-ii/evaluation-process-and-reforms/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Student Performance and Learning Outcomes",
-            link: "/naac/criteria-ii/student-performance-and-learning-outcomes/",
-            target: "",
-          },
-        ],
-      },
-      {
-        subItemName: "Criteria III",
-        link: "#",
-        target: "",
-        submenuChild: [
-          {
-            innerSubItemName: "Innovation Ecosystem",
-            link: "/naac/criteria-iii/innovation-ecosystem/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Extension Activities",
-            link: "/naac/criteria-iii/extension-activities/",
-            target: "",
-          },
-        ],
-      },
-      {
-        subItemName: "Criteria IV",
-        link: "#",
-        target: "",
-        submenuChild: [
-          {
-            innerSubItemName: "Physical Facilities",
-            link: "/naac/criteria-iv/physical-facilities/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Library as Learning Resource",
-            link: "/naac/criteria-iv/library-as-learning-resource/",
-            target: "",
-          },
-          {
-            innerSubItemName: "IT Infrastructure",
-            link: "/naac/criteria-iv/it-infrastructure/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Maintenance of Campus Infrastructure",
-            link: "/naac/criteria-iv/maintenance-of-campus-infrastructure/",
-            target: "",
-          },
-        ],
-      },
-      {
-        subItemName: "Criteria V",
-        link: "#",
-        target: "",
-        submenuChild: [
-          {
-            innerSubItemName: "Student Support",
-            link: "/naac/criteria-v/student-support/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Student Participation and Activities",
-            link: "/naac/criteria-v/student-participation-and-activities/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Alumni Engagement",
-            link: "/naac/criteria-v/alumni-engagement/",
-            target: "",
-          },
-        ],
-      },
-      {
-        subItemName: "Criteria VI",
-        link: "#",
-        target: "",
-        submenuChild: [
-          {
-            innerSubItemName: "Institutional Vision and Leadership",
-            link: "/naac/criteria-vi/institutional-vision-and-leadership/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Strategy Development and Deployment",
-            link: "/naac/criteria-vi/strategy-development-and-deployment/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Faculty Empowerment Strategies",
-            link: "/naac/criteria-vi/faculty-empowerment-strategies/",
-            target: "",
-          },
-          {
-            innerSubItemName:
-              "Financial Management and Resource Mobilization",
-            link: "/naac/criteria-vi/financial-management-and-resource-mobilization/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Internal Quality Assurance System",
-            link: "/naac/criteria-vi/internal-quality-assurance-system/",
-            target: "",
-          },
-        ],
-      },
-      {
-        subItemName: "Criteria VII",
-        link: "#",
-        target: "",
-        submenuChild: [
-          {
-            innerSubItemName:
-              "Institutional Values and Social Responsibilities",
-            link: "/naac/criteria-vii/institutional-values-and-social-responsibilities/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Energy Saving Measure",
-            link: "/naac/criteria-vii/energy-saving-measure/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Best Practices",
-            link: "/naac/criteria-vii/best-practices/",
-            target: "",
-          },
-          {
-            innerSubItemName: "Institutional Distinctiveness",
-            link: "/naac/criteria-vii/institutional-distinctiveness/",
-            target: "",
-          },
-        ],
-      },
+      // {
+      //   subItemName: "Criteria I",
+      //   link: "#",
+      //   target: "",
+      //   submenuChild: [
+      //     {
+      //       innerSubItemName: "Curricular Planning and Implementation",
+      //       link: "/naac/criteria-i/curricular-planning-and-implementation/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Academic Flexibility",
+      //       link: "/naac/criteria-i/academic-flexibility/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Curriculum Enrichment",
+      //       link: "/naac/criteria-i/curriculum-enrichment/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Feedback System",
+      //       link: "/naac/criteria-i/feedback-system/",
+      //       target: "",
+      //     },
+      //   ],
+      // },
+      // {
+      //   subItemName: "Criteria II",
+      //   link: "#",
+      //   target: "",
+      //   submenuChild: [
+      //     {
+      //       innerSubItemName: "Catering to Students’ Diversity",
+      //       link: "/naac/criteria-ii/tering-to-students-diversity/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Teaching-Learning Process",
+      //       link: "/naac/criteria-ii/teaching-learning-process/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Evaluation Process and Reforms",
+      //       link: "/naac/criteria-ii/evaluation-process-and-reforms/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Student Performance and Learning Outcomes",
+      //       link: "/naac/criteria-ii/student-performance-and-learning-outcomes/",
+      //       target: "",
+      //     },
+      //   ],
+      // },
+      // {
+      //   subItemName: "Criteria III",
+      //   link: "#",
+      //   target: "",
+      //   submenuChild: [
+      //     {
+      //       innerSubItemName: "Innovation Ecosystem",
+      //       link: "/naac/criteria-iii/innovation-ecosystem/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Extension Activities",
+      //       link: "/naac/criteria-iii/extension-activities/",
+      //       target: "",
+      //     },
+      //   ],
+      // },
+      // {
+      //   subItemName: "Criteria IV",
+      //   link: "#",
+      //   target: "",
+      //   submenuChild: [
+      //     {
+      //       innerSubItemName: "Physical Facilities",
+      //       link: "/naac/criteria-iv/physical-facilities/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Library as Learning Resource",
+      //       link: "/naac/criteria-iv/library-as-learning-resource/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "IT Infrastructure",
+      //       link: "/naac/criteria-iv/it-infrastructure/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Maintenance of Campus Infrastructure",
+      //       link: "/naac/criteria-iv/maintenance-of-campus-infrastructure/",
+      //       target: "",
+      //     },
+      //   ],
+      // },
+      // {
+      //   subItemName: "Criteria V",
+      //   link: "#",
+      //   target: "",
+      //   submenuChild: [
+      //     {
+      //       innerSubItemName: "Student Support",
+      //       link: "/naac/criteria-v/student-support/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Student Participation and Activities",
+      //       link: "/naac/criteria-v/student-participation-and-activities/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Alumni Engagement",
+      //       link: "/naac/criteria-v/alumni-engagement/",
+      //       target: "",
+      //     },
+      //   ],
+      // },
+      // {
+      //   subItemName: "Criteria VI",
+      //   link: "#",
+      //   target: "",
+      //   submenuChild: [
+      //     {
+      //       innerSubItemName: "Institutional Vision and Leadership",
+      //       link: "/naac/criteria-vi/institutional-vision-and-leadership/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Strategy Development and Deployment",
+      //       link: "/naac/criteria-vi/strategy-development-and-deployment/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Faculty Empowerment Strategies",
+      //       link: "/naac/criteria-vi/faculty-empowerment-strategies/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName:
+      //         "Financial Management and Resource Mobilization",
+      //       link: "/naac/criteria-vi/financial-management-and-resource-mobilization/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Internal Quality Assurance System",
+      //       link: "/naac/criteria-vi/internal-quality-assurance-system/",
+      //       target: "",
+      //     },
+      //   ],
+      // },
+      // {
+      //   subItemName: "Criteria VII",
+      //   link: "#",
+      //   target: "",
+      //   submenuChild: [
+      //     {
+      //       innerSubItemName:
+      //         "Institutional Values and Social Responsibilities",
+      //       link: "/naac/criteria-vii/institutional-values-and-social-responsibilities/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Energy Saving Measure",
+      //       link: "/naac/criteria-vii/energy-saving-measure/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Best Practices",
+      //       link: "/naac/criteria-vii/best-practices/",
+      //       target: "",
+      //     },
+      //     {
+      //       innerSubItemName: "Institutional Distinctiveness",
+      //       link: "/naac/criteria-vii/institutional-distinctiveness/",
+      //       target: "",
+      //     },
+      //   ],
+      // },
     ],
   },
   {
@@ -528,7 +528,7 @@ export const headerLevel3Data = [
         ],
       },
       {
-        subItemName: "EXAMINATION CELL",
+        subItemName: "Examination Cell",
         link: "#",
         target: "",
         submenuChild: [

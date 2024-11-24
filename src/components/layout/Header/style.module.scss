@@ -9,7 +9,7 @@
     @media (max-width: 767px) {
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: center; 
     }
 
     .mobileMenu {
@@ -151,12 +151,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 18px;
   padding: 33px 60px;
   background-color: $White;
 
   @media (max-width: 1500px) {
-    gap: 12px;
+    gap: 10px;
   }
 
   @media (max-width: 1199px) {

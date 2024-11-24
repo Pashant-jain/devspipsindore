@@ -35,6 +35,7 @@ const ResearchGuides = () => {
         <Banner
           bannerImg={bannerImg}
           heading="Research Guides"
+            Contact={true}
           />
 
         <CommitteeList

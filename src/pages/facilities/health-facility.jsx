@@ -25,7 +25,7 @@ const HealthFacility = () => {
       <main>
         <Banner
           bannerImg={bannerImg}
-          heading="Physical Facility"
+          heading="Health Facility"
           Contact={true}
         />
 

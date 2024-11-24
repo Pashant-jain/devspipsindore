@@ -72,7 +72,8 @@ const tabsData = {
       <Banner
         isFrontBanner={false}
         bannerImg={bannerImg}
-        heading={"INSTITUTIONAL DISTINCTIVENESS"}
+        heading={"IQAC Initiatives"}
+        Contact={true}
       />
       <div className="spacing_both">
         <div className="container">

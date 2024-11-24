@@ -70,7 +70,7 @@ const AboutIqac = () => {
           }
         />
        
-       <Features
+       <PageContent
           sectionGap="bottom"
           descriptionClass="about_message"
           className="bg_white"
@@ -90,7 +90,7 @@ const AboutIqac = () => {
             </>
           }
         />
-          <Features
+          <PageContent
           sectionGap="bottom"
           descriptionClass="about_message"
           className="bg_white"

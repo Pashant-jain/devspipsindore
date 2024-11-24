@@ -177,7 +177,8 @@ const InstitutionalDistinctiveness = () => {
       <Banner
         isFrontBanner={false}
         bannerImg={bannerImg}
-        heading={"INSTITUTIONAL DISTINCTIVENESS"}
+        heading={"IQAC Members"}
+        Contact={true}
       />
       <div className={`spacing_both`}>
         <div className="container">

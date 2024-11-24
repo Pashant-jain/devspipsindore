@@ -58,28 +58,34 @@ export const Stats =[
     {
         title: 'Departments',
         number: 6,
+        extention: '',
     },
     {
         title: 'Courses Available',
-        number: 10,
+        number: 7,
+        extention: '',
     },
-    
     {
         title: 'Happy Students',
-        number: 1610,
+        number: 1600,
+        extention: '+',
     },
     {
         title: 'Highly Qualified Faculties',
         number: 41,
+        extention: '+',
+
     },
     {
         title: 'Placement (%)',
         number: 80,
+        extention: '%',
     },
     
     {
         title: 'Completion Rate (%)',
         number: 98,
+        extention: "%"
     },
     
 ]

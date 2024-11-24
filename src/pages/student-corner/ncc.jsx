@@ -20,6 +20,7 @@ import Image9 from "/public/assets/images/Ncc/9.jpg"
 
 import Image from "next/image";
 import PageContent from "@/components/comman/PageContent";
+import Accordion from "@/components/comman/Accordion";
 
 
 const Ncc = () => {
@@ -63,49 +64,10 @@ const Ncc = () => {
           },
       ];
 
-  return (
-    <>
-      <Head>
-      <title>SPIPS &#8211; St. Paul Institute of Professional Studies, Indore</title>
-        <meta name="description" content="SPIPS - St. Paul Institute of Professional Studies, Indore: A premier educational institution offering top-tier programs in management, commerce, science, and arts. Empowering students with academic excellence, holistic development, and career-oriented learning in a dynamic and inclusive environment." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main>
-        <Banner
-          bannerImg={bannerImg}
-          heading="National Cadet Corp (NCC)"
-        Contact={true}
-
-        />
-
-        <Features
-          sectionGap="both"
-          imageSlider={NccImages}
-          descriptionClass="about_message"
-          className="bg_white"
-          title={'NATIONAL CADET CORP'}
-          content={
-            <>
-             National Cadet Corp (NCC): The NCC unit at SPIPS, which welcomes both boys and girls, is guided by the army unit, known as ‘9 MP Battalion’, CRP Line, Indore. As per the guidelines issued, the NCC unit at SPIPS is completely self-financed. Through this endeavor, SPIPS aims at inculcating in its students a sense of discipline, commitment, patriotism and service to the nation. The cadets are motivated to be punctual and regular for all the prescribed training camps. They are also prepared to appear for A-Certificate, B-Certificate and C-Certificate Exams. This will be very beneficial for their career prospects.
-
-            </>
-          }
-        />
-      
-      <PageContent
-          sectionGap={"bottom"}
-          className="bg_white"
-          title={"Contact Officer"}
-          content={
-            <>
-           <h3 className="heading-5" >Capt. Lt. Dr. Avinash Yadav - +91 94253 53832</h3>
-           <br/>
-           <br/>
-           <h3 className="heading-6" >
-           NCC Initiatives</h3>
-
-<ul>
+      const NccInitiatives = {
+        "NCC Initiatives": (
+        <>
+        <ul>
   <li>Celebration of Vijay Diwas</li>
   <li>Best Educationist Award and Certificate of Education Excellence by International Institute of Education and Management.</li>
 
@@ -160,6 +122,57 @@ const Ncc = () => {
   <li>Plantation Drive at Simrol Talai</li>
   <li>Aids  Awareness Programme</li>
 </ul>
+        </>
+      ),
+       };
+    
+
+  return (
+    <>
+      <Head>
+      <title>SPIPS &#8211; St. Paul Institute of Professional Studies, Indore</title>
+        <meta name="description" content="SPIPS - St. Paul Institute of Professional Studies, Indore: A premier educational institution offering top-tier programs in management, commerce, science, and arts. Empowering students with academic excellence, holistic development, and career-oriented learning in a dynamic and inclusive environment." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <main>
+        <Banner
+          bannerImg={bannerImg}
+          heading="National Cadet Corp (NCC)"
+        Contact={true}
+
+        />
+
+        <Features
+          sectionGap="both"
+          imageSlider={NccImages}
+          descriptionClass="about_message"
+          className="bg_white"
+          title={'NATIONAL CADET CORP'}
+          content={
+            <>
+             National Cadet Corp (NCC): The NCC unit at SPIPS, which welcomes both boys and girls, is guided by the army unit, known as ‘9 MP Battalion’, CRP Line, Indore. As per the guidelines issued, the NCC unit at SPIPS is completely self-financed. Through this endeavor, SPIPS aims at inculcating in its students a sense of discipline, commitment, patriotism and service to the nation. The cadets are motivated to be punctual and regular for all the prescribed training camps. They are also prepared to appear for A-Certificate, B-Certificate and C-Certificate Exams. This will be very beneficial for their career prospects.
+
+            </>
+          }
+        />
+      
+      <PageContent
+          sectionGap={"bottom"}
+          className="bg_white"
+          title={"Contact Officer"}
+          content={
+            <>
+           <h3 className="heading-5" >Capt. Lt. Dr. Avinash Yadav - +91 94253 53832</h3>
+           <br/>
+           <br/>
+           {/* <h3 className="heading-6 mb-5" >
+           NCC Initiatives</h3> */}
+
+           <Accordion tabsData={NccInitiatives} />
+
+
+
             </>
           }
         />

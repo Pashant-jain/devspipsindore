@@ -7,7 +7,7 @@ const SubNavbar = () => {
   return (
     <div className={style["sumNavbar"]}>
       {headerLevel2Data.links.map((link , index) => (
-        <Link key={index} href={link.href} className="text-regular" target={link.target}>
+        <Link key={index} href={link.href} className="submenu_item" target={link.target}>
           {link.text}
         </Link>
       ))}
